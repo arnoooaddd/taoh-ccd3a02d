@@ -23,14 +23,14 @@ export const Interview = () => {
           </p>
         </motion.div>
         
-        <div className="grid lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
-          {/* Desktop Video - 16:9 */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-4xl mx-auto"
+        >
+          {/* Desktop/Tablet Video - 16:9 - Hidden on mobile */}
+          <div className="hidden md:block">
             <div className="video-container aspect-video">
               <iframe
                 src="https://www.loom.com/embed/9fe0a97f692f407398a760573fee616c"
@@ -39,17 +39,10 @@ export const Interview = () => {
                 className="absolute inset-0 w-full h-full"
               />
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-4">
-              Desktop View (16:9)
-            </p>
-          </motion.div>
+          </div>
           
-          {/* Mobile Video - 9:16 */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
+          {/* Mobile Video - 9:16 - Hidden on tablet/desktop */}
+          <div className="block md:hidden">
             <div className="video-container aspect-[9/16] max-w-xs mx-auto">
               <iframe
                 src="https://www.loom.com/embed/78b8ae05942e4a19a69c0b1dcc47aab3"
@@ -58,11 +51,8 @@ export const Interview = () => {
                 className="absolute inset-0 w-full h-full"
               />
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-4">
-              Mobile Optimized (9:16)
-            </p>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}

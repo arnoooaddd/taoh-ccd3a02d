@@ -32,7 +32,7 @@ export const Reviews = () => {
             What Our Partners Say
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Real reviews from real home services business owners we've helped grow
+            Hear from home services business owners we've helped grow
           </p>
         </motion.div>
         
