@@ -47,7 +47,7 @@ export const Stats = () => {
             Powered by Agendac, our French subsidiary
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Proven Results, Real Numbers
+            Proven Results, Verified Numbers
           </h2>
         </motion.div>
         
