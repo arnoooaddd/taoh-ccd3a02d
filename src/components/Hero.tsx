@@ -4,16 +4,21 @@ import { FloatingLogos } from './FloatingLogos';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const floatingAppointments = [
-  { title: "HVAC Install", value: "$12,000", delay: 1.2, position: "left-4 md:left-8 top-1/4" },
-  { title: "Solar Consult", value: "$8,500", delay: 1.5, position: "right-4 md:right-8 top-1/3" },
-  { title: "Roofing Est", value: "$15,000", delay: 1.8, position: "left-8 md:left-16 bottom-1/4" },
-  { title: "Pool Install", value: "$22,000", delay: 2.1, position: "right-12 md:right-24 bottom-1/3" },
+  { title: "HVAC Install", value: "$12,000", delay: 1.2, position: "right-[5%] top-[8%]" },
+  { title: "Solar Consult", value: "$8,500", delay: 1.5, position: "right-[8%] top-[35%]" },
+  { title: "Roofing Est", value: "$15,000", delay: 1.8, position: "right-[3%] bottom-[25%]" },
+  { title: "Pool Install", value: "$22,000", delay: 2.1, position: "right-[10%] bottom-[45%]" },
 ];
 
 const floatingCalendars = [
-  { date: "Jan 15", time: "10:00 AM", delay: 2.4, position: "left-[15%] top-[20%]" },
-  { date: "Jan 16", time: "2:30 PM", delay: 2.7, position: "right-[20%] top-[15%]" },
-  { date: "Jan 17", time: "11:00 AM", delay: 3.0, position: "left-[10%] bottom-[35%]" },
+  { date: "Jan 15", time: "10:00 AM", delay: 2.4, position: "right-[2%] top-[22%]" },
+  { date: "Jan 16", time: "2:30 PM", delay: 2.7, position: "right-[15%] top-[5%]" },
+  { date: "Jan 17", time: "11:00 AM", delay: 3.0, position: "right-[5%] bottom-[10%]" },
+];
+
+// Mobile floating calendars (fewer, positioned away from content)
+const mobileFloatingCalendars = [
+  { date: "Jan 16", time: "2:30 PM", delay: 2.0, position: "right-[5%] top-[8%]" },
 ];
 
 export const Hero = () => {
@@ -29,7 +34,7 @@ export const Hero = () => {
       {/* Floating Logos */}
       <FloatingLogos />
       
-      {/* Floating Calendar Events */}
+      {/* Desktop Floating Calendar Events */}
       {floatingCalendars.map((cal, index) => (
         <motion.div
           key={index}
@@ -47,11 +52,29 @@ export const Hero = () => {
         </motion.div>
       ))}
       
-      {/* Floating appointment badges */}
+      {/* Mobile Floating Calendar Events */}
+      {mobileFloatingCalendars.map((cal, index) => (
+        <motion.div
+          key={`mobile-${index}`}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: cal.delay, duration: 0.8 }}
+          className={`lg:hidden flex absolute ${cal.position} glass-card flex-col gap-1 text-xs animate-calendar-float z-0`}
+          style={{ animationDelay: `${index * 0.5}s` }}
+        >
+          <div className="flex items-center gap-2">
+            <Clock className="w-3 h-3 text-primary" />
+            <span className="text-muted-foreground">{cal.date}</span>
+          </div>
+          <span className="font-medium text-foreground/80">{cal.time}</span>
+        </motion.div>
+      ))}
+      
+      {/* Floating appointment badges - Desktop only, positioned to the right */}
       {floatingAppointments.map((apt, index) => (
         <motion.div
           key={apt.title}
-          initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+          initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: apt.delay, duration: 0.8 }}
           className={`hidden lg:flex absolute ${apt.position} glass-card flex-col gap-2 text-sm animate-calendar-float z-0`}
@@ -100,8 +123,7 @@ export const Hero = () => {
             </h1>
             
             <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Stop burning cash on shared leads. We help home services businesses 
-              doing $2M+ build unstoppable digital presence and predictable growth.
+              We help home services businesses doing $2M+ build unstoppable digital presence and predictable growth.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

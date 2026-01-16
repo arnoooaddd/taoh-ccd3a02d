@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Facebook, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Facebook, MessageCircle } from 'lucide-react';
 import logoFull from '@/assets/logo-full-white-transparent.png';
 
 const navLinks = [
@@ -21,6 +21,18 @@ export const Navbar = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // Load Elfsight script for translator
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      // Cleanup if needed
+    };
   }, []);
 
   return (
@@ -57,6 +69,12 @@ export const Navbar = () => {
 
           {/* Desktop CTA & Socials */}
           <div className="hidden lg:flex items-center gap-4">
+            {/* Elfsight Translator Widget */}
+            <div 
+              className="elfsight-app-8ec03314-2832-4037-a0a6-d3b3064a482c" 
+              data-elfsight-app-lazy
+              style={{ width: '90px', height: '40px' }}
+            />
             <a
               href="https://www.facebook.com/thealphaomegahub"
               target="_blank"
@@ -73,13 +91,21 @@ export const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-foreground"
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile: Translator + Menu Button */}
+          <div className="lg:hidden flex items-center gap-2">
+            {/* Elfsight Translator Widget - Mobile */}
+            <div 
+              className="elfsight-app-8ec03314-2832-4037-a0a6-d3b3064a482c" 
+              data-elfsight-app-lazy
+              style={{ width: '80px', height: '36px' }}
+            />
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-foreground"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 

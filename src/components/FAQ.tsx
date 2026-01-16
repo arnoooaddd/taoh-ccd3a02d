@@ -25,7 +25,7 @@ export const FAQ = () => {
 
   return (
     <section className="section" ref={ref} id="faq">
-      <div className="container mx-auto max-w-3xl">
+      <div className="container mx-auto max-w-4xl px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -53,13 +53,13 @@ export const FAQ = () => {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between text-left p-0"
               >
-                <div className="flex items-center gap-4">
-                  <span className="text-2xl font-bold text-white/20">
+                <div className="flex items-start gap-3 sm:gap-4 flex-1 min-w-0">
+                  <span className="text-xl sm:text-2xl font-bold text-white/20 flex-shrink-0">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="text-lg font-semibold">{faq.question}</h3>
+                  <h3 className="text-base sm:text-lg font-semibold">{faq.question}</h3>
                 </div>
-                <div className="flex-shrink-0 ml-4">
+                <div className="flex-shrink-0 ml-2 sm:ml-4">
                   {openIndex === index ? (
                     <Minus className="w-5 h-5" />
                   ) : (
@@ -77,7 +77,7 @@ export const FAQ = () => {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="text-muted-foreground pt-4 pl-12 leading-relaxed">
+                    <p className="text-muted-foreground pt-4 pl-8 sm:pl-12 pr-2 leading-relaxed text-sm sm:text-base">
                       {faq.answer}
                     </p>
                   </motion.div>

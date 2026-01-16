@@ -47,8 +47,7 @@ export const Mission = () => {
             The Alpha Omega Hub's Mission
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            We're not just another agency. We're your growth accelerator, focused on 
-            building long-term brand value for home services businesses.
+            A growth accelerator, focused on building long-term brand value for home services businesses.
           </p>
         </motion.div>
         

@@ -33,9 +33,9 @@ export const Gallery = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-5xl mx-auto"
         >
-          {/* Elfsight Photo Gallery Widget */}
+          {/* Elfsight Photo Gallery Widget - TAOH clients */}
           <div 
-            className="elfsight-app-989ab5e2-99fb-4015-ab1f-50030f53aa48" 
+            className="elfsight-app-71fe0748-62ad-4959-822a-e609d5bb3a38" 
             data-elfsight-app-lazy
           />
         </motion.div>
@@ -47,8 +47,9 @@ export const Gallery = () => {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground mb-4">Your turn next!</p>
-          <a href="#contact" className="btn-hero-primary">
-            Schedule Your Shoot
+          <a href="#contact" className="btn-hero-primary whitespace-nowrap">
+            <span className="hidden sm:inline">Schedule Your Shoot</span>
+            <span className="sm:hidden">Schedule Your<br />Shoot</span>
           </a>
         </motion.div>
       </div>
