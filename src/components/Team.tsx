@@ -2,19 +2,26 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
+import arnaudImg from '@/assets/team/arnaud.webp';
+import kerimImg from '@/assets/team/kerim.webp';
+import gabrielImg from '@/assets/team/gabriel.webp';
+import omarImg from '@/assets/team/omar.webp';
+import andreiImg from '@/assets/team/andrei.webp';
+
 const teamLeaders = [
   {
     name: "Arnaud UTILLE",
     role: "Chief Executive Officer",
     description: "Client Relationship & Customer Success Management",
     highlight: "Bachelor, majoring in physics • 9+ years in marketing",
-    whatsapp: "+33628545978"
+    image: arnaudImg
   },
   {
     name: "Kerim JAKUPOVIC",
     role: "Chief Operating Officer",
     description: "Project Management & Technical Implementation",
-    highlight: "Master's in Marketing • 4+ years in content creation"
+    highlight: "Master's in Marketing • 4+ years in content creation",
+    image: kerimImg
   }
 ];
 
@@ -23,19 +30,22 @@ const teamMembers = [
     name: "Gabriel Gonzales",
     role: "Brand Ambassador",
     description: "Trusted figure with years of on-camera experience",
-    highlight: "5+ years experience in Brand development"
+    highlight: "5+ years experience in Brand development",
+    image: gabrielImg
   },
   {
     name: "Omar TROUSSI",
     role: "Advertising Manager",
     description: "Advertising Campaigns Management",
-    highlight: "4+ years of advertising campaigns management"
+    highlight: "4+ years of advertising campaigns management",
+    image: omarImg
   },
   {
     name: "Andrei ADAVANII",
     role: "Video Editing Manager",
     description: "Content Assembly and Post-Production",
-    highlight: "6+ years of video editing experience"
+    highlight: "6+ years of video editing experience",
+    image: andreiImg
   }
 ];
 
@@ -70,10 +80,12 @@ export const Team = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="glass-card text-center group hover:bg-white/10 transition-all duration-500"
             >
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 mx-auto mb-4 flex items-center justify-center border-2 border-primary/30">
-                <span className="text-2xl font-bold text-primary">
-                  {member.name.split(' ').map(n => n[0]).join('')}
-                </span>
+              <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-primary/30">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
               <p className="text-sm text-primary mb-2">({member.role})</p>
@@ -93,10 +105,12 @@ export const Team = () => {
               transition={{ duration: 0.6, delay: (index + 2) * 0.1 }}
               className="glass-card text-center group hover:bg-white/10 transition-all duration-500"
             >
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 mx-auto mb-4 flex items-center justify-center border-2 border-primary/20">
-                <span className="text-xl font-bold text-primary/80">
-                  {member.name.split(' ').map(n => n[0]).join('')}
-                </span>
+              <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden border-2 border-primary/20">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
               <p className="text-sm text-primary/80 mb-2">({member.role})</p>
