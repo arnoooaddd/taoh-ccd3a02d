@@ -48,7 +48,8 @@ export const Gallery = () => {
         >
           <p className="text-muted-foreground mb-4">Your turn next!</p>
           <a href="#contact" className="btn-hero-primary whitespace-normal text-center">
-            Schedule Your Shoot
+            <span className="hidden sm:inline">Become a Partner</span>
+            <span className="sm:hidden">Become a<br />Partner</span>
           </a>
         </motion.div>
       </div>

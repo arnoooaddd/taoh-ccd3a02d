@@ -25,7 +25,7 @@ export const FAQ = () => {
 
   return (
     <section className="section" ref={ref} id="faq">
-      <div className="container mx-auto max-w-4xl px-4">
+      <div className="container mx-auto max-w-4xl px-2 sm:px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -77,7 +77,7 @@ export const FAQ = () => {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="text-muted-foreground pt-4 pl-8 sm:pl-12 pr-2 leading-relaxed text-sm sm:text-base">
+                    <p className="text-muted-foreground pt-4 pl-2 sm:pl-12 pr-1 sm:pr-2 leading-relaxed text-sm sm:text-base">
                       {faq.answer}
                     </p>
                   </motion.div>
