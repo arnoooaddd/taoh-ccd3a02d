@@ -22,9 +22,9 @@ export const Contact = () => {
 
   return (
     <section className="section section-dark" ref={ref} id="contact">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-0 sm:px-4">
         {/* Mobile Layout */}
-        <div className="lg:hidden">
+        <div className="lg:hidden px-2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -44,11 +44,11 @@ export const Contact = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="glass-card !p-1 mb-6 -mx-4"
+            className="glass-card !p-0 mb-6 -mx-2"
           >
             <div 
               data-tf-live="01KEZ1CB4G0RYGXG6CMFQ1846W"
-              style={{ width: '95%', margin: '0 auto', height: 'auto', minHeight: '500px' }}
+              style={{ width: '100%', height: 'auto', minHeight: '500px' }}
             />
           </motion.div>
           
