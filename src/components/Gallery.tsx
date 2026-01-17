@@ -47,9 +47,8 @@ export const Gallery = () => {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground mb-4">Your turn next!</p>
-          <a href="#contact" className="btn-hero-primary whitespace-nowrap">
-            <span className="hidden sm:inline">Schedule Your Shoot</span>
-            <span className="sm:hidden">Schedule Your<br />Shoot</span>
+          <a href="#contact" className="btn-hero-primary whitespace-normal text-center">
+            Schedule Your Shoot
           </a>
         </motion.div>
       </div>
