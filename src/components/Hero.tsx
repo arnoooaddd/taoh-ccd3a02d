@@ -3,17 +3,18 @@ import { ArrowDown, Play, Calendar, Star, Clock, CheckCircle } from 'lucide-reac
 import { FloatingLogos } from './FloatingLogos';
 import heroBg from '@/assets/hero-bg.jpg';
 
+// Desktop floating widgets - positioned around edges, away from center content
 const floatingAppointments = [
-  { title: "HVAC Install", value: "$12,000", delay: 1.2, position: "right-[5%] top-[8%]" },
-  { title: "Solar Consult", value: "$8,500", delay: 1.5, position: "right-[8%] top-[35%]" },
-  { title: "Roofing Est", value: "$15,000", delay: 1.8, position: "right-[3%] bottom-[25%]" },
-  { title: "Pool Install", value: "$22,000", delay: 2.1, position: "right-[10%] bottom-[45%]" },
+  { title: "HVAC Install", value: "$12,000", delay: 1.2, position: "left-[3%] top-[12%]", opacity: "opacity-60" },
+  { title: "Solar Consult", value: "$8,500", delay: 1.5, position: "left-[5%] bottom-[20%]", opacity: "opacity-50" },
+  { title: "Roofing Est", value: "$15,000", delay: 1.8, position: "right-[3%] bottom-[15%]", opacity: "opacity-70" },
+  { title: "Pool Install", value: "$22,000", delay: 2.1, position: "right-[5%] bottom-[40%]", opacity: "opacity-60" },
 ];
 
 const floatingCalendars = [
-  { date: "Jan 15", time: "10:00 AM", delay: 2.4, position: "right-[2%] top-[22%]" },
-  { date: "Jan 16", time: "2:30 PM", delay: 2.7, position: "right-[15%] top-[5%]" },
-  { date: "Jan 17", time: "11:00 AM", delay: 3.0, position: "right-[5%] bottom-[10%]" },
+  { date: "Jan 15", time: "10:00 AM", delay: 2.4, position: "left-[2%] top-[35%]", opacity: "opacity-50" },
+  { date: "Jan 16", time: "2:30 PM", delay: 2.7, position: "right-[2%] top-[10%]", opacity: "opacity-60" },
+  { date: "Jan 17", time: "11:00 AM", delay: 3.0, position: "left-[4%] bottom-[35%]", opacity: "opacity-40" },
 ];
 
 // Mobile floating calendars (fewer, positioned away from content)
@@ -41,7 +42,7 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: cal.delay, duration: 0.8 }}
-          className={`hidden lg:flex absolute ${cal.position} glass-card flex-col gap-1 text-xs animate-calendar-float z-0`}
+          className={`hidden lg:flex absolute ${cal.position} ${cal.opacity} glass-card flex-col gap-1 text-xs animate-calendar-float z-0`}
           style={{ animationDelay: `${index * 0.5}s` }}
         >
           <div className="flex items-center gap-2">
@@ -70,14 +71,14 @@ export const Hero = () => {
         </motion.div>
       ))}
       
-      {/* Floating appointment badges - Desktop only, positioned to the right */}
+      {/* Floating appointment badges - Desktop only, positioned around edges */}
       {floatingAppointments.map((apt, index) => (
         <motion.div
           key={apt.title}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: apt.delay, duration: 0.8 }}
-          className={`hidden lg:flex absolute ${apt.position} glass-card flex-col gap-2 text-sm animate-calendar-float z-0`}
+          className={`hidden lg:flex absolute ${apt.position} ${apt.opacity} glass-card flex-col gap-2 text-sm animate-calendar-float z-0`}
           style={{ animationDelay: `${index * 0.3}s` }}
         >
           <div className="flex items-center gap-2">
@@ -127,11 +128,13 @@ export const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#contact" className="btn-hero-primary inline-flex items-center justify-center gap-2">
-                Get Started
+              <a href="#contact" className="btn-hero-primary inline-flex items-center justify-center gap-2 whitespace-normal text-center">
+                <span className="hidden sm:inline">Get Started</span>
+                <span className="sm:hidden">Start Your<br />Transformation</span>
                 <ArrowDown className="w-5 h-5" />
               </a>
-              <a href="#vsl" className="btn-hero-secondary inline-flex items-center justify-center gap-2">
+              {/* Mobile only - Watch How It Works */}
+              <a href="#vsl" className="lg:hidden btn-hero-secondary inline-flex items-center justify-center gap-2">
                 <Play className="w-5 h-5" />
                 Watch How It Works
               </a>

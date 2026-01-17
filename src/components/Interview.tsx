@@ -33,7 +33,7 @@ export const Interview = () => {
           <div className="hidden md:block">
             <div className="video-container aspect-video">
               <iframe
-                src="https://www.loom.com/embed/9fe0a97f692f407398a760573fee616c"
+                src="https://www.loom.com/embed/921561ff962742f3ac3fffded373cf32"
                 frameBorder="0"
                 allowFullScreen
                 className="absolute inset-0 w-full h-full"
