@@ -129,8 +129,8 @@ export const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="#contact" className="btn-hero-primary inline-flex items-center justify-center gap-2 whitespace-normal text-center">
-                <span className="hidden sm:inline">Get Started</span>
-                <span className="sm:hidden">Start Your<br />Transformation</span>
+                <span className="hidden sm:inline">Become a Partner</span>
+                <span className="sm:hidden">Become a<br />Partner</span>
                 <ArrowDown className="w-5 h-5" />
               </a>
               {/* Mobile only - Watch How It Works */}

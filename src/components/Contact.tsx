@@ -44,11 +44,11 @@ export const Contact = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="glass-card !p-1 mb-6 -mx-2"
+            className="glass-card !p-1 mb-6 -mx-4"
           >
             <div 
               data-tf-live="01KEZ1CB4G0RYGXG6CMFQ1846W"
-              style={{ width: '100%', height: 'auto', minHeight: '500px' }}
+              style={{ width: '95%', margin: '0 auto', height: 'auto', minHeight: '500px' }}
             />
           </motion.div>
           
