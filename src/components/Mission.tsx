@@ -86,8 +86,8 @@ export const Mission = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center mt-12"
         >
-          <a href="#contact" className="btn-hero-primary">
-            Start Your Transformation
+          <a href="#contact" className="btn-hero-primary min-w-[200px] px-8">
+            Become a Partner
           </a>
         </motion.div>
       </div>
