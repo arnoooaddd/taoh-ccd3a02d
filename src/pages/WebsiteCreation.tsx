@@ -121,7 +121,7 @@ const WebsiteCreation = () => {
               Everything You Need
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A comprehensive website package designed for home services businesses
+              A comprehensive website package designed for established businesses
             </p>
           </motion.div>
 

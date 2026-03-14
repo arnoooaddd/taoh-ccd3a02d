@@ -94,12 +94,12 @@ export const Hero = () => {
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               The #1 Growth Accelerator for{' '}
-              <span className="text-gradient">Home Services</span>{' '}
-              Companies
+              <span className="text-gradient">Established</span>{' '}
+              Businesses
             </h1>
             
             <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-xl mx-auto">
-              We help home services businesses doing $2M+ build unstoppable digital presence and predictable growth.
+              We help established businesses doing $1M+ build unstoppable digital presence and predictable growth.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
