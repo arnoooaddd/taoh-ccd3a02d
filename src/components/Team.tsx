@@ -27,10 +27,10 @@ const teamLeaders = [
 
 const teamMembers = [
   {
-    name: "Gabriel Gonzales",
-    role: "Brand Ambassador",
-    description: "Trusted figure with years of on-camera experience",
-    highlight: "5+ years experience in Brand development",
+    name: "Gabriel AGERON",
+    role: "Website & Web Apps Developer",
+    description: "Web development and application engineering",
+    highlight: "Expert in modern web technologies",
     image: gabrielImg
   },
   {
