@@ -138,7 +138,7 @@ export const Contact = () => {
               className="h-12 w-auto mx-auto mb-4"
             />
             <p className="text-sm text-muted-foreground mb-2">
-              The Alpha Omega Hub is your growth accelerator for home services businesses.
+              The Alpha Omega Hub is your growth accelerator for established businesses.
               Based in Tampa Bay, Florida.
             </p>
             <p className="text-xs text-muted-foreground">
