@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Play, Calendar, Star, Clock, CheckCircle } from 'lucide-react';
+import { ArrowDown, Calendar, Star, Clock, CheckCircle } from 'lucide-react';
 import { FloatingLogos } from './FloatingLogos';
 import heroBg from '@/assets/hero-bg.jpg';
 
@@ -15,11 +15,6 @@ const floatingCalendars = [
   { date: "Jan 15", time: "10:00 AM", delay: 2.4, position: "left-[2%] top-[35%]", opacity: "opacity-50" },
   { date: "Jan 16", time: "2:30 PM", delay: 2.7, position: "right-[2%] top-[10%]", opacity: "opacity-60" },
   { date: "Jan 17", time: "11:00 AM", delay: 3.0, position: "left-[4%] bottom-[35%]", opacity: "opacity-40" },
-];
-
-// Mobile floating calendars (fewer, positioned away from content)
-const mobileFloatingCalendars = [
-  { date: "Jan 16", time: "2:30 PM", delay: 2.0, position: "right-[5%] top-[8%]" },
 ];
 
 export const Hero = () => {
@@ -53,24 +48,6 @@ export const Hero = () => {
         </motion.div>
       ))}
       
-      {/* Mobile Floating Calendar Events */}
-      {mobileFloatingCalendars.map((cal, index) => (
-        <motion.div
-          key={`mobile-${index}`}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: cal.delay, duration: 0.8 }}
-          className={`lg:hidden flex absolute ${cal.position} glass-card flex-col gap-1 text-xs animate-calendar-float z-0`}
-          style={{ animationDelay: `${index * 0.5}s` }}
-        >
-          <div className="flex items-center gap-2">
-            <Clock className="w-3 h-3 text-primary" />
-            <span className="text-muted-foreground">{cal.date}</span>
-          </div>
-          <span className="font-medium text-foreground/80">{cal.time}</span>
-        </motion.div>
-      ))}
-      
       {/* Floating appointment badges - Desktop only, positioned around edges */}
       {floatingAppointments.map((apt, index) => (
         <motion.div
@@ -91,13 +68,11 @@ export const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 md:px-8 relative z-10 pt-24">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left side - Text */}
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left"
           >
             {/* Social Proof Badge */}
             <motion.div
@@ -123,24 +98,19 @@ export const Hero = () => {
               Companies
             </h1>
             
-            <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-xl mx-auto">
               We help home services businesses doing $2M+ build unstoppable digital presence and predictable growth.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="btn-hero-primary inline-flex items-center justify-center gap-2 min-w-[200px] px-8">
                 Become a Partner
                 <ArrowDown className="w-5 h-5" />
               </a>
-              {/* Mobile only - Watch How It Works */}
-              <a href="#vsl" className="lg:hidden btn-hero-secondary inline-flex items-center justify-center gap-2">
-                <Play className="w-5 h-5" />
-                Watch How It Works
-              </a>
             </div>
             
             {/* Stats row */}
-            <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-border">
+            <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-border max-w-2xl mx-auto">
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">$8M+</p>
                 <p className="text-xs sm:text-sm text-muted-foreground">Generated Revenue</p>
@@ -153,24 +123,6 @@ export const Hero = () => {
                 <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">3+</p>
                 <p className="text-xs sm:text-sm text-muted-foreground">Years Experience</p>
               </div>
-            </div>
-          </motion.div>
-          
-          {/* Right side - Video */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-            id="vsl"
-            className="relative flex items-center justify-center"
-          >
-            <div className="video-container aspect-[9/16] w-full max-w-[280px] sm:max-w-[300px] md:max-w-[320px] mx-auto glow">
-              <iframe
-                src="https://www.loom.com/embed/12cf52395f814aa5887f6d9da02dd30c"
-                frameBorder="0"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-              />
             </div>
           </motion.div>
         </div>
