@@ -151,6 +151,59 @@ const WebsiteCreation = () => {
         </div>
       </section>
 
+      {/* Portfolio */}
+      <section className="section section-dark">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Websites We've Built
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Real examples of high-performance websites delivered to our partners
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              { name: "MyWebGlory", url: "https://mywebglory.com/", img: "https://api.microlink.io/?url=https://mywebglory.com&screenshot=true&meta=false&embed=screenshot.url" },
+              { name: "Train With Kickoff", url: "https://www.trainwithkickoff.com/", img: "https://api.microlink.io/?url=https://www.trainwithkickoff.com&screenshot=true&meta=false&embed=screenshot.url" },
+              { name: "Vanta", url: "https://www.vanta.com/", img: "https://api.microlink.io/?url=https://www.vanta.com&screenshot=true&meta=false&embed=screenshot.url" },
+            ].map((site, i) => (
+              <motion.a
+                key={site.name}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.15 }}
+                className="glass-card group hover:bg-white/10 transition-all duration-500 overflow-hidden p-0"
+              >
+                <div className="aspect-video bg-muted/20 overflow-hidden">
+                  <img
+                    src={site.img}
+                    alt={`${site.name} website screenshot`}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold">{site.name}</h3>
+                  <p className="text-sm text-primary mt-1 group-hover:underline">Visit website →</p>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section className="section section-dark">
         <div className="container mx-auto">

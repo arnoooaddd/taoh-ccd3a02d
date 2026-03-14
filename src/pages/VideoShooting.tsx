@@ -79,6 +79,43 @@ const VideoShooting = () => {
         </div>
       </section>
 
+      {/* Example Work */}
+      <section className="section section-dark">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              See Our Work in Action
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Ad produced for Community Bible Baptist Church
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="relative aspect-[9/16] max-w-sm mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+              <iframe
+                src="https://www.loom.com/embed/2a4e68e80d164773a4bcae2b7ff09772"
+                frameBorder="0"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Outcome & Pricing */}
       <section className="section section-dark">
         <div className="container mx-auto">
