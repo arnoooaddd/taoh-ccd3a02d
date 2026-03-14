@@ -159,7 +159,7 @@ export const Contact = () => {
               Get In Touch
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Ready to transform your home services business? Let's talk.
+              Ready to transform your business? Let's talk.
             </p>
           </motion.div>
           
