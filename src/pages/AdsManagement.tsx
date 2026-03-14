@@ -16,7 +16,7 @@ const features = [
 const stats = [
   { icon: DollarSign, value: "$8M+", label: "Revenue Generated", desc: "For our partners in the last 3 years" },
   { icon: TrendingUp, value: ">400%", label: "Average ROI", desc: "Gross margin return on investment" },
-  { icon: Target, value: "$570K+", label: "Ad Spend Managed", desc: "In home services advertising" },
+  { icon: Target, value: "$570K+", label: "Ad Spend Managed", desc: "Across multiple industries" },
   { icon: Zap, value: "30", label: "Days to First Results", desc: "With our pay-per-appointment system" },
 ];
 

@@ -23,7 +23,7 @@ export const Clients = () => {
             They Trust The Alpha Omega Hub
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Join the growing family of home services businesses we've helped dominate their markets
+            Join the growing family of businesses we've helped dominate their markets
           </p>
         </motion.div>
         

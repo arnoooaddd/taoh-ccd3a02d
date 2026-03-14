@@ -11,7 +11,7 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <img src={logoFull} alt="The Alpha Omega Hub" className="h-12 w-auto mb-4" />
             <p className="text-muted-foreground max-w-md mb-4">
-              The #1 Growth Accelerator for Home Services Companies. 
+              The #1 Growth Accelerator for Established Businesses. 
               Powered by Agendac, our French subsidiary where it all started.
             </p>
             <div className="flex items-center gap-4">

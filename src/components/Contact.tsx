@@ -35,7 +35,7 @@ export const Contact = () => {
               Get In Touch
             </h2>
             <p className="text-muted-foreground text-lg">
-              Ready to transform your home services business? Let's talk.
+              Ready to transform your business? Let's talk.
             </p>
           </motion.div>
           
@@ -138,7 +138,7 @@ export const Contact = () => {
               className="h-12 w-auto mx-auto mb-4"
             />
             <p className="text-sm text-muted-foreground mb-2">
-              The Alpha Omega Hub is your growth accelerator for home services businesses.
+              The Alpha Omega Hub is your growth accelerator for established businesses.
               Based in Tampa Bay, Florida.
             </p>
             <p className="text-xs text-muted-foreground">
@@ -159,7 +159,7 @@ export const Contact = () => {
               Get In Touch
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Ready to transform your home services business? Let's talk.
+              Ready to transform your business? Let's talk.
             </p>
           </motion.div>
           
@@ -178,9 +178,9 @@ export const Contact = () => {
                   className="h-16 w-auto mb-6"
                 />
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  The Alpha Omega Hub is your growth accelerator for home services businesses.
-                  Based in Tampa Bay, Florida, we help HVAC, solar, roofing, and home improvement 
-                  companies build unstoppable digital presence.
+                  The Alpha Omega Hub is your growth accelerator for established businesses.
+                  Based in Tampa Bay, Florida, we help companies doing $1M+ 
+                  build unstoppable digital presence.
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Adornier LLC • FL 33716 St Petersburg, Florida

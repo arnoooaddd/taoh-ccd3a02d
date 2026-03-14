@@ -10,11 +10,11 @@ const faqs = [
   },
   {
     question: "What do you do at The Alpha Omega Hub?",
-    answer: "At TAOH, we help home services businesses grow through structured, high-quality advertising and brand positioning. We work across the entire home renovation and improvement ecosystem, including HVAC, solar, insulation, joinery, roofing, pools, home remodeling, and more. We produce professional content—video shoots, visuals, and copywriting—designed to showcase our clients' offers, services, and above all, their credibility and brand image. We do not rely on flashy messaging or unrealistic promises. Our approach is built around clarity, trust, and long-term positioning, helping serious businesses attract serious customers."
+    answer: "At TAOH, we help established businesses grow through structured, high-quality advertising and brand positioning. We work across multiple industries, producing professional content—video shoots, visuals, and copywriting—designed to showcase our clients' offers, services, and above all, their credibility and brand image. We do not rely on flashy messaging or unrealistic promises. Our approach is built around clarity, trust, and long-term positioning, helping serious businesses attract serious customers."
   },
   {
     question: "Why choose TAOH instead of another provider?",
-    answer: "We are not a traditional agency—we are a growth accelerator. We specialize in home services and home renovation businesses. We understand your trades, your customers, and the realities of your market. Because we speak the same language as your business, we build campaigns that are relevant, credible, and aligned with your sales process—not generic marketing templates. Our focus is simple: helping you grow sustainably by strengthening your visibility, your reputation, and your commercial performance over the long term."
+    answer: "We are not a traditional agency—we are a growth accelerator. We work with established companies doing $1M+ annually. We understand your customers and the realities of your market. Because we speak the same language as your business, we build campaigns that are relevant, credible, and aligned with your sales process—not generic marketing templates. Our focus is simple: helping you grow sustainably by strengthening your visibility, your reputation, and your commercial performance over the long term."
   }
 ];
 
