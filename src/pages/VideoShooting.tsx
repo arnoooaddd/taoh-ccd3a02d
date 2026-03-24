@@ -106,10 +106,10 @@ const VideoShooting = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-center"
             >
-              <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">Bottom of Funnel — Conversion Ad</p>
+              <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">Top of Funnel — Client Interview</p>
               <div className="relative aspect-[9/16] max-w-xs mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                 <iframe
-                  src="https://www.youtube.com/embed/Vu51NLokiwE"
+                  src="https://www.youtube.com/embed/HJtxQX0ekZ4"
                   frameBorder="0"
                   allowFullScreen
                   className="absolute inset-0 w-full h-full"
@@ -123,10 +123,10 @@ const VideoShooting = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-center"
             >
-              <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">Top of Funnel — Client Interview</p>
+              <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">Bottom of Funnel — Conversion Ad</p>
               <div className="relative aspect-[9/16] max-w-xs mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                 <iframe
-                  src="https://www.youtube.com/embed/HJtxQX0ekZ4"
+                  src="https://www.youtube.com/embed/Vu51NLokiwE"
                   frameBorder="0"
                   allowFullScreen
                   className="absolute inset-0 w-full h-full"
