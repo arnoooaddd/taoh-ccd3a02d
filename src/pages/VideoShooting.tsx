@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { Camera, CheckCircle, Film, Clapperboard, Users, Sparkles, RefreshCw, ArrowDown } from 'lucide-react';
@@ -12,6 +13,11 @@ const features = [
 ];
 
 const VideoShooting = () => {
+  useEffect(() => {
+    document.title = 'Video Production Tampa Bay | The Alpha Omega Hub';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Professional video production in Tampa Bay. 8-15 ads-ready videos per shoot. Scripted, filmed & edited for maximum impact. Starting at $5,000.');
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}
@@ -35,9 +41,14 @@ const VideoShooting = () => {
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Authentic, high-impact videos designed for websites, social media, and ad campaigns — built to boost visibility and attract new clients.
               </p>
-              <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
-                Get Started <ArrowDown className="w-5 h-5" />
-              </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
+                  Get Started <ArrowDown className="w-5 h-5" />
+                </a>
+                <a href="#examples" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-all text-center justify-center">
+                  View Our Work
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -81,7 +92,7 @@ const VideoShooting = () => {
       </section>
 
       {/* Example Work */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="examples">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

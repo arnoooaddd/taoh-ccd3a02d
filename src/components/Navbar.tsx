@@ -5,9 +5,9 @@ import { Link, useLocation } from 'react-router-dom';
 import logoFull from '@/assets/logo-full-white-transparent.png';
 
 const serviceLinks = [
-  { name: 'Website Creation', href: '/services/website-creation' },
   { name: 'Video Shooting', href: '/services/video-shooting' },
   { name: 'Ads Management', href: '/services/ads-management' },
+  { name: 'Website Creation', href: '/services/website-creation' },
 ];
 
 const navLinks = [

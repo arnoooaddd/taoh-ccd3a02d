@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { Globe, Search, Phone, BarChart3, Share2, Languages, CheckCircle, Monitor, Smartphone, Tablet, ArrowDown, DollarSign, Clock } from 'lucide-react';
@@ -66,6 +67,11 @@ const sections = [
 ];
 
 const WebsiteCreation = () => {
+  useEffect(() => {
+    document.title = 'Website Creation Tampa Bay | The Alpha Omega Hub';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'SEO-optimized, conversion-focused website creation in Tampa Bay. Up to 15 pages, bilingual, mobile-first. Starting at $6,000.');
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}
@@ -100,9 +106,14 @@ const WebsiteCreation = () => {
                   <Smartphone className="w-5 h-5" /> <span className="text-sm">Mobile</span>
                 </div>
               </div>
-              <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
-                Get Started <ArrowDown className="w-5 h-5" />
-              </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
+                  Get Started <ArrowDown className="w-5 h-5" />
+                </a>
+                <a href="#portfolio" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-all text-center justify-center">
+                  View Our Work
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -153,7 +164,7 @@ const WebsiteCreation = () => {
       </section>
 
       {/* Portfolio */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="portfolio">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
