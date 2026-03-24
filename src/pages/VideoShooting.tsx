@@ -86,7 +86,7 @@ const VideoShooting = () => {
       </section>
 
       {/* Example Work */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="examples">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
