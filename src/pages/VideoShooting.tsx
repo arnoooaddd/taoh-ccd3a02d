@@ -13,6 +13,11 @@ const features = [
 ];
 
 const VideoShooting = () => {
+  useEffect(() => {
+    document.title = 'Video Production Tampa Bay | The Alpha Omega Hub';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Professional video production in Tampa Bay. 8-15 ads-ready videos per shoot. Scripted, filmed & edited for maximum impact. Starting at $5,000.');
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}

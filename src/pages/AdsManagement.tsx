@@ -22,6 +22,11 @@ const stats = [
 ];
 
 const AdsManagement = () => {
+  useEffect(() => {
+    document.title = 'Ads Management Tampa Bay | The Alpha Omega Hub';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'AI-powered ads management in Tampa Bay. Meta Ads, conversion tracking & performance optimization. $8M+ generated, 400%+ ROI. Starting at $2,000/month.');
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}

@@ -67,6 +67,11 @@ const sections = [
 ];
 
 const WebsiteCreation = () => {
+  useEffect(() => {
+    document.title = 'Website Creation Tampa Bay | The Alpha Omega Hub';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'SEO-optimized, conversion-focused website creation in Tampa Bay. Up to 15 pages, bilingual, mobile-first. Starting at $6,000.');
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}
