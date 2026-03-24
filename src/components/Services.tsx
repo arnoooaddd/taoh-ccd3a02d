@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 
 const services = [
   {
+    icon: Globe,
+    title: "Website Creation",
+    desc: "Professional, conversion-focused websites fully optimized for mobile, tablet, and desktop — with built-in local SEO.",
+    link: "/services/website-creation",
+  },
+  {
     icon: Camera,
     title: "Video Shooting",
     desc: "High-impact video content for ads, social media, and your website — scripted, filmed, and edited by our team.",
@@ -14,12 +20,6 @@ const services = [
     title: "Ads Management",
     desc: "A fully managed acquisition engine powered by AI tracking, creative optimization, and continuous performance reviews.",
     link: "/services/ads-management",
-  },
-  {
-    icon: Globe,
-    title: "Website Creation",
-    desc: "Professional, conversion-focused websites fully optimized for mobile, tablet, and desktop — with built-in local SEO.",
-    link: "/services/website-creation",
   },
 ];
 

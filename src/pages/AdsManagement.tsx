@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { BarChart3, Target, Brain, RefreshCw, LineChart, Shield, DollarSign, TrendingUp, Zap, CheckCircle, ArrowDown } from 'lucide-react';
@@ -22,11 +21,6 @@ const stats = [
 ];
 
 const AdsManagement = () => {
-  useEffect(() => {
-    document.title = 'Ads Management Tampa Bay | The Alpha Omega Hub';
-    document.querySelector('meta[name="description"]')?.setAttribute('content', 'AI-powered ads management in Tampa Bay. Meta Ads, conversion tracking & performance optimization. $8M+ generated, 400%+ ROI. Starting at $2,000/month.');
-  }, []);
-
   return (
     <ServicePageLayout>
       {/* Hero */}
@@ -50,14 +44,9 @@ const AdsManagement = () => {
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 A predictable, scalable acquisition engine powered by AI tracking and creative optimization.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
-                  Get Started <ArrowDown className="w-5 h-5" />
-                </a>
-                <a href="#results" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-all text-center justify-center">
-                  See Our Results
-                </a>
-              </div>
+              <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
+                Get Started <ArrowDown className="w-5 h-5" />
+              </a>
             </motion.div>
           </div>
         </div>
