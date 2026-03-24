@@ -82,8 +82,9 @@ const WebsiteCreation = () => {
                 🌐 Website Creation Service
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Building Your Website From{' '}
-                <span className="text-gradient">Alpha to Omega</span>
+                Building Your Website
+                <br />
+                <span className="text-gradient">From Alpha to Omega</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
                 A fully optimized, conversion-focused website built to dominate local search and turn visitors into customers.

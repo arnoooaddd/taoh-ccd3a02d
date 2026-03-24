@@ -37,8 +37,9 @@ const AdsManagement = () => {
                 📊 Lead Generation & Ads Management
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Running Your Ads From{' '}
-                <span className="text-gradient">Alpha to Omega</span>
+                Running Your Ads
+                <br />
+                <span className="text-gradient">From Alpha to Omega</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 A predictable, scalable acquisition engine powered by AI tracking and creative optimization.
