@@ -28,8 +28,9 @@ const VideoShooting = () => {
                 🎬 Video Production Service
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Taking Your Brand From{' '}
-                <span className="text-gradient">Alpha to Omega</span>
+                Taking Your Brand
+                <br />
+                <span className="text-gradient">From Alpha to Omega</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Authentic, high-impact videos designed for websites, social media, and ad campaigns — built to boost visibility and attract new clients.
