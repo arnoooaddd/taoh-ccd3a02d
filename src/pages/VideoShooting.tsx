@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { Camera, CheckCircle, Film, Clapperboard, Users, Sparkles, RefreshCw, ArrowDown } from 'lucide-react';
