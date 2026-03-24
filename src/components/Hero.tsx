@@ -107,6 +107,9 @@ export const Hero = () => {
                 Become a Partner
                 <ArrowDown className="w-5 h-5" />
               </a>
+              <a href="#services" className="inline-flex items-center justify-center gap-2 min-w-[200px] px-8 py-3 rounded-lg border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-all duration-300">
+                View Our Services
+              </a>
             </div>
             
             {/* Stats row */}
