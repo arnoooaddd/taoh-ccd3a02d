@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { BarChart3, Target, Brain, RefreshCw, LineChart, Shield, DollarSign, TrendingUp, Zap, CheckCircle, ArrowDown } from 'lucide-react';
