@@ -22,6 +22,40 @@
     <link rel="icon" href="/favicon.png" type="image/png" />
   </head>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MarketingAgency",
+      "name": "The Alpha Omega Hub",
+      "url": "https://thealphaomegahub.com",
+      "logo": "https://thealphaomegahub.com/favicon.png",
+      "description": "Tampa Bay's #1 growth accelerator for established businesses. Video production, website creation & ads management.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "St. Petersburg",
+        "addressRegion": "FL",
+        "postalCode": "33716",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 27.7676, "longitude": -82.6403 },
+        "geoRadius": "100 mi"
+      },
+      "sameAs": ["https://www.facebook.com/thealphaomegahub"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Video Shooting", "description": "High-impact video production for ads and social media", "offers": { "@type": "Offer", "price": "5000", "priceCurrency": "USD" } } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ads Management", "description": "AI-powered lead generation and Meta Ads management", "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "USD" } } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Creation", "description": "SEO-optimized, conversion-focused website development", "offers": { "@type": "Offer", "price": "6000", "priceCurrency": "USD" } } }
+        ]
+      }
+    }
+    </script>
+  </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
