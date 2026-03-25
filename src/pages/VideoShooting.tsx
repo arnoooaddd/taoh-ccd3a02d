@@ -35,9 +35,14 @@ const VideoShooting = () => {
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Authentic, high-impact videos designed for websites, social media, and ad campaigns — built to boost visibility and attract new clients.
               </p>
-              <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
-                Get Started <ArrowDown className="w-5 h-5" />
-              </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
+                  Get Started <ArrowDown className="w-5 h-5" />
+                </a>
+                <a href="#gallery" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-colors justify-center">
+                  View Our Work
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
