@@ -67,6 +67,13 @@ const sections = [
 ];
 
 const WebsiteCreation = () => {
+  useEffect(() => {
+    document.title = "Website Creation Tampa Bay | SEO-Optimized Business Websites | The Alpha Omega Hub";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', 'Professional website creation for Tampa Bay & West Central Florida businesses. Mobile-optimized, SEO-ready, conversion-focused websites with local SEO built in.');
+    return () => { document.title = "The Alpha Omega Hub | Tampa Bay's #1 Growth Accelerator"; };
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}
