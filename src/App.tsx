@@ -11,6 +11,7 @@ import VideoShooting from "./pages/VideoShooting";
 import WebsiteCreation from "./pages/WebsiteCreation";
 import AdsManagement from "./pages/AdsManagement";
 import ArnoCard from "./pages/ArnoCard";
+import KerimCard from "./pages/KerimCard";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/services/website-creation" element={<WebsiteCreation />} />
           <Route path="/services/ads-management" element={<AdsManagement />} />
           <Route path="/aa" element={<ArnoCard />} />
+          <Route path="/kj" element={<KerimCard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
