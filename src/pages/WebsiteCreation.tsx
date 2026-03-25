@@ -87,15 +87,15 @@ const WebsiteCreation = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block text-sm uppercase tracking-widest text-primary font-semibold mb-4">
-                🌐 Website Creation Service
+                🌐 Website Creation in Tampa Bay
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Building Your Website
+                Professional Websites
                 <br />
-                <span className="text-gradient">From Alpha to Omega</span>
+                <span className="text-gradient">for Tampa Bay Businesses</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-                A fully optimized, conversion-focused website built to dominate local search and turn visitors into customers.
+                Conversion-focused websites with built-in local SEO — designed for West Central Florida businesses ready to dominate their market.
               </p>
               <div className="flex items-center justify-center gap-6 mb-8">
                 <div className="flex items-center gap-2 text-muted-foreground">
