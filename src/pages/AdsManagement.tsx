@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { BarChart3, Target, Brain, RefreshCw, LineChart, Shield, DollarSign, TrendingUp, Zap, CheckCircle, ArrowDown } from 'lucide-react';
 import { Interview } from '@/components/Interview';
 import { Stats } from '@/components/Stats';
+import { useEffect } from 'react';
 
 const features = [
   { icon: Target, title: "Meta Ads Campaign Management", desc: "Full campaign management on Facebook & Instagram to reach your ideal customers." },
