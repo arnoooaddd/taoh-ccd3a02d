@@ -33,15 +33,15 @@ const VideoShooting = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block text-sm uppercase tracking-widest text-primary font-semibold mb-4">
-                🎬 Video Production Service
+                🎬 Video Production in Tampa Bay
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Taking Your Brand
+                Professional Video Production
                 <br />
-                <span className="text-gradient">From Alpha to Omega</span>
+                <span className="text-gradient">for Tampa Bay Businesses</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Authentic, high-impact videos designed for websites, social media, and ad campaigns — built to boost visibility and attract new clients.
+                Authentic, high-impact videos for West Central Florida businesses — scripted, filmed, and edited to boost visibility and attract new clients.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">

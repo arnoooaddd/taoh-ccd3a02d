@@ -42,15 +42,15 @@ const AdsManagement = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block text-sm uppercase tracking-widest text-primary font-semibold mb-4">
-                📊 Lead Generation & Ads Management
+                📊 Ads Management in Tampa Bay
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Running Your Ads
+                Facebook & Instagram Ads
                 <br />
-                <span className="text-gradient">From Alpha to Omega</span>
+                <span className="text-gradient">for Tampa Bay Businesses</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                A predictable, scalable acquisition engine powered by AI tracking and creative optimization.
+                A predictable, scalable acquisition engine for West Central Florida businesses — powered by AI tracking and creative optimization.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
