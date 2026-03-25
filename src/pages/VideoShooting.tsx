@@ -1,6 +1,7 @@
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { Camera, CheckCircle, Film, Clapperboard, Users, Sparkles, RefreshCw, ArrowDown } from 'lucide-react';
+import { useEffect } from 'react';
 
 const features = [
   { icon: Clapperboard, title: "Complete Scriptwriting", desc: "We shape your message with a professional script tailored to your brand and audience." },
