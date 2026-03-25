@@ -1,6 +1,7 @@
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { Globe, Search, Phone, BarChart3, Share2, Languages, CheckCircle, Monitor, Smartphone, Tablet, ArrowDown, DollarSign, Clock } from 'lucide-react';
+import { useEffect } from 'react';
 
 const sections = [
   {
