@@ -11,6 +11,7 @@ import VideoShooting from "./pages/VideoShooting";
 import WebsiteCreation from "./pages/WebsiteCreation";
 import AdsManagement from "./pages/AdsManagement";
 import ArnoCard from "./pages/ArnoCard";
+import KerimCard from "./pages/KerimCard";
 
 const queryClient = new QueryClient();
 
