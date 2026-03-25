@@ -11,7 +11,7 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <section className="section" ref={ref}>
+    <section className="section" ref={ref} id="gallery">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
