@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { BarChart3, Target, Brain, RefreshCw, LineChart, Shield, DollarSign, TrendingUp, Zap, CheckCircle, ArrowDown } from 'lucide-react';
 import { Interview } from '@/components/Interview';
 import { Stats } from '@/components/Stats';
-import { useEffect } from 'react';
 
 const features = [
   { icon: Target, title: "Meta Ads Campaign Management", desc: "Full campaign management on Facebook & Instagram to reach your ideal customers." },
@@ -22,13 +21,6 @@ const stats = [
 ];
 
 const AdsManagement = () => {
-  useEffect(() => {
-    document.title = "Ads Management Tampa Bay | Facebook & Instagram Ads | The Alpha Omega Hub";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute('content', 'Expert Facebook & Instagram ads management for Tampa Bay businesses. AI-driven tracking, $8M+ revenue generated, 400%+ ROI. Serving West Central Florida.');
-    return () => { document.title = "The Alpha Omega Hub | Tampa Bay's #1 Growth Accelerator"; };
-  }, []);
-
   return (
     <ServicePageLayout>
       {/* Hero */}
@@ -42,15 +34,15 @@ const AdsManagement = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block text-sm uppercase tracking-widest text-primary font-semibold mb-4">
-                📊 Ads Management in Tampa Bay
+                📊 Lead Generation & Ads Management
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Facebook & Instagram Ads
+                Running Your Ads
                 <br />
-                <span className="text-gradient">for Tampa Bay Businesses</span>
+                <span className="text-gradient">From Alpha to Omega</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                A predictable, scalable acquisition engine for West Central Florida businesses — powered by AI tracking and creative optimization.
+                A predictable, scalable acquisition engine powered by AI tracking and creative optimization.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">

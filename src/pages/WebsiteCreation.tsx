@@ -1,7 +1,6 @@
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
 import { Globe, Search, Phone, BarChart3, Share2, Languages, CheckCircle, Monitor, Smartphone, Tablet, ArrowDown, DollarSign, Clock } from 'lucide-react';
-import { useEffect } from 'react';
 
 const sections = [
   {
@@ -67,13 +66,6 @@ const sections = [
 ];
 
 const WebsiteCreation = () => {
-  useEffect(() => {
-    document.title = "Website Creation Tampa Bay | SEO-Optimized Business Websites | The Alpha Omega Hub";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute('content', 'Professional website creation for Tampa Bay & West Central Florida businesses. Mobile-optimized, SEO-ready, conversion-focused websites with local SEO built in.');
-    return () => { document.title = "The Alpha Omega Hub | Tampa Bay's #1 Growth Accelerator"; };
-  }, []);
-
   return (
     <ServicePageLayout>
       {/* Hero */}
@@ -87,15 +79,15 @@ const WebsiteCreation = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block text-sm uppercase tracking-widest text-primary font-semibold mb-4">
-                🌐 Website Creation in Tampa Bay
+                🌐 Website Creation Service
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Professional Websites
+                Building Your Website
                 <br />
-                <span className="text-gradient">for Tampa Bay Businesses</span>
+                <span className="text-gradient">From Alpha to Omega</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-                Conversion-focused websites with built-in local SEO — designed for West Central Florida businesses ready to dominate their market.
+                A fully optimized, conversion-focused website built to dominate local search and turn visitors into customers.
               </p>
               <div className="flex items-center justify-center gap-6 mb-8">
                 <div className="flex items-center gap-2 text-muted-foreground">
@@ -112,7 +104,7 @@ const WebsiteCreation = () => {
                 <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
                   Get Started <ArrowDown className="w-5 h-5" />
                 </a>
-                <a href="#portfolio" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-colors justify-center">
+                <a href="#gallery" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-colors justify-center">
                   View Our Work
                 </a>
               </div>
@@ -166,7 +158,7 @@ const WebsiteCreation = () => {
       </section>
 
       {/* Portfolio */}
-      <section className="section section-dark" id="portfolio">
+      <section className="section section-dark">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
