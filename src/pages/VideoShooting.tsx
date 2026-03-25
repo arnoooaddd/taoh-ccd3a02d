@@ -12,6 +12,13 @@ const features = [
 ];
 
 const VideoShooting = () => {
+  useEffect(() => {
+    document.title = "Video Production Tampa Bay | Professional Business Videos | The Alpha Omega Hub";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', 'Professional video production services in Tampa Bay & West Central Florida. High-impact business videos for ads, social media & websites. Scripted, filmed & edited by our team.');
+    return () => { document.title = "The Alpha Omega Hub | Tampa Bay's #1 Growth Accelerator"; };
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}
