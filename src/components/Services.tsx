@@ -35,10 +35,10 @@ export const Services = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Our Services
+            Our Services in Tampa Bay
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Everything you need to build an unstoppable digital presence
+            Everything your West Central Florida business needs to build an unstoppable digital presence
           </p>
         </motion.div>
 
