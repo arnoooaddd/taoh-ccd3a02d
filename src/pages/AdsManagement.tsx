@@ -22,6 +22,13 @@ const stats = [
 ];
 
 const AdsManagement = () => {
+  useEffect(() => {
+    document.title = "Ads Management Tampa Bay | Facebook & Instagram Ads | The Alpha Omega Hub";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', 'Expert Facebook & Instagram ads management for Tampa Bay businesses. AI-driven tracking, $8M+ revenue generated, 400%+ ROI. Serving West Central Florida.');
+    return () => { document.title = "The Alpha Omega Hub | Tampa Bay's #1 Growth Accelerator"; };
+  }, []);
+
   return (
     <ServicePageLayout>
       {/* Hero */}
