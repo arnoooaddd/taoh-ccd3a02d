@@ -42,6 +42,7 @@ const App = () => (
           <Route path="/services/website-creation" element={<WebsiteCreation />} />
           <Route path="/services/ads-management" element={<AdsManagement />} />
           <Route path="/aa" element={<ArnoCard />} />
+          <Route path="/kj" element={<KerimCard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
