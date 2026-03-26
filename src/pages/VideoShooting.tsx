@@ -39,7 +39,7 @@ const VideoShooting = () => {
                 <a href="#contact" className="btn-hero-primary inline-flex items-center gap-2 min-w-[200px] px-8">
                   Get Started <ArrowDown className="w-5 h-5" />
                 </a>
-                <a href="#gallery" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-colors justify-center">
+                <a href="#our-work" className="inline-flex items-center gap-2 min-w-[200px] px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-colors justify-center">
                   View Our Work
                 </a>
               </div>
@@ -86,7 +86,7 @@ const VideoShooting = () => {
       </section>
 
       {/* Example Work */}
-      <section className="section section-dark">
+      <section id="our-work" className="section section-dark">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
