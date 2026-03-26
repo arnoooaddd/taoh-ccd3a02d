@@ -158,7 +158,7 @@ const WebsiteCreation = () => {
       </section>
 
       {/* Portfolio */}
-      <section className="section section-dark">
+      <section id="our-work" className="section section-dark">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
