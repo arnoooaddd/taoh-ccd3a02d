@@ -9,6 +9,14 @@ import { blogArticles } from './Blog';
 
 // Article content components
 const articles: Record<string, { component: React.FC; meta: { title: string; description: string; keywords: string } }> = {
+  'why-buying-leads-bad-strategy-tampa-2026': {
+    component: BuyingLeadsTampaArticle,
+    meta: {
+      title: 'Why Buying Leads Is a Bad Strategy for Tampa Businesses in 2026 | TAOH',
+      description: 'Buying leads destroys margin and weakens your brand. Learn why Tampa businesses should build branded acquisition systems instead of renting prospects.',
+      keywords: 'digital marketing agency tampa, lead generation agency, customer acquisition, branding agency, paid advertising agency',
+    },
+  },
   'should-you-hire-marketing-manager-in-house-2026': {
     component: MarketingManagerArticle,
     meta: {
