@@ -1253,6 +1253,12 @@ function PaidAdvertisingArticle() {
       <div className="glass-card my-8">
         <p className="text-sm text-muted-foreground mb-3">📚 Related Articles</p>
         <div className="space-y-2">
+          <Link to="/blog/how-much-should-tampa-businesses-spend-on-ads-2026" className="text-primary hover:underline font-semibold block">
+            How Much Should Tampa Bay Businesses Spend on Ads in 2026? →
+          </Link>
+          <Link to="/blog/lead-qualification-levels-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
+            Not All Leads Are Equal: The 4 Qualification Levels Tampa Bay Businesses Need →
+          </Link>
           <Link to="/blog/why-buying-leads-bad-strategy-tampa-2026" className="text-primary hover:underline font-semibold block">
             Why Buying Leads Is a Bad Strategy for Tampa Businesses in 2026 →
           </Link>
