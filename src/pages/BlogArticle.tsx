@@ -270,7 +270,7 @@ function AdBudgetArticle() {
       </p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need Help Building Your Ad Budget Strategy?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established Tampa Bay businesses structure <strong>paid ads management</strong> systems across Google and Facebook — built for real <strong>customer acquisition</strong>, not just clicks.
@@ -497,7 +497,7 @@ function AdBudgetArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Paid Ads Strategy for Tampa Bay</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established businesses structure <strong>paid ads management</strong> systems across Google and Facebook — calibrated for your industry, your ticket size, and your revenue goals.
@@ -664,7 +664,7 @@ function GoogleVsFacebookArticle() {
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Not Sure Which Platform Fits Your Business?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established Tampa Bay businesses build <strong>paid ads management</strong> systems across Google and Facebook — structured for real <strong>client acquisition</strong>, not just clicks.
@@ -893,7 +893,7 @@ function GoogleVsFacebookArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Paid Ads Growth System</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established Tampa Bay businesses build predictable <strong>lead generation</strong> systems using Google Ads and Facebook Ads — structured for revenue, not vanity metrics.
@@ -1038,7 +1038,7 @@ function PaidAdvertisingArticle() {
       </p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Build a Real Growth System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established Tampa Bay businesses build branded <strong>customer acquisition</strong> systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
@@ -1269,7 +1269,7 @@ function PaidAdvertisingArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Growth Engine in Tampa Bay</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established businesses build predictable, brand-led <strong>lead generation</strong> systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
@@ -1472,7 +1472,7 @@ function MarketingManagerArticle() {
       </p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need a Growth System, Not Just a Hire?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established Tampa Bay businesses build full <strong>customer acquisition</strong> systems — from paid ads to landing pages to video to CRM.
@@ -1656,7 +1656,7 @@ function MarketingManagerArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Growth Engine — Without the Wrong Hire</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established businesses build predictable, branded <strong>lead generation</strong> systems — from paid ads to landing pages to video to CRM.
@@ -1867,7 +1867,7 @@ function BuyingLeadsTampaArticle() {
       <p>Every month starts from zero. For businesses around Tampa Bay, that is a weak position to scale from.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Own Your Growth?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established Tampa Bay businesses build branded <strong>lead generation</strong> systems that compound over time — not rented lead lists that reset every month.
@@ -2054,7 +2054,7 @@ function BuyingLeadsTampaArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Branded Growth Engine in Tampa Bay</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established businesses build predictable, brand-led <strong>lead generation</strong> systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
@@ -2235,7 +2235,7 @@ function RenovationLeadsArticle() {
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Stop Renting Leads?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established renovation and home service businesses build their own <strong>lead generation</strong> engine — with predictable results and real margin.
@@ -2431,7 +2431,7 @@ function RenovationLeadsArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Own Growth Engine</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established businesses build predictable, branded <strong>lead generation</strong> systems — from paid ads to landing pages to video to CRM.
@@ -2603,7 +2603,7 @@ function DigitalAcquisitionTimelineArticle() {
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want a Realistic Acquisition Plan for Your Business?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established Tampa Bay businesses build <strong>paid ads management</strong> systems across Google and Facebook — with real timelines and <strong>conversion rate optimization</strong> baked in.
@@ -2798,7 +2798,7 @@ function DigitalAcquisitionTimelineArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Build a Real Acquisition System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses launch <Link to="/services/ads-management" className="text-primary hover:underline">Google and Meta campaigns</Link> designed for qualified <strong>lead generation services</strong> — with proper timelines, tracking, and follow-up built in.
@@ -2977,7 +2977,7 @@ function ChooseAgencyArticle() {
       <p>If you want better leads, better <strong>conversion rate optimization</strong>, and better brand perception, the agency needs to know how to turn your actual business into strong marketing assets.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Looking for a Tampa Agency That Actually Delivers?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help established businesses build <strong>customer acquisition</strong> systems through <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">websites</Link>, funnels, and <Link to="/services/video-shooting" className="text-primary hover:underline">creative production</Link>.
@@ -3088,7 +3088,7 @@ function ChooseAgencyArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Work With an Agency That Gets Results?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We are a <strong>tampa digital marketing agency</strong> built for established businesses that want predictable <strong>client acquisition</strong> — through ads, funnels, websites, and creative.
@@ -3284,7 +3284,7 @@ function LeadQualificationArticle() {
       <p>For local Tampa Bay businesses, this matters even more in competitive categories. The faster and cleaner your response, the more likely you are to win.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want Better Lead Quality From Your Campaigns?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <strong>lead generation services</strong> systems that filter, qualify, and convert — not just generate form fills.
@@ -3416,7 +3416,7 @@ function LeadQualificationArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Fix Your Lead Quality?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with built-in lead qualification — so your sales team only talks to people worth talking to.
@@ -3599,7 +3599,7 @@ function SocialMediaLeadSpeedArticle() {
       <p>That is not overkill. That is how serious businesses reduce no-shows and improve conversion.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need a Follow-Up System That Actually Converts?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <strong>customer acquisition</strong> systems that go beyond the click — with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, lead routing, and follow-up processes built for real appointments.
@@ -3742,7 +3742,7 @@ function SocialMediaLeadSpeedArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Turn More Leads Into Appointments?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with follow-up processes designed for real <strong>customer acquisition</strong> — not just form fills.
@@ -3939,7 +3939,7 @@ function GoogleVsFacebookPlatformArticle() {
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Not Sure Which Platform Fits Your Business?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses choose and execute the right <Link to="/services/ads-management" className="text-primary hover:underline">paid advertising strategy</Link> — Google, Meta, or both — based on your offer, market, and growth goals.
@@ -4083,7 +4083,7 @@ function GoogleVsFacebookPlatformArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Choose the Right Platform and Scale?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We are a <strong>tampa digital marketing agency</strong> that builds <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> for established businesses — Google, Meta, or both — designed for real <strong>customer acquisition</strong>, not vanity metrics.
@@ -4308,7 +4308,7 @@ function RetargetingArticle() {
       <p>A good retargeting ad is not just "come back." It is "here is why you should take the next step now."</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want to Stop Leaking Revenue from Paid Traffic?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">retargeting systems</Link> that turn wasted clicks into qualified leads and booked appointments.
@@ -4426,7 +4426,7 @@ function RetargetingArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Make Your Paid Traffic Work Harder?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We are a <strong>tampa digital marketing agency</strong> that builds complete <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> — including retargeting, <strong>landing page optimization</strong>, and full-funnel <strong>customer acquisition</strong>.
@@ -4633,7 +4633,7 @@ function ContentPaidAds2026Article() {
       <p>…the click is easier, the lead is warmer, and the sales process is smoother. This is why <strong>content marketing services</strong>, <strong>video marketing agency</strong> support, and <strong>paid ads management</strong> should work together.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Build a Real Marketing System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses combine <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, content, and <Link to="/services/website-creation" className="text-primary hover:underline">conversion-focused websites</Link> into one growth engine.
@@ -4765,7 +4765,7 @@ function ContentPaidAds2026Article() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Build Your Growth System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We are a <strong>digital marketing agency tampa</strong> businesses trust to build complete multichannel systems — <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">video production</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">conversion websites</Link>, and full-funnel <strong>customer acquisition</strong>.
@@ -4973,7 +4973,7 @@ function StandOutTrustArticle() {
       <p>That is part of conversion. Not admin.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want Marketing That Builds Trust and Converts?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with trust-first positioning, strong creative, and <Link to="/services/website-creation" className="text-primary hover:underline">conversion-focused websites</Link>.
@@ -5096,7 +5096,7 @@ function StandOutTrustArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Stand Out in Tampa Bay?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We are a <strong>digital marketing agency tampa</strong> businesses trust to build credible brands, <Link to="/services/ads-management" className="text-primary hover:underline">high-performing ads</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">trust-building video</Link>, and full <strong>client acquisition services</strong> systems.
