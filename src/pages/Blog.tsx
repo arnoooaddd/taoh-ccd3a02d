@@ -7,6 +7,15 @@ import { Helmet } from 'react-helmet-async';
 
 export const blogArticles = [
   {
+    slug: 'how-much-should-tampa-businesses-spend-on-ads-2026',
+    title: 'How Much Should Tampa Bay Businesses Spend on Ads in 2026?',
+    excerpt: 'Most businesses fail with ads not because they spend too much, but because they spend too little. Here are realistic budgets for Meta and Google Ads in Tampa Bay.',
+    date: '2026-03-29',
+    readTime: '14 min read',
+    category: 'Paid Advertising',
+    keywords: ['paid advertising agency', 'google ads agency', 'facebook ads agency', 'digital marketing agency tampa'],
+  },
+  {
     slug: 'google-ads-vs-facebook-ads-tampa-2026',
     title: 'Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026?',
     excerpt: 'It is not "Which platform is better?" It is "Which platform fits your buying cycle, sales process, and growth goal?" Here is how to decide.',
