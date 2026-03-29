@@ -567,11 +567,17 @@ function GoogleVsFacebookArticle() {
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">✅ Use Google Ads when:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoGoogleAds} alt="Google Ads" className="w-5 h-5 object-contain" />
+              <p className="text-sm font-semibold text-primary m-0">✅ Use Google Ads when:</p>
+            </div>
             <p className="m-0 text-sm">People already know what they want and are actively searching for a solution or provider.</p>
           </div>
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">✅ Use Facebook Ads when:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoFacebook} alt="Facebook Ads" className="w-5 h-5 object-contain rounded" />
+              <p className="text-sm font-semibold text-primary m-0">✅ Use Facebook Ads when:</p>
+            </div>
             <p className="m-0 text-sm">You need to create demand, build awareness, and stay visible before the buyer is ready.</p>
           </div>
         </div>
