@@ -484,6 +484,12 @@ function AdBudgetArticle() {
           <Link to="/blog/google-ads-vs-facebook-ads-tampa-2026" className="text-primary hover:underline font-semibold block">
             Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026? →
           </Link>
+          <Link to="/blog/digital-acquisition-results-timeline-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
+            How Long Does It Take to See Results From Digital Acquisition? →
+          </Link>
+          <Link to="/blog/retargeting-paid-ads-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
+            Why Retargeting Matters for Tampa Bay Businesses Running Paid Ads →
+          </Link>
           <Link to="/blog/why-paid-advertising-beats-random-lead-tactics-tampa-2026" className="text-primary hover:underline font-semibold block">
             Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses →
           </Link>
