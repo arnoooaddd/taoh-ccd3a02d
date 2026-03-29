@@ -877,8 +877,14 @@ function GoogleVsFacebookArticle() {
       <div className="glass-card my-8">
         <p className="text-sm text-muted-foreground mb-3">📚 Related Articles</p>
         <div className="space-y-2">
+          <Link to="/blog/how-much-should-tampa-businesses-spend-on-ads-2026" className="text-primary hover:underline font-semibold block">
+            How Much Should Tampa Bay Businesses Spend on Ads in 2026? →
+          </Link>
+          <Link to="/blog/google-ads-vs-facebook-ads-tampa-businesses" className="text-primary hover:underline font-semibold block">
+            Google Ads or Facebook Ads: Which Platform Makes More Sense? →
+          </Link>
           <Link to="/blog/why-paid-advertising-beats-random-lead-tactics-tampa-2026" className="text-primary hover:underline font-semibold block">
-            Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses in 2026 →
+            Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses →
           </Link>
           <Link to="/blog/why-buying-leads-bad-strategy-tampa-2026" className="text-primary hover:underline font-semibold block">
             Why Buying Leads Is a Bad Strategy for Tampa Businesses in 2026 →
