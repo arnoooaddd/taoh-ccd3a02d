@@ -59,6 +59,392 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
   },
 };
 
+function AdBudgetArticle() {
+  return (
+    <div className="prose-custom">
+      {/* Summary */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <p className="text-lg leading-relaxed text-foreground/90 m-0">
+          Most businesses do not fail with ads because they spend too much. They fail because they spend too little, expect results too fast, and judge performance before the system has enough data. This article gives Tampa Bay businesses realistic budget benchmarks for Meta and Google Ads, CPL ranges, and a framework for building a ***paid advertising agency***-grade system that actually scales. Note: these are general benchmarks — actual budgets depend on your industry, ticket size, and competition level.
+        </p>
+      </div>
+
+      {/* Table of Contents */}
+      <div className="glass-card mb-12">
+        <h2 className="text-xl font-bold mb-4 mt-0">📑 Table of Contents</h2>
+        <nav className="space-y-2">
+          {[
+            { id: 'first-mistake-ab', label: 'The First Mistake: Budgets Too Small to Learn' },
+            { id: 'meta-budget-ab', label: '1. What Meta Ads Should Cost' },
+            { id: 'meta-cpl-ab', label: '2. What a Good Meta CPL Looks Like' },
+            { id: 'google-budget-ab', label: '3. What Google Ads Should Cost' },
+            { id: 'google-cpl-ab', label: '4. What a Good Google CPL Looks Like' },
+            { id: 'low-budgets-ab', label: '5. Why Low Budgets Create Bad Conclusions' },
+            { id: 'learning-phase-ab', label: '6. The Learning Phase Matters' },
+            { id: 'both-channels-ab', label: '7. Why Launching Both Channels Is Usually Better' },
+            { id: 'best-known-ab', label: '8. Best Known Beats Best' },
+            { id: 'framework-ab', label: '9. Realistic Starting Framework' },
+            { id: 'measure-ab', label: '10. What to Actually Measure' },
+            { id: 'faq-ab', label: 'FAQ' },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
+              <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Industry Disclaimer */}
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
+        <h3 className="text-lg font-bold mb-3 mt-0">⚠️ Important: Budgets Depend on Your Industry and Ticket Size</h3>
+        <p className="mb-3">The numbers in this article are <strong>general benchmarks</strong> for Tampa Bay businesses. Your actual budget will vary based on:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>👉 <strong>Industry:</strong> construction, HVAC, roofing, and high-ticket services typically require higher budgets due to more expensive clicks and longer sales cycles</li>
+          <li>👉 <strong>Ticket size:</strong> higher average deal values justify and often require higher ad spend</li>
+          <li>👉 <strong>Competition level:</strong> more competitors in your market means higher cost per click</li>
+          <li>👉 <strong>Service area:</strong> broader geographic targeting increases required budget</li>
+        </ul>
+        <p className="mt-3 mb-0 text-sm text-muted-foreground">
+          A ***construction digital marketing agency*** or ***hvac digital marketing agency*** client will typically need higher budgets than a local service provider with a smaller ticket. Use these ranges as a starting point, then adjust based on your specific market conditions.
+        </p>
+      </div>
+
+      {/* Section 1 */}
+      <h2 id="first-mistake-ab" className="flex items-center gap-3">
+        🔴 The First Mistake: Launching with a Budget That Cannot Produce Learning
+      </h2>
+      <p>A lot of businesses start with a number that feels comfortable. That is the wrong approach.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Ad budgets should be based on:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Channel economics</li>
+          <li>✔️ Cost per click in your market</li>
+          <li>✔️ Sales cycle length</li>
+          <li>✔️ Market competition</li>
+          <li>✔️ Required testing volume</li>
+          <li>✔️ Lead quality goals</li>
+        </ul>
+      </div>
+      <p>If the budget is too low, you do not get enough data to optimize. You do not learn faster — you just waste time slower.</p>
+
+      {/* Meta Budget */}
+      <h2 id="meta-budget-ab" className="flex items-center gap-3">
+        🟠 1. What Meta Ads Should Cost for Tampa-Based Businesses
+      </h2>
+      <p>Meta works well when you need visibility, awareness, retargeting, lower-cost traffic, and demand creation. But Meta needs enough spend to test properly.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
+        <h4 className="font-bold mb-4 mt-0 text-primary">Recommended Meta Ads Budget</h4>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold mb-1">Minimum Viable Budget:</p>
+            <p className="text-2xl font-bold mb-0">$2,500<span className="text-sm font-normal text-muted-foreground">/month</span></p>
+          </div>
+          <div>
+            <p className="text-sm font-semibold mb-1">Strong Working Budget:</p>
+            <p className="text-2xl font-bold mb-0">$4,000 – $6,000<span className="text-sm font-normal text-muted-foreground">/month</span></p>
+          </div>
+        </div>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">
+          That range usually gives enough room to test audiences, creatives, angles, offers, and retargeting sequences. Anything below that often creates weak signal quality.
+        </p>
+      </div>
+
+      {/* Meta CPL */}
+      <h2 id="meta-cpl-ab" className="flex items-center gap-3">
+        🎯 2. What a Good Meta Cost Per Lead Looks Like
+      </h2>
+      <p>For many businesses, a strong Meta lead usually lands in this range:</p>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8 text-center">
+        <p className="text-3xl font-bold mb-2">$40 – $80 <span className="text-lg font-normal text-muted-foreground">per lead</span></p>
+        <p className="text-sm text-muted-foreground mb-0">When the offer, creative, and follow-up are solid. Higher-ticket industries may see higher CPLs — and that is often perfectly fine if the deal value supports it.</p>
+      </div>
+      <p>If the CPL is below that, it is not automatically a win. Cheap leads are often:</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>⚠️ Low intent</li>
+          <li>⚠️ Low trust</li>
+          <li>⚠️ Hard to contact</li>
+          <li>⚠️ Poor fit</li>
+          <li>⚠️ Weak in close rate</li>
+        </ul>
+      </div>
+      <p>The right metric is not the cheapest lead. It is the most profitable qualified lead.</p>
+
+      {/* Google Budget */}
+      <h2 id="google-budget-ab" className="flex items-center gap-3">
+        🔴 3. What Google Ads Should Cost for Tampa-Based Businesses
+      </h2>
+      <p>Google Ads captures intent. That means the lead is usually more qualified, but the traffic is more expensive.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
+        <h4 className="font-bold mb-4 mt-0 text-primary">Recommended Google Ads Budget</h4>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold mb-1">Minimum Viable Budget:</p>
+            <p className="text-2xl font-bold mb-0">$3,000<span className="text-sm font-normal text-muted-foreground">/month</span></p>
+          </div>
+          <div>
+            <p className="text-sm font-semibold mb-1">Ideal Working Budget:</p>
+            <p className="text-2xl font-bold mb-0">$3,500 – $6,000<span className="text-sm font-normal text-muted-foreground">/month</span></p>
+          </div>
+        </div>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">
+          That is usually what it takes to buy enough clicks, gather conversion data, test landing pages, optimize search terms, and make real decisions. Higher-ticket industries like construction or manufacturing may need to invest more — a ***construction digital marketing agency*** client often requires $5,000+ to compete effectively.
+        </p>
+      </div>
+
+      {/* Google CPL */}
+      <h2 id="google-cpl-ab" className="flex items-center gap-3">
+        🎯 4. What a Good Google Ads Cost Per Lead Looks Like
+      </h2>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8 text-center">
+        <p className="text-3xl font-bold mb-2">$50 – $120 <span className="text-lg font-normal text-muted-foreground">per lead</span></p>
+        <p className="text-sm text-muted-foreground mb-0">Normal when traffic is high intent and competition is real. A lead from Google is often worth more because the buyer is closer to action. Industries with higher ticket sizes often see CPLs above this range — and still maintain strong ROI.</p>
+      </div>
+      <p>
+        The real question is not "How low can we get the CPL?" — it is "What does it cost to generate a qualified lead that can realistically turn into revenue?"
+      </p>
+
+      {/* Mid-Article CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need Help Building Your Ad Budget Strategy?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help established Tampa Bay businesses structure ***paid ads management*** systems across Google and Facebook — built for real ***customer acquisition***, not just clicks.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* Low Budgets */}
+      <h2 id="low-budgets-ab" className="flex items-center gap-3">
+        ⚠️ 5. Why Low Budgets Create Bad Conclusions
+      </h2>
+      <p>This is one of the biggest reasons businesses think ads do not work. They launch with a weak budget, gather weak data, and make a strong conclusion.</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">Common pattern:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ Meta budget too low to test enough creatives</li>
+          <li>❌ Google budget too low to collect enough search data</li>
+          <li>❌ No retargeting</li>
+          <li>❌ Weak follow-up</li>
+          <li>❌ Generic landing page</li>
+        </ul>
+      </div>
+      <p>Then the business says: "Meta leads are junk," "Google is too expensive," or ***"paid ads do not work in Tampa."***</p>
+      <p>Usually that is not true. The setup failed before the channel even had a real chance.</p>
+
+      {/* Learning Phase */}
+      <h2 id="learning-phase-ab" className="flex items-center gap-3">
+        🟠 6. The Learning Phase Matters More Than Most Businesses Think
+      </h2>
+      <p>Both Meta and Google need a ramp-up period. You are not just turning ads on — you are training the system.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">The first phase is for finding answers:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Which audience responds</li>
+          <li>✔️ Which offer gets action</li>
+          <li>✔️ Which creative gets attention</li>
+          <li>✔️ Which <Link to="/services/website-creation" className="text-primary hover:underline">landing page</Link> converts</li>
+          <li>✔️ Which leads turn into meetings</li>
+          <li>✔️ Which channel drives better quality</li>
+        </ul>
+      </div>
+      <p>That means the first weeks are not just about volume — they are about clarity. A strong ***paid advertising agency*** or ***lead generation agency*** should be using this phase to make better decisions, not just report impressions and clicks.</p>
+
+      {/* Both Channels */}
+      <h2 id="both-channels-ab" className="flex items-center gap-3">
+        🎯 7. Why Launching with Both Channels Is Usually the Better Strategy
+      </h2>
+      <p>For most Tampa Bay businesses, the strongest move is to launch with both <Link to="/services/ads-management" className="text-primary hover:underline">Google Ads and Meta Ads</Link>. Because they do different jobs:</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Google Ads:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Captures active demand</li>
+              <li>✅ Targets people already searching</li>
+              <li>✅ Drives high-intent inbound traffic</li>
+              <li>✅ Supports fast ***lead generation services***</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Meta Ads:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Builds awareness</li>
+              <li>✅ Creates market visibility</li>
+              <li>✅ Supports retargeting</li>
+              <li>✅ Keeps your brand visible before they buy</li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">Together, they create a system — not just channel testing for its own sake.</p>
+      </div>
+
+      {/* Best Known */}
+      <h2 id="best-known-ab" className="flex items-center gap-3">
+        🔴 8. Best Known Beats Best
+      </h2>
+      <p>This matters even more in 2026. A lot of businesses still believe the best operator wins. That is not how attention works.</p>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
+        <p className="mb-3 font-semibold text-primary text-lg">Best known beats best.</p>
+        <p className="mb-3">The brand that gets seen more often, remembered faster, and trusted sooner usually gets the first click, the first form, and the first call.</p>
+        <p className="mb-0 text-sm text-muted-foreground">
+          This is exactly why Meta matters, even when Google may produce stronger intent. Google captures demand. Meta helps create familiarity. And familiarity improves conversion.
+        </p>
+      </div>
+
+      {/* Framework */}
+      <h2 id="framework-ab" className="flex items-center gap-3">
+        🟠 9. Realistic Starting Framework
+      </h2>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 my-8">
+        <div className="space-y-8">
+          <div>
+            <h4 className="font-bold mb-2 mt-0">Option 1: Meta-First Approach</h4>
+            <p className="text-sm text-muted-foreground mb-2">Best for visibility, brand awareness, retargeting data, audience testing, lower-cost traffic.</p>
+            <p className="font-semibold">Start at $2,500/month → push toward $4,000–$6,000/month for serious testing</p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-2 mt-0">Option 2: Google-First Approach</h4>
+            <p className="text-sm text-muted-foreground mb-2">Best for high-intent traffic, faster ***lead generation***, direct-response results, demand capture.</p>
+            <p className="font-semibold">Start at $3,000/month → aim for $3,500–$6,000/month for stronger structure</p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-2 mt-0 text-primary">Option 3: Best Overall Approach ✅</h4>
+            <p className="text-sm text-muted-foreground mb-2">Best for businesses that want both visibility and demand capture. Run Google for intent + Meta for awareness and retargeting.</p>
+            <p className="font-semibold">This is usually the strongest setup for established businesses trying to scale efficiently.</p>
+          </div>
+        </div>
+        <p className="mt-6 text-sm text-muted-foreground mb-0">
+          These are general starting points. Higher-ticket industries (construction, manufacturing, financial services) may need to invest significantly more to see meaningful results. Always calibrate based on your average deal value and close rate.
+        </p>
+      </div>
+
+      {/* What to Measure */}
+      <h2 id="measure-ab" className="flex items-center gap-3">
+        🎯 10. What Tampa Bay Businesses Should Actually Measure
+      </h2>
+      <p>Do not judge ad performance on clicks alone.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 m-0 list-none p-0">
+          <li>✅ Cost per qualified lead</li>
+          <li>✅ Lead-to-appointment rate</li>
+          <li>✅ Appointment show rate</li>
+          <li>✅ Close rate</li>
+          <li>✅ Revenue by channel</li>
+          <li>✅ Cost per acquisition</li>
+          <li>✅ ***ROI of paid ads***</li>
+        </ul>
+      </div>
+      <p>If you only track top-of-funnel numbers, you will make bad decisions with good-looking dashboards.</p>
+
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
+        <h4 className="font-bold mb-3 mt-0">🧠 Why Some Leads Cost More and Are Still Better</h4>
+        <p className="mb-3">A $45 lead is not automatically better than a $95 lead. The more expensive lead may:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✅ Answer the phone</li>
+          <li>✅ Show up</li>
+          <li>✅ Fit your ideal customer profile</li>
+          <li>✅ Buy faster</li>
+          <li>✅ Generate more revenue</li>
+        </ul>
+        <p className="mt-3 mb-0 text-sm text-muted-foreground">
+          That is why ***cost per lead marketing*** only matters when it is tied to quality. The cheapest lead is often the most expensive one in the end.
+        </p>
+      </div>
+
+      {/* Bottom Line */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
+        <h3 className="text-xl font-bold mb-3 mt-0">📌 Bottom Line</h3>
+        <p className="mb-3">If your budget is too low, your campaign is not underperforming — it is underfed. For most Tampa-based businesses in 2026:</p>
+        <ul className="space-y-2 list-none p-0 m-0 mb-4">
+          <li>✅ Meta should start around <strong>$2,500/month</strong>, with a strong range of <strong>$4,000–$6,000/month</strong></li>
+          <li>✅ Google should start around <strong>$3,000/month</strong>, with an ideal range of <strong>$3,500–$6,000/month</strong></li>
+          <li>✅ Good Meta leads often land around <strong>$40–$80</strong></li>
+          <li>✅ Good Google leads often land around <strong>$50–$120</strong></li>
+        </ul>
+        <p className="mb-0 font-semibold text-primary">
+          These are general benchmarks — higher-ticket industries will often need more. The better strategy is usually not choosing one platform. It is launching with both and building a complete acquisition system around visibility, intent, follow-up, and conversion. That is what a real ***digital marketing agency tampa***, ***google ads agency***, or ***lead generation agency*** should help you build.
+        </p>
+      </div>
+
+      {/* FAQ */}
+      <h2 id="faq-ab" className="flex items-center gap-3">
+        ❓ Frequently Asked Questions
+      </h2>
+
+      <div className="space-y-4 my-8">
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">What is a realistic Meta Ads budget for a Tampa Bay business?</h4>
+          <p className="m-0 text-muted-foreground">
+            A practical starting point is $2,500 per month. A stronger budget for real testing and optimization is usually $4,000 to $6,000 per month. This varies by industry and ticket size.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">What is a realistic Google Ads budget for a Tampa Bay business?</h4>
+          <p className="m-0 text-muted-foreground">
+            A practical starting point is $3,000 per month, with $3,500 to $6,000 per month being a stronger range. Higher-ticket industries like construction or manufacturing may require more.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">What is a good cost per lead on Meta?</h4>
+          <p className="m-0 text-muted-foreground">
+            A strong benchmark is usually $40 to $80 per lead, assuming the lead is qualified and the campaign is properly structured. Higher-ticket services may see higher CPLs.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">What is a good cost per lead on Google Ads?</h4>
+          <p className="m-0 text-muted-foreground">
+            A strong benchmark is usually $50 to $120 per qualified lead, depending on competition, intent, industry, and market conditions.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">Should businesses launch Google Ads and Facebook Ads together?</h4>
+          <p className="m-0 text-muted-foreground">
+            Usually yes. Google captures active demand, while Meta builds visibility and supports retargeting. Together, they create a stronger ***customer acquisition*** system.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">Do budgets change based on industry?</h4>
+          <p className="m-0 text-muted-foreground">
+            Yes. Higher-ticket industries like construction, manufacturing, and financial services typically need higher budgets because clicks are more expensive and the sales cycle is longer. Always calibrate based on your average deal value and market competition.
+          </p>
+        </div>
+      </div>
+
+      {/* Related Articles */}
+      <div className="glass-card my-8">
+        <p className="text-sm text-muted-foreground mb-3">📚 Related Articles</p>
+        <div className="space-y-2">
+          <Link to="/blog/google-ads-vs-facebook-ads-tampa-2026" className="text-primary hover:underline font-semibold block">
+            Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026? →
+          </Link>
+          <Link to="/blog/why-paid-advertising-beats-random-lead-tactics-tampa-2026" className="text-primary hover:underline font-semibold block">
+            Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses →
+          </Link>
+        </div>
+      </div>
+
+      {/* Final CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+        <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Paid Ads Strategy for Tampa Bay</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help established businesses structure ***paid ads management*** systems across Google and Facebook — calibrated for your industry, your ticket size, and your revenue goals.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link to="/#contact" className="btn-hero-primary">
+            Get Started Today
+          </Link>
+          <Link to="/services/ads-management" className="btn-hero-secondary">
+            See Our Ad Services
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function GoogleVsFacebookArticle() {
   return (
     <div className="prose-custom">
