@@ -7,6 +7,15 @@ import { Helmet } from 'react-helmet-async';
 
 export const blogArticles = [
   {
+    slug: 'should-you-hire-marketing-manager-in-house-2026',
+    title: 'Should You Hire a Marketing Manager In-House in 2026? What Tampa Businesses Need to Know',
+    excerpt: 'Hiring a marketing manager feels like control. In most cases, it gives you one salary, partial execution, and no real client acquisition system.',
+    date: '2026-03-29',
+    readTime: '14 min read',
+    category: 'Growth Strategy',
+    keywords: ['digital marketing agency tampa', 'lead generation agency', 'growth marketing'],
+  },
+  {
     slug: 'why-buying-home-renovation-leads-is-bad-strategy-2026',
     title: 'Why Buying Home Renovation Leads Is a Bad Strategy in 2026',
     excerpt: 'Buying leads looks efficient. In practice, it usually wrecks margin, weakens your brand, and keeps your sales team stuck chasing low-intent prospects.',

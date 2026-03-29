@@ -9,6 +9,14 @@ import { blogArticles } from './Blog';
 
 // Article content components
 const articles: Record<string, { component: React.FC; meta: { title: string; description: string; keywords: string } }> = {
+  'should-you-hire-marketing-manager-in-house-2026': {
+    component: MarketingManagerArticle,
+    meta: {
+      title: 'Should You Hire a Marketing Manager In-House in 2026? | TAOH',
+      description: 'Hiring a marketing manager in-house sounds smart. Here\'s why most Tampa businesses get better results from a digital marketing agency instead.',
+      keywords: 'digital marketing agency tampa, lead generation agency, paid advertising agency, sales funnel agency, conversion rate optimization',
+    },
+  },
   'why-buying-home-renovation-leads-is-bad-strategy-2026': {
     component: RenovationLeadsArticle,
     meta: {
@@ -18,6 +26,401 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
     },
   },
 };
+
+function MarketingManagerArticle() {
+  return (
+    <div className="prose-custom">
+      {/* Summary */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <p className="text-lg leading-relaxed text-foreground/90 m-0">
+          Hiring a marketing manager feels like control. In most cases, it gives you one salary, partial execution, and no real ***client acquisition*** system.
+          If you are running an established business in Tampa Bay, this article breaks down when in-house makes sense — and when a ***digital marketing agency tampa*** businesses trust will deliver faster, stronger results.
+        </p>
+      </div>
+
+      {/* Table of Contents */}
+      <div className="glass-card mb-12">
+        <h2 className="text-xl font-bold mb-4 mt-0">📑 Table of Contents</h2>
+        <nav className="space-y-2">
+          {[
+            { id: 'real-issue', label: 'The Real Issue: Capability, Not Headcount' },
+            { id: 'hidden-costs', label: '1. Why In-House Looks Cheaper Than It Really Is' },
+            { id: 'one-person-myth', label: '2. One Person Cannot Replace a Team' },
+            { id: 'tampa-competition', label: '3. Why This Hits Tampa Businesses Hard' },
+            { id: 'wrong-comparison', label: '4. The Wrong Comparison Most Owners Make' },
+            { id: 'when-inhouse-works', label: '5. When Hiring In-House Actually Makes Sense' },
+            { id: 'when-inhouse-wrong', label: '6. When Hiring Is the Wrong Move' },
+            { id: 'execution-gap', label: '7. The Execution Gap Is Bigger Than You Think' },
+            { id: 'better-model', label: 'What a Better Model Looks Like' },
+            { id: 'what-to-measure', label: 'What to Measure Before Deciding' },
+            { id: 'faq-mm', label: 'FAQ' },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
+              <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Section 1 */}
+      <h2 id="real-issue" className="flex items-center gap-3">
+        🔴 The Real Issue: Capability, Not Headcount
+      </h2>
+      <p>
+        Most companies do not need "someone to handle marketing." They need a system that consistently produces qualified leads, booked appointments, and predictable pipeline.
+      </p>
+      <p>That system is usually built from several moving parts:</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 m-0 list-none p-0">
+          <li>✅ ***Paid ads management***</li>
+          <li>✅ Funnel strategy</li>
+          <li>✅ ***Landing page optimization***</li>
+          <li>✅ ***Website conversion optimization***</li>
+          <li>✅ Ad creative and ***video ads creation***</li>
+          <li>✅ CRM and lead tracking</li>
+          <li>✅ Reporting tied to revenue, not vanity metrics</li>
+        </ul>
+      </div>
+      <p>One internal marketing manager rarely does all of that well.</p>
+
+      {/* Section 2 */}
+      <h2 id="hidden-costs" className="flex items-center gap-3">
+        🟠 1. Why In-House Looks Cheaper Than It Really Is
+      </h2>
+      <p>The visible cost is the monthly salary. That internal hire often costs $5,000 to $6,000 per month.</p>
+      <p>But the real cost goes much further:</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 m-0 list-none p-0">
+          <li>⚠️ Software subscriptions</li>
+          <li>⚠️ Leadership time managing them</li>
+          <li>⚠️ Missed execution from skill gaps</li>
+          <li>⚠️ Outside freelancers when they cannot cover everything</li>
+        </ul>
+      </div>
+      <p>Then add the hidden losses:</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 m-0 list-none p-0">
+          <li>❌ Wasted ad spend</li>
+          <li>❌ Weak creative</li>
+          <li>❌ Slow funnel testing</li>
+          <li>❌ Poor attribution</li>
+          <li>❌ Low conversion rates</li>
+          <li>❌ Inconsistent lead quality</li>
+        </ul>
+      </div>
+      <p>
+        A business thinks it hired marketing. What it actually hired was one person inside a role that requires a team.
+      </p>
+
+      {/* Section 3 */}
+      <h2 id="one-person-myth" className="flex items-center gap-3">
+        🎯 2. A Marketing Manager Is Not a Full Acquisition Team
+      </h2>
+      <p>This is where most businesses make the wrong bet. They hire one person and expect them to manage:</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <div className="grid md:grid-cols-2 gap-4">
+          <ul className="space-y-2 list-none p-0 m-0">
+            <li>👉 ***Google Ads management***</li>
+            <li>👉 ***Facebook Ads management***</li>
+            <li>👉 Landing pages</li>
+            <li>👉 CRM automations</li>
+            <li>👉 Website updates</li>
+          </ul>
+          <ul className="space-y-2 list-none p-0 m-0">
+            <li>👉 Copywriting</li>
+            <li>👉 Email marketing</li>
+            <li>👉 Reporting</li>
+            <li>👉 ***Video content creation***</li>
+            <li>👉 Campaign strategy</li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        That is not one job. That is a blend of what a ***lead generation agency***, ***paid advertising agency***, ***sales funnel agency***, conversion optimization agency, and video marketing agency would cover together.
+      </p>
+
+      {/* Example Card */}
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
+        <h3 className="text-lg font-bold mb-4 mt-0">🎯 Real Example</h3>
+        <p className="mb-3">A business hires a marketing manager at $5,500/month. The expectation: "Own marketing and generate more leads."</p>
+        <p className="mb-3">The reality:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ Campaigns launch, but targeting is average</li>
+          <li>❌ Landing pages are functional, not high-converting</li>
+          <li>❌ Tracking is incomplete</li>
+          <li>❌ Reporting stops at cost per lead</li>
+          <li>❌ Nobody connects lead quality to closed revenue</li>
+        </ul>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">
+          The business spends every month but still does not have a reliable growth engine.
+        </p>
+      </div>
+
+      {/* Section 4 */}
+      <h2 id="tampa-competition" className="flex items-center gap-3">
+        ⚠️ 3. Why This Problem Hits Tampa Businesses Hard
+      </h2>
+      <p>
+        If you are competing in the Tampa Bay area, weak execution gets exposed fast. Local markets are crowded.
+      </p>
+      <p>
+        Whether you are in home services, construction, manufacturing, or financial services — you are competing against companies already investing in:
+      </p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 m-0 list-none p-0">
+          <li>✅ <Link to="/services/ads-management" className="text-primary hover:underline">Google Ads & Meta Ads</Link></li>
+          <li>✅ <Link to="/services/website-creation" className="text-primary hover:underline">Strong websites</Link></li>
+          <li>✅ Remarketing</li>
+          <li>✅ Better offers</li>
+          <li>✅ Local trust positioning</li>
+        </ul>
+      </div>
+      <p>
+        That is why many companies start searching for a ***digital marketing agency tampa*** instead of trying to solve growth with one internal generalist.
+      </p>
+
+      {/* Section 5 */}
+      <h2 id="wrong-comparison" className="flex items-center gap-3">
+        🟠 4. The Wrong Comparison Most Owners Make
+      </h2>
+      <p>They compare one employee vs. one agency invoice. That comparison is incomplete.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-destructive mb-2">❌ One Internal Generalist</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>• Partial execution</li>
+              <li>• Skill gaps</li>
+              <li>• Slow testing</li>
+              <li>• Limited bandwidth</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">✅ Specialist Team</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>• Strategy + media buying</li>
+              <li>• Landing pages + tracking</li>
+              <li>• Creative + optimization</li>
+              <li>• Full execution coverage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p>
+        A strong ***growth marketing services*** partner can usually replace multiple execution gaps at once — especially when the business needs faster testing, better attribution, and lower acquisition costs.
+      </p>
+
+      {/* Mid-Article CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need a Growth System, Not Just a Hire?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help established Tampa Bay businesses build full ***customer acquisition*** systems — from paid ads to landing pages to video to CRM.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* Section 6 */}
+      <h2 id="when-inhouse-works" className="flex items-center gap-3">
+        ✅ 5. When Hiring In-House Actually Makes Sense
+      </h2>
+      <p>Internal hiring can work if the company already has a mature system. Usually that means:</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 m-0 list-none p-0">
+          <li>✅ Proven offers</li>
+          <li>✅ Stable lead flow</li>
+          <li>✅ Clear sales process</li>
+          <li>✅ Clean data from lead to closed deal</li>
+          <li>✅ Leadership that understands marketing performance</li>
+          <li>✅ Budget for more than one role</li>
+        </ul>
+      </div>
+      <p>
+        In-house works best when you are building a department, not hiring a single operator and hoping they can do everything.
+      </p>
+
+      {/* Section 7 */}
+      <h2 id="when-inhouse-wrong" className="flex items-center gap-3">
+        🔴 6. When Hiring a Marketing Manager Is the Wrong Move
+      </h2>
+      <p>For many businesses, hiring in-house is the wrong move when:</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 m-0 list-none p-0">
+          <li>⚠️ Lead flow is inconsistent</li>
+          <li>⚠️ Ads are not profitable yet</li>
+          <li>⚠️ The website is underperforming</li>
+          <li>⚠️ There is no lead generation funnel</li>
+          <li>⚠️ Attribution is weak</li>
+          <li>⚠️ Speed matters</li>
+        </ul>
+      </div>
+      <p>
+        At that stage, the company does not need headcount first. It needs a working acquisition system. That is where a ***lead generation agency*** or ***paid advertising agency*** creates more value than an employee.
+      </p>
+
+      {/* Section 8 */}
+      <h2 id="execution-gap" className="flex items-center gap-3">
+        ⚠️ 7. The Execution Gap Is Bigger Than You Think
+      </h2>
+      <p>Most companies underestimate how many specialist disciplines are required to grow efficiently.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">A real acquisition system needs execution in:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ ***Google Ads management***</li>
+          <li>✔️ ***Facebook Ads management***</li>
+          <li>✔️ Offer positioning</li>
+          <li>✔️ ***Landing page optimization***</li>
+          <li>✔️ ***Conversion rate optimization***</li>
+          <li>✔️ Creative testing</li>
+          <li>✔️ Follow-up systems</li>
+          <li>✔️ Reporting tied to sales outcomes</li>
+        </ul>
+      </div>
+      <p>
+        That is why businesses often end up hiring externally after hiring internally. They realize the salary did not solve the system problem.
+      </p>
+      <p>
+        This is even more obvious in service businesses: ***contractor marketing agency*** support matters when local demand is competitive, and ***home service marketing agency*** expertise matters when speed-to-lead affects close rate.
+      </p>
+
+      {/* Better Model */}
+      <h2 id="better-model" className="flex items-center gap-3">
+        🎯 What a Better Model Looks Like
+      </h2>
+      <p>
+        A stronger model is to work with a performance-focused partner that already has the pieces in place. That may look like a ***tampa digital marketing agency*** businesses use for:
+      </p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✅ <Link to="/services/ads-management" className="text-primary hover:underline">Paid ads management</Link></li>
+          <li>✅ <Link to="/services/website-creation" className="text-primary hover:underline">Landing page optimization & funnel building</Link></li>
+          <li>✅ ***Website conversion optimization***</li>
+          <li>✅ <Link to="/services/video-shooting" className="text-primary hover:underline">Video ads creation</Link></li>
+          <li>✅ Campaign management & ***performance advertising services***</li>
+        </ul>
+      </div>
+
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
+        <h3 className="text-xl font-bold mb-4 mt-0">🧠 The Hybrid Model: Usually the Smartest Move</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Keep Internal:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Brand vision</li>
+              <li>✅ Offer knowledge</li>
+              <li>✅ Sales feedback</li>
+              <li>✅ Market insight</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Outsource:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Paid media</li>
+              <li>✅ Funnel strategy</li>
+              <li>✅ High converting landing pages</li>
+              <li>✅ Creative production</li>
+              <li>✅ Reporting & optimization</li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">
+          That gives you strategic control without forcing one employee to carry an entire revenue system.
+        </p>
+      </div>
+
+      {/* What to Measure */}
+      <h2 id="what-to-measure" className="flex items-center gap-3">
+        📊 What to Measure Before Deciding
+      </h2>
+      <p>Do not make this decision based on preference. Make it based on numbers.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Track these before hiring:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Cost per qualified lead</li>
+          <li>✔️ Lead-to-appointment rate</li>
+          <li>✔️ Appointment-to-sale rate</li>
+          <li>✔️ Cost per acquisition</li>
+          <li>✔️ ***ROI of paid ads***</li>
+          <li>✔️ Revenue per channel</li>
+          <li>✔️ Time to launch and optimize campaigns</li>
+        </ul>
+      </div>
+      <p>If you cannot track those yet, hiring in-house will not fix the issue. It usually just hides it behind payroll.</p>
+
+      {/* Bottom Line */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
+        <h3 className="text-xl font-bold mb-3 mt-0">📌 Bottom Line</h3>
+        <p className="mb-0">
+          Hiring a marketing manager in-house is not automatically a growth move. For many companies, it is just a more expensive way to keep an incomplete system. If your goal is more qualified leads, better conversion, and predictable pipeline growth — the better question is: <strong>who can build the stronger acquisition engine?</strong> In many cases, that is not one employee. It is a specialist partner with the capabilities of a ***digital marketing agency tampa***, ***lead generation agency***, ***ppc agency***, ***google ads agency***, ***facebook ads agency***, and ***sales funnel agency*** working together.
+        </p>
+      </div>
+
+      {/* FAQ */}
+      <h2 id="faq-mm" className="flex items-center gap-3">
+        ❓ Frequently Asked Questions
+      </h2>
+
+      <div className="space-y-4 my-8">
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">Is hiring a marketing manager cheaper than working with an agency?</h4>
+          <p className="m-0 text-muted-foreground">
+            Not usually when you factor in execution gaps, slower optimization, tool costs, and the need for outside support. One salary often buys less capability than owners expect.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">When should a business hire in-house marketing?</h4>
+          <p className="m-0 text-muted-foreground">
+            When it already has stable lead flow, strong reporting, a proven sales process, and enough budget to build a real internal team — not rely on one person.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">Why do many businesses choose a digital marketing agency in Tampa instead?</h4>
+          <p className="m-0 text-muted-foreground">
+            Because a strong ***digital marketing agency tampa*** businesses trust can provide strategy, <Link to="/services/ads-management" className="text-primary hover:underline">paid media</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">funnel optimization</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">creative</Link>, and reporting faster than an internal hire can build it.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">Is this only relevant for home service companies?</h4>
+          <p className="m-0 text-muted-foreground">
+            No. It applies to service businesses, contractors, manufacturers, financial firms, and established companies that need predictable ***customer acquisition***.
+          </p>
+        </div>
+        <div className="glass-card">
+          <h4 className="font-bold mt-0 mb-2">What is the smarter alternative to hiring one marketing manager?</h4>
+          <p className="m-0 text-muted-foreground">
+            Build a system first. That often means using a ***lead generation agency***, ***paid advertising agency***, or ***sales funnel agency*** that can handle execution across channels while your business keeps strategic control.
+          </p>
+        </div>
+      </div>
+
+      {/* Final CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+        <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Growth Engine — Without the Wrong Hire</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help established businesses build predictable, branded ***lead generation*** systems — from paid ads to landing pages to video to CRM.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link to="/#contact" className="btn-hero-primary">
+            Get Started Today
+          </Link>
+          <Link to="/services/ads-management" className="btn-hero-secondary">
+            See Our Services
+          </Link>
+        </div>
+      </div>
+
+      {/* Related Article */}
+      <div className="glass-card my-8">
+        <p className="text-sm text-muted-foreground mb-2">📚 Related Article</p>
+        <Link to="/blog/why-buying-home-renovation-leads-is-bad-strategy-2026" className="text-primary hover:underline font-semibold">
+          Why Buying Home Renovation Leads Is a Bad Strategy in 2026 →
+        </Link>
+      </div>
+    </div>
+  );
+}
 
 function RenovationLeadsArticle() {
   return (
