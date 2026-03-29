@@ -113,6 +113,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'digital marketing agency tampa, tampa digital marketing agency, content marketing services, growth marketing services, paid advertising agency, video marketing agency, brand positioning services, customer acquisition',
     },
   },
+  'stand-out-from-untrustworthy-competitors-tampa-businesses': {
+    component: StandOutTrustArticle,
+    meta: {
+      title: 'How Tampa Bay Businesses Can Stand Out in a Low-Trust Market | TAOH',
+      description: 'Learn how Tampa Bay businesses can build trust, improve lead quality, and stand out from low-credibility competitors with stronger marketing, branding, and follow-up systems.',
+      keywords: 'lead generation agency, lead generation services, customer acquisition, client acquisition services, brand positioning services, digital marketing agency tampa, why ads are not working, video marketing agency',
+    },
+  },
 };
 
 function AdBudgetArticle() {
