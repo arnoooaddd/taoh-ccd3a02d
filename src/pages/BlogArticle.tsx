@@ -3982,6 +3982,333 @@ function GoogleVsFacebookPlatformArticle() {
   );
 }
 
+function RetargetingArticle() {
+  return (
+    <div className="prose-custom">
+      {/* Summary */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <p className="text-lg leading-relaxed text-foreground/90 m-0">
+          Most prospects do not buy the first time they see you. They click, browse, compare, get distracted, and leave. If your business is spending money on paid traffic and not retargeting those visitors, you are leaking revenue every day. For Tampa Bay businesses investing serious budget into Google, Meta, or multi-channel paid ads, retargeting is not optional — it is part of the system.
+        </p>
+      </div>
+
+      {/* Table of Contents */}
+      <div className="glass-card mb-12">
+        <h2 className="text-xl font-bold mb-4 mt-0">📑 Table of Contents</h2>
+        <nav className="space-y-2">
+          {[
+            { id: 'stop-wasting-rt', label: '1. How Retargeting Stops Wasting Paid Traffic' },
+            { id: 'who-rt', label: '2. Who Should Prioritize Retargeting First' },
+            { id: 'lose-prospects-rt', label: '3. Why Most Businesses Lose Prospects Too Early' },
+            { id: 'audiences-rt', label: '4. The Best Retargeting Audiences to Build' },
+            { id: 'creative-rt', label: '5. What Good Retargeting Creative Looks Like' },
+            { id: 'homepage-rt', label: '6. The Biggest Retargeting Mistake' },
+            { id: 'windows-rt', label: '7. How Long Should Retargeting Run?' },
+            { id: 'financial-rt', label: '8. When Retargeting Makes Real Financial Sense' },
+            { id: 'not-fix-rt', label: '9. Retargeting Is Not a Fix for a Broken Offer' },
+            { id: 'faq-rt', label: 'FAQ' },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
+              <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Section 1 */}
+      <h2 id="stop-wasting-rt" className="flex items-center gap-3">
+        🎯 1. Retargeting Is How You Stop Wasting Paid Traffic
+      </h2>
+      <p>A lot of local businesses focus only on getting the click. That is not enough. If visitors do not convert on the first visit, most of that traffic disappears unless you follow them up with retargeting.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Retargeting helps you stay in front of:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ People who visited your website</li>
+          <li>✔️ Users who clicked an ad but did not convert</li>
+          <li>✔️ Prospects who watched your video but did not take action</li>
+          <li>✔️ Leads who started a form and dropped off</li>
+          <li>✔️ Buyers who showed intent but were not ready yet</li>
+        </ul>
+      </div>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
+        <p className="font-semibold text-primary text-lg mb-2">The first click creates awareness.</p>
+        <p className="mb-0">Retargeting creates repetition, trust, and action. That is where a real ***paid advertising agency*** earns its keep.</p>
+      </div>
+
+      {/* Section 2 */}
+      <h2 id="who-rt" className="flex items-center gap-3">
+        🟠 2. Who Should Prioritize Retargeting First
+      </h2>
+      <p>Retargeting becomes especially important once you are spending more than <strong>$3,000 per month</strong> across all ad platforms. At that level, you usually have enough traffic to build meaningful retargeting audiences.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">If your business is spending across:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ ***Google Ads***</li>
+          <li>✔️ Facebook and Instagram Ads</li>
+          <li>✔️ YouTube</li>
+          <li>✔️ Landing page traffic campaigns</li>
+          <li>✔️ ***Lead generation funnels***</li>
+        </ul>
+      </div>
+      <p>…then retargeting is one of the easiest ways to improve ***roi of paid ads*** without increasing top-of-funnel spend.</p>
+
+      {/* Section 3 */}
+      <h2 id="lose-prospects-rt" className="flex items-center gap-3">
+        🔴 3. Why Most Businesses Lose Prospects Too Early
+      </h2>
+      <p>The buyer journey is rarely linear. A Tampa Bay business owner might click your ad on Monday, check your website for 2 minutes, leave to compare competitors, get busy for 10 days, and remember your brand only after seeing you again.</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">Without retargeting, businesses say things like:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ "Our ads are getting clicks, but not enough leads."</li>
+          <li>❌ "We get traffic, but conversion is weak."</li>
+          <li>❌ "The ***cost per lead marketing*** feels too high."</li>
+          <li>❌ "People visit the site, then disappear."</li>
+        </ul>
+      </div>
+      <p>In many cases, the issue is not the first campaign. It is the missing follow-up layer after the first visit.</p>
+
+      {/* Section 4 */}
+      <h2 id="audiences-rt" className="flex items-center gap-3">
+        🎯 4. The Best Retargeting Audiences to Build
+      </h2>
+      <p>Not all retargeting audiences are equal. Here are the most useful ones for service businesses and SMBs around Tampa Bay.</p>
+      <div className="space-y-6 my-8">
+        <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0 text-primary">Website Visitors</h4>
+          <p className="text-sm mb-2">The basic starting point. Segment further by:</p>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Homepage visitors</li>
+            <li>✔️ Service page visitors</li>
+            <li>✔️ Pricing page visitors</li>
+            <li>✔️ Contact page visitors</li>
+            <li>✔️ ***Landing page*** visitors</li>
+          </ul>
+          <p className="text-xs text-muted-foreground mt-2 mb-0">The deeper the page intent, the stronger the audience.</p>
+        </div>
+        <div className="bg-secondary/30 border border-border rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Landing Page Drop-Offs</h4>
+          <p className="text-sm mb-2">Often your best retargeting candidates. They clicked because something worked — they just did not finish. Retarget with:</p>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ A stronger offer</li>
+            <li>✔️ More proof</li>
+            <li>✔️ A simpler call to action</li>
+            <li>✔️ A deadline or urgency element</li>
+          </ul>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Video Viewers</h4>
+          <p className="text-sm mb-2">If your business uses ***video ads creation*** or short-form content, someone who watched 50-95% of a video has shown real interest. Follow up with:</p>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Book a call</li>
+            <li>✔️ Request a quote</li>
+            <li>✔️ See case studies</li>
+            <li>✔️ Claim an offer</li>
+          </ul>
+        </div>
+        <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0 text-primary">Existing Leads Who Did Not Close</h4>
+          <p className="text-sm mb-2">A lead that did not buy in the first week is not automatically dead. Retarget people who:</p>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Booked but did not show</li>
+            <li>✔️ Requested info but stopped replying</li>
+            <li>✔️ Got a proposal but delayed</li>
+            <li>✔️ Showed interest but were not ready yet</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Section 5 */}
+      <h2 id="creative-rt" className="flex items-center gap-3">
+        🟠 5. What Good Retargeting Creative Looks Like
+      </h2>
+      <p>Retargeting should not feel like a repeat of the first ad. You already have their attention once. Now you need to reduce hesitation.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Proof</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Reviews and testimonials</li>
+              <li>✅ Before-and-after examples</li>
+              <li>✅ Short case study angles</li>
+              <li>✅ Outcomes, not just promises</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Trust</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Who you work with</li>
+              <li>✅ What makes your process better</li>
+              <li>✅ Why local businesses choose you</li>
+              <li>✅ How easy the next step is</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Clarity</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ What happens after they click</li>
+              <li>✅ What they get</li>
+              <li>✅ Who it is for</li>
+              <li>✅ Why they should act now</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Friction Reduction</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Simple offer</li>
+              <li>✅ Easy booking</li>
+              <li>✅ Low-pressure consultation</li>
+              <li>✅ Fewer steps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p>A good retargeting ad is not just "come back." It is "here is why you should take the next step now."</p>
+
+      {/* Mid-Article CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want to Stop Leaking Revenue from Paid Traffic?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">retargeting systems</Link> that turn wasted clicks into qualified leads and booked appointments.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* Section 6 */}
+      <h2 id="homepage-rt" className="flex items-center gap-3">
+        🔴 6. The Biggest Retargeting Mistake: Sending Everyone Back to the Homepage
+      </h2>
+      <p>This kills momentum. If someone visited a specific landing page, pricing page, or offer page, your retargeting should reflect that context.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Better options include:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Sending them back to the exact offer page</li>
+          <li>✔️ Using a shorter ***lead generation funnel***</li>
+          <li>✔️ Routing them to a booking page</li>
+          <li>✔️ Showing a tailored <Link to="/services/website-creation" className="text-primary hover:underline">landing page</Link> with stronger proof</li>
+          <li>✔️ Presenting a clearer service angle for their stage of awareness</li>
+        </ul>
+      </div>
+      <p>Retargeting works best when the message and destination match the original intent.</p>
+
+      {/* Section 7 */}
+      <h2 id="windows-rt" className="flex items-center gap-3">
+        ⏱️ 7. How Long Should Retargeting Run?
+      </h2>
+      <p>Not forever. You want enough frequency to stay remembered, but not so much that you annoy people or burn budget.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <h4 className="font-bold mb-4 mt-0 text-primary">Practical Retargeting Windows</h4>
+        <div className="space-y-4">
+          <div className="flex items-start gap-3">
+            <span className="text-primary font-bold whitespace-nowrap">0–7 days:</span>
+            <span>Highest intent — strongest CTA, direct offer</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-primary font-bold whitespace-nowrap">8–30 days:</span>
+            <span>Proof, objection handling, trust building</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-primary font-bold whitespace-nowrap">31–90 days:</span>
+            <span>Lighter reminder, educational angle, credibility</span>
+          </div>
+        </div>
+      </div>
+      <p>For local service businesses, the shorter windows often perform best because intent fades fast. For higher-ticket B2B or longer decision cycles, a longer sequence can make sense.</p>
+
+      {/* Section 8 */}
+      <h2 id="financial-rt" className="flex items-center gap-3">
+        🎯 8. When Retargeting Starts Making Real Financial Sense
+      </h2>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Retargeting gets more valuable when:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Your traffic volume is growing</li>
+          <li>✔️ Your offer is already validated</li>
+          <li>✔️ Your ***high converting landing pages*** are decent</li>
+          <li>✔️ You have enough visitors to build audiences</li>
+          <li>✔️ Your business wants better efficiency, not just more clicks</li>
+        </ul>
+      </div>
+      <p>At that stage, you are no longer just buying traffic. You are building a ***customer acquisition*** system. This is why businesses spending $3,000+ per month should almost always test retargeting seriously.</p>
+
+      {/* Section 9 */}
+      <h2 id="not-fix-rt" className="flex items-center gap-3">
+        ⚠️ 9. Retargeting Is Not a Fix for a Broken Offer
+      </h2>
+      <p>Retargeting can improve performance, but it cannot rescue weak positioning, bad landing pages, irrelevant traffic, or slow sales follow-up.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">A serious ***lead generation agency*** or ***sales funnel agency*** looks at the full funnel:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Traffic quality</li>
+          <li>✔️ Audience intent</li>
+          <li>✔️ Page experience</li>
+          <li>✔️ Lead handling</li>
+          <li>✔️ Speed to contact</li>
+          <li>✔️ Follow-up sequence</li>
+          <li>✔️ ***Conversion rate optimization***</li>
+        </ul>
+      </div>
+      <p>Retargeting works best when it sits inside a solid system.</p>
+
+      {/* Bottom Line */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-12">
+        <h3 className="text-xl font-bold mb-4 mt-0 text-primary">What Tampa Bay Businesses Should Do Next</h3>
+        <p className="mb-3">If you are already running paid ads, ask these questions:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✅ Are we retargeting website visitors?</li>
+          <li>✅ Are we segmenting by intent?</li>
+          <li>✅ Are we using different creative for warm audiences?</li>
+          <li>✅ Are we sending people to the right page, not just the homepage?</li>
+          <li>✅ Are we spending enough monthly to make retargeting worthwhile?</li>
+          <li>✅ Are we tracking booked calls, leads, and actual closed revenue?</li>
+        </ul>
+        <p className="mt-4 mb-0 text-muted-foreground">If the answer is no to most of these, there is a good chance your ***paid ads management*** is leaving money on the table. Retargeting is not the flashy part of paid advertising — it is the part that makes your traffic work harder.</p>
+      </div>
+
+      {/* Final CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Make Your Paid Traffic Work Harder?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We are a ***tampa digital marketing agency*** that builds complete <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> — including retargeting, ***landing page optimization***, and full-funnel ***customer acquisition***.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* FAQ */}
+      <h2 id="faq-rt" className="flex items-center gap-3">
+        ❓ FAQ
+      </h2>
+      <div className="space-y-6 my-8">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">What is retargeting in paid advertising?</h4>
+          <p className="text-muted-foreground mb-0">Retargeting shows ads to people who already interacted with your business — visited your website, watched a video, or clicked an ad. It brings warm prospects back to convert.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">How much should I spend on retargeting?</h4>
+          <p className="text-muted-foreground mb-0">Retargeting usually works best as 10-20% of your total ad budget. It becomes most effective once you are spending at least $3,000/month total across platforms.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Does retargeting work for local service businesses?</h4>
+          <p className="text-muted-foreground mb-0">Yes. For Tampa Bay service businesses, retargeting helps recover prospects who compared providers, got distracted, or needed more trust before booking. It is one of the highest-ROI ad strategies available.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">What is the best retargeting audience?</h4>
+          <p className="text-muted-foreground mb-0">Landing page drop-offs and service page visitors are usually the strongest audiences because they showed the highest intent. Video viewers (50%+) are also very effective.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">How long should I retarget someone?</h4>
+          <p className="text-muted-foreground mb-0">For most local businesses, 7-30 days is the strongest window. For longer sales cycles, extend to 90 days with different creative at each stage.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const articleData = slug ? articles[slug] : null;
