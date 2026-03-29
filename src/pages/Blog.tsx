@@ -123,6 +123,15 @@ export const blogArticles = [
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'content marketing services', 'growth marketing services', 'brand positioning services'],
   },
+  {
+    slug: 'stand-out-from-untrustworthy-competitors-tampa-businesses',
+    title: 'How Tampa Bay Businesses Can Stand Out in a Market Where Buyers Don\'t Trust Anyone',
+    excerpt: 'Getting attention is not enough anymore. If you want to grow in Tampa Bay, you need marketing that generates demand and reduces buyer hesitation at the same time.',
+    date: '2026-03-29',
+    readTime: '14 min read',
+    category: 'Growth Strategy',
+    keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'brand positioning services'],
+  },
 ];
 
 const Blog = () => {
