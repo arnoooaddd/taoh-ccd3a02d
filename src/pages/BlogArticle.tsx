@@ -2759,6 +2759,7 @@ function DigitalAcquisitionTimelineArticle() {
 }
 
 
+  return (
     <main className="min-h-screen bg-background overflow-x-hidden">
       <Helmet>
         <title>{articleData.meta.title}</title>
