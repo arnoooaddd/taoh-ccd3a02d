@@ -1671,12 +1671,23 @@ function MarketingManagerArticle() {
         </div>
       </div>
 
-      {/* Related Article */}
+      {/* Related Articles */}
       <div className="glass-card my-8">
-        <p className="text-sm text-muted-foreground mb-2">📚 Related Article</p>
-        <Link to="/blog/why-buying-home-renovation-leads-is-bad-strategy-2026" className="text-primary hover:underline font-semibold">
-          Why Buying Home Renovation Leads Is a Bad Strategy in 2026 →
-        </Link>
+        <p className="text-sm text-muted-foreground mb-3">📚 Related Articles</p>
+        <div className="space-y-2">
+          <Link to="/blog/how-to-choose-a-digital-marketing-agency-in-tampa" className="text-primary hover:underline font-semibold block">
+            How to Choose a Digital Marketing Agency in Tampa Without Wasting Time or Budget →
+          </Link>
+          <Link to="/blog/why-paid-advertising-beats-random-lead-tactics-tampa-2026" className="text-primary hover:underline font-semibold block">
+            Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses →
+          </Link>
+          <Link to="/blog/why-buying-leads-bad-strategy-tampa-2026" className="text-primary hover:underline font-semibold block">
+            Why Buying Leads Is a Bad Strategy for Tampa Businesses in 2026 →
+          </Link>
+          <Link to="/blog/why-buying-home-renovation-leads-is-bad-strategy-2026" className="text-primary hover:underline font-semibold block">
+            Why Buying Home Renovation Leads Is a Bad Strategy in 2026 →
+          </Link>
+        </div>
       </div>
     </div>
   );
