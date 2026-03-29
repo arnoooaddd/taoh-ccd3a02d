@@ -7,6 +7,15 @@ import { Helmet } from 'react-helmet-async';
 
 export const blogArticles = [
   {
+    slug: 'why-buying-leads-bad-strategy-tampa-2026',
+    title: 'Why Buying Leads Is a Bad Strategy for Tampa Businesses in 2026',
+    excerpt: 'Buying leads feels easy. In reality, it destroys margin, weakens brand value, and keeps you dependent on platforms you do not control. Here is what to build instead.',
+    date: '2026-03-29',
+    readTime: '15 min read',
+    category: 'Lead Generation',
+    keywords: ['digital marketing agency tampa', 'lead generation agency', 'customer acquisition', 'branding agency'],
+  },
+  {
     slug: 'should-you-hire-marketing-manager-in-house-2026',
     title: 'Should You Hire a Marketing Manager In-House in 2026? What Tampa Businesses Need to Know',
     excerpt: 'Hiring a marketing manager feels like control. In most cases, it gives you one salary, partial execution, and no real client acquisition system.',
