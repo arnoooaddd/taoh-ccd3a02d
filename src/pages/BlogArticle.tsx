@@ -9,6 +9,14 @@ import { blogArticles } from './Blog';
 
 // Article content components
 const articles: Record<string, { component: React.FC; meta: { title: string; description: string; keywords: string } }> = {
+  'should-you-hire-marketing-manager-in-house-2026': {
+    component: MarketingManagerArticle,
+    meta: {
+      title: 'Should You Hire a Marketing Manager In-House in 2026? | TAOH',
+      description: 'Hiring a marketing manager in-house sounds smart. Here\'s why most Tampa businesses get better results from a digital marketing agency instead.',
+      keywords: 'digital marketing agency tampa, lead generation agency, paid advertising agency, sales funnel agency, conversion rate optimization',
+    },
+  },
   'why-buying-home-renovation-leads-is-bad-strategy-2026': {
     component: RenovationLeadsArticle,
     meta: {
