@@ -2414,6 +2414,22 @@ function RenovationLeadsArticle() {
         </div>
       </div>
 
+      {/* Related Articles */}
+      <div className="glass-card my-8">
+        <p className="text-sm text-muted-foreground mb-3">📚 Related Articles</p>
+        <div className="space-y-2">
+          <Link to="/blog/why-buying-leads-bad-strategy-tampa-2026" className="text-primary hover:underline font-semibold block">
+            Why Buying Leads Is a Bad Strategy for Tampa Businesses in 2026 →
+          </Link>
+          <Link to="/blog/lead-qualification-levels-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
+            Not All Leads Are Equal: The 4 Qualification Levels Tampa Bay Businesses Need →
+          </Link>
+          <Link to="/blog/why-paid-advertising-beats-random-lead-tactics-tampa-2026" className="text-primary hover:underline font-semibold block">
+            Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses →
+          </Link>
+        </div>
+      </div>
+
       {/* Final CTA */}
       <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Own Growth Engine</h3>
