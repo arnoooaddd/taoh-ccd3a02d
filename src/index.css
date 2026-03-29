@@ -182,7 +182,132 @@
   .animate-on-scroll.visible {
     @apply opacity-100 translate-y-0;
   }
-  /* Blog prose styling */
+  /* Blog light theme wrapper */
+  .blog-light {
+    --blog-bg: 0 0% 99%;
+    --blog-text: 215 30% 18%;
+    --blog-text-muted: 215 15% 45%;
+    --blog-heading: 215 98% 15%;
+    --blog-card-bg: 215 30% 96%;
+    --blog-card-border: 215 20% 88%;
+    --blog-cta-bg: 215 98% 15%;
+    --blog-cta-text: 0 0% 99%;
+    background: hsl(var(--blog-bg));
+    color: hsl(var(--blog-text));
+  }
+
+  .blog-light .prose-custom {
+    color: hsl(var(--blog-text));
+  }
+  .blog-light .prose-custom h2 {
+    @apply text-2xl md:text-3xl font-bold mt-14 mb-6 scroll-mt-24;
+    color: hsl(var(--blog-heading));
+  }
+  .blog-light .prose-custom h3 {
+    @apply text-xl md:text-2xl font-bold mt-10 mb-4;
+    color: hsl(var(--blog-heading));
+  }
+  .blog-light .prose-custom h4 {
+    @apply text-lg font-semibold;
+    color: hsl(var(--blog-heading));
+  }
+  .blog-light .prose-custom p {
+    @apply text-base md:text-lg leading-relaxed mb-5;
+    color: hsl(var(--blog-text));
+  }
+  .blog-light .prose-custom ul {
+    @apply mb-6;
+  }
+  .blog-light .prose-custom a {
+    @apply text-primary hover:underline transition-colors;
+  }
+  .blog-light .prose-custom li {
+    color: hsl(var(--blog-text));
+  }
+  .blog-light .prose-custom strong {
+    color: hsl(var(--blog-heading));
+  }
+
+  /* Blog light - override glass cards and containers */
+  .blog-light .glass-card {
+    background: hsl(var(--blog-card-bg));
+    border-color: hsl(var(--blog-card-border));
+    backdrop-filter: none;
+  }
+  .blog-light .glass-card h2,
+  .blog-light .glass-card h4,
+  .blog-light .glass-card p {
+    color: hsl(var(--blog-text));
+  }
+  .blog-light .glass-card .text-muted-foreground {
+    color: hsl(var(--blog-text-muted));
+  }
+
+  /* Blog light - colored cards */
+  .blog-light [class*="bg-primary/5"],
+  .blog-light [class*="bg-primary/10"] {
+    background: hsl(42 100% 50% / 0.08);
+    border-color: hsl(42 100% 50% / 0.25);
+  }
+  .blog-light [class*="bg-secondary/30"] {
+    background: hsl(215 30% 94%);
+    border-color: hsl(var(--blog-card-border));
+  }
+  .blog-light [class*="bg-destructive/5"] {
+    background: hsl(0 84% 60% / 0.06);
+    border-color: hsl(0 84% 60% / 0.2);
+  }
+  .blog-light [class*="bg-white/5"] {
+    background: hsl(var(--blog-card-bg));
+    border-color: hsl(var(--blog-card-border));
+  }
+
+  /* Blog light - text overrides */
+  .blog-light .text-foreground {
+    color: hsl(var(--blog-heading)) !important;
+  }
+  .blog-light .text-foreground\/90,
+  .blog-light .text-foreground\/85,
+  .blog-light .text-foreground\/80 {
+    color: hsl(var(--blog-text)) !important;
+  }
+  .blog-light .text-foreground\/60 {
+    color: hsl(var(--blog-text-muted)) !important;
+  }
+  .blog-light .text-muted-foreground {
+    color: hsl(var(--blog-text-muted)) !important;
+  }
+
+  /* Blog light - CTA blocks */
+  .blog-light .blog-cta {
+    background: hsl(var(--blog-cta-bg));
+    color: hsl(var(--blog-cta-text));
+    border-color: hsl(215 98% 15%);
+  }
+  .blog-light .blog-cta h3,
+  .blog-light .blog-cta p {
+    color: hsl(var(--blog-cta-text)) !important;
+  }
+  .blog-light .blog-cta .text-muted-foreground {
+    color: hsl(0 0% 80%) !important;
+  }
+  .blog-light .blog-cta .btn-hero-primary {
+    @apply bg-primary text-primary-foreground;
+  }
+  .blog-light .blog-cta .btn-hero-secondary {
+    border-color: hsl(0 0% 80%);
+    color: hsl(0 0% 99%);
+  }
+
+  /* Blog light - Related articles box */
+  .blog-light .border-t {
+    border-color: hsl(var(--blog-card-border));
+  }
+  .blog-light .border-border {
+    border-color: hsl(var(--blog-card-border));
+  }
+
+  /* Blog prose styling (fallback / dark mode) */
   .prose-custom {
     @apply text-foreground/90;
   }
