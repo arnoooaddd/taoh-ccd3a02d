@@ -6,6 +6,10 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { ArrowLeft, Clock, Calendar, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { blogArticles } from './Blog';
+import logoGoogleAds from '@/assets/logo-google-ads.png';
+import logoFacebook from '@/assets/logo-facebook.png';
+import logoLinkedin from '@/assets/logo-linkedin.png';
+import logoYoutube from '@/assets/logo-youtube.png';
 
 // Article content components
 const articles: Record<string, { component: React.FC; meta: { title: string; description: string; keywords: string } }> = {
