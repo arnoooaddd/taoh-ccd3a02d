@@ -3649,6 +3649,331 @@ function SocialMediaLeadSpeedArticle() {
   );
 }
 
+function GoogleVsFacebookPlatformArticle() {
+  return (
+    <div className="prose-custom">
+      {/* Summary */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <p className="text-lg leading-relaxed text-foreground/90 m-0">
+          If your business is ready to spend at least $2,000 per month on advertising, platform choice starts to matter. Stop asking "Where can we run ads?" and start asking "Which platform gives us the best path to qualified leads, booked appointments, and actual revenue?" For most Tampa Bay businesses, the answer depends on your offer, your sales cycle, and how fast prospects need to act.
+        </p>
+      </div>
+
+      {/* Table of Contents */}
+      <div className="glass-card mb-12">
+        <h2 className="text-xl font-bold mb-4 mt-0">📑 Table of Contents</h2>
+        <nav className="space-y-2">
+          {[
+            { id: 'capture-create-gf', label: '1. Demand Capture vs. Demand Creation' },
+            { id: 'bad-choice-gf', label: '2. Bad Platform Choice Gets Expensive Fast' },
+            { id: 'google-best-gf', label: '3. When Google Ads Is the Better Choice' },
+            { id: 'meta-best-gf', label: '4. When Facebook & Instagram Ads Work' },
+            { id: 'both-gf', label: '5. For Many Businesses, the Answer Is Both' },
+            { id: 'getting-started-gf', label: '6. Getting Started with Paid Ads' },
+            { id: 'lead-handling-gf', label: '7. Platform Choice Depends on Lead Handling' },
+            { id: 'signs-google-gf', label: '8. Signs You Should Lean Into Google' },
+            { id: 'signs-meta-gf', label: '9. Signs You Should Lean Into Meta' },
+            { id: 'not-working-gf', label: '10. If Ads Are Not Working, Check This First' },
+            { id: 'recommendation-gf', label: '11. Smart Recommendation Framework' },
+            { id: 'faq-gf', label: 'FAQ' },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
+              <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Section 1 */}
+      <h2 id="capture-create-gf" className="flex items-center gap-3">
+        🎯 1. Start with the Real Question: Demand Capture or Demand Creation?
+      </h2>
+      <p>This is the simplest way to think about it.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Google Ads is usually better when:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ People already know they need the service</li>
+              <li>✅ They are actively searching for a provider</li>
+              <li>✅ Speed matters</li>
+              <li>✅ You want higher-intent leads</li>
+              <li>✅ Your business depends on direct response</li>
+            </ul>
+            <p className="text-xs text-muted-foreground mt-3 mb-0">Examples: HVAC, plumbing, roofing, legal services, med spas, accounting, urgent repairs</p>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Facebook & Instagram Ads are usually better when:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Buyers are not searching yet</li>
+              <li>✅ Your offer needs education</li>
+              <li>✅ Your brand needs visibility first</li>
+              <li>✅ Your service benefits from strong creative</li>
+              <li>✅ Impulse, emotion, or aspiration plays a role</li>
+            </ul>
+            <p className="text-xs text-muted-foreground mt-3 mb-0">Examples: aesthetic services, gyms, real estate, coaching, events, lifestyle brands</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
+        <p className="font-semibold text-primary text-lg mb-2">The split is simple:</p>
+        <p className="mb-0">Google captures demand. Meta creates and shapes demand.</p>
+      </div>
+
+      {/* Section 2 */}
+      <h2 id="bad-choice-gf" className="flex items-center gap-3">
+        🔴 2. If You Are Spending Over $2,000/Month, Bad Platform Choice Gets Expensive Fast
+      </h2>
+      <p>A lot of businesses waste months running Facebook Ads for a service people already search for on Google — or running Google Ads for an offer nobody is actively searching for.</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">That creates the same problems every time:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ Low lead quality</li>
+          <li>❌ Weak conversion rates</li>
+          <li>❌ Inflated ***cost per lead marketing***</li>
+          <li>❌ Poor follow-up performance</li>
+          <li>❌ The false belief that ***ads are not working***</li>
+        </ul>
+      </div>
+      <p>Usually the problem is not the channel by itself. It is the match between platform, offer, audience, and funnel. That is exactly where a solid ***paid advertising agency*** or ***lead generation agency*** should be useful.</p>
+
+      {/* Section 3 */}
+      <h2 id="google-best-gf" className="flex items-center gap-3">
+        🟠 3. Google Ads Is Usually the Better Choice for High-Intent Local Lead Generation
+      </h2>
+      <p>If your business wins by showing up when someone needs help now, Google is often the first platform to test.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Google Ads tends to work best when you have:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ A clear service offer</li>
+          <li>✔️ A strong <Link to="/services/website-creation" className="text-primary hover:underline">landing page</Link></li>
+          <li>✔️ Fast lead response</li>
+          <li>✔️ Call tracking</li>
+          <li>✔️ Good geographic targeting</li>
+          <li>✔️ A team that can handle inbound leads well</li>
+        </ul>
+      </div>
+      <p>If you are hiring a ***google ads agency***, this is what they should be optimizing around. Not just clicks — actual lead flow and downstream conversion.</p>
+
+      {/* Section 4 */}
+      <h2 id="meta-best-gf" className="flex items-center gap-3">
+        🟠 4. Facebook and Instagram Ads Work When Creative Is the Real Sales Engine
+      </h2>
+      <p>Meta can work extremely well, but only when the offer and the creative are strong enough to stop attention and create interest.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">A strong ***facebook ads agency*** should build ads around:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Pain points</li>
+          <li>✔️ Transformation</li>
+          <li>✔️ Proof and authority</li>
+          <li>✔️ Local relevance</li>
+          <li>✔️ ***Short form video ads***</li>
+          <li>✔️ Clear calls to action</li>
+        </ul>
+      </div>
+      <p>If your ad looks like every other business in your market, Meta gets expensive fast. That is why many businesses think Facebook Ads are bad when the real issue is weak positioning and lazy creative.</p>
+
+      {/* Section 5 */}
+      <h2 id="both-gf" className="flex items-center gap-3">
+        🎯 5. For Many Businesses, the Answer Is Not One Platform
+      </h2>
+      <p>Once your budget clears the $2,000/month range, think less in terms of "Google or Facebook" and more in terms of funnel role.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Use Google Ads for:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Bottom-of-funnel demand</li>
+              <li>✅ Local high-intent search traffic</li>
+              <li>✅ Direct lead capture</li>
+              <li>✅ Quote requests</li>
+              <li>✅ Booked calls</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">Use Meta Ads for:</p>
+            <ul className="space-y-1 list-none p-0 m-0 text-sm">
+              <li>✅ Top-of-funnel awareness</li>
+              <li>✅ Retargeting</li>
+              <li>✅ Offer education</li>
+              <li>✅ Social proof</li>
+              <li>✅ ***Video ads creation***-led trust building</li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">This is where good ***paid ads management*** becomes real strategy, not channel babysitting.</p>
+      </div>
+
+      {/* Mid-Article CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Not Sure Which Platform Fits Your Business?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help Tampa Bay businesses choose and execute the right <Link to="/services/ads-management" className="text-primary hover:underline">paid advertising strategy</Link> — Google, Meta, or both — based on your offer, market, and growth goals.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* Section 6 */}
+      <h2 id="getting-started-gf" className="flex items-center gap-3">
+        🟠 6. What to Do If You Are Just Getting Started with Paid Ads
+      </h2>
+      <p>If your business is new to advertising, do not spread your budget across too many platforms. Pick the channel that matches buying intent first.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>👉 Choose Google first if people already search for your service</li>
+          <li>👉 Choose Meta first if your offer needs attention, education, or visual persuasion</li>
+          <li>👉 Add the second channel only once the first one has clear signal</li>
+        </ul>
+      </div>
+      <p>At a $2,000 monthly budget, focus matters. A split budget across too many campaigns usually means weak data, weak learnings, and weak results.</p>
+
+      {/* Section 7 */}
+      <h2 id="lead-handling-gf" className="flex items-center gap-3">
+        🔴 7. Platform Choice Also Depends on Your Lead Handling
+      </h2>
+      <p>This part gets ignored far too often. You can run good ads and still get poor results if your lead handling is slow or sloppy.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Before scaling either platform, make sure you have:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Fast response time</li>
+          <li>✔️ SMS follow-up</li>
+          <li>✔️ Email reminders</li>
+          <li>✔️ Clear call scripts</li>
+          <li>✔️ Calendar booking flow</li>
+          <li>✔️ Someone accountable for speed to lead</li>
+          <li>✔️ A way to track which leads turn into customers</li>
+        </ul>
+      </div>
+      <p>The platform gets the click. Your process gets the customer. Read more about <Link to="/blog/contact-social-media-leads-tampa-bay-businesses" className="text-primary hover:underline">speed-to-lead best practices</Link>.</p>
+
+      {/* Section 8 */}
+      <h2 id="signs-google-gf" className="flex items-center gap-3">
+        🎯 8. Signs You Should Lean Harder Into Google Ads
+      </h2>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✅ Your service has strong existing search demand</li>
+          <li>✅ Prospects want quotes fast</li>
+          <li>✅ Calls are more valuable than engagement</li>
+          <li>✅ Your team is good at handling inbound inquiries</li>
+          <li>✅ Local intent drives the buying decision</li>
+          <li>✅ You need clearer purchase intent from the start</li>
+        </ul>
+      </div>
+      <p>This is why a lot of high-performing local businesses treat Google as their core acquisition engine.</p>
+
+      {/* Section 9 */}
+      <h2 id="signs-meta-gf" className="flex items-center gap-3">
+        🎯 9. Signs You Should Lean Harder Into Facebook and Instagram
+      </h2>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✅ Your service needs to be seen to be understood</li>
+          <li>✅ Your value proposition is emotional or visual</li>
+          <li>✅ Your business wins through creative differentiation</li>
+          <li>✅ Your market is not actively searching in high volume</li>
+          <li>✅ You want to build brand familiarity before conversion</li>
+          <li>✅ You already have strong customer proof and content</li>
+        </ul>
+      </div>
+      <p>For the right business, Meta can become a powerful ***customer acquisition services*** channel — but only if the offer and creative are good enough to carry the campaign.</p>
+
+      {/* Section 10 */}
+      <h2 id="not-working-gf" className="flex items-center gap-3">
+        ⚠️ 10. If Ads Are Not Working, the Platform May Not Be the Real Issue
+      </h2>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">Most underperforming campaigns fail because of:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ Weak offer</li>
+          <li>❌ Weak messaging</li>
+          <li>❌ Generic creative</li>
+          <li>❌ Bad <Link to="/services/website-creation" className="text-primary hover:underline">landing page</Link></li>
+          <li>❌ Poor follow-up</li>
+          <li>❌ Broad targeting</li>
+          <li>❌ Mismatched channel choice</li>
+          <li>❌ Not enough budget to generate signal</li>
+          <li>❌ No clear conversion tracking</li>
+        </ul>
+      </div>
+      <p>The better question is: Which platform fits our business model, our buyer behavior, and our current ability to convert leads? That is the question that leads to better ***roi of paid ads***.</p>
+
+      {/* Section 11 */}
+      <h2 id="recommendation-gf" className="flex items-center gap-3">
+        🔴 11. What a Smart Recommendation Looks Like
+      </h2>
+      <div className="space-y-6 my-8">
+        <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0 text-primary">Start with Google Ads if:</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ You sell a service people already search for</li>
+            <li>✔️ You want direct lead intent</li>
+            <li>✔️ You need calls, estimates, or booked consultations</li>
+          </ul>
+        </div>
+        <div className="bg-secondary/30 border border-border rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Start with Facebook & Instagram if:</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Your offer needs education</li>
+            <li>✔️ Your creative can do the heavy lifting</li>
+            <li>✔️ Your business benefits from video, proof, and repeated visibility</li>
+          </ul>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Use both if:</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ You want to build a full ***customer acquisition*** system</li>
+            <li>✔️ You have enough budget to support funnel depth</li>
+            <li>✔️ You are serious about scaling</li>
+          </ul>
+        </div>
+      </div>
+      <p>The platform matters. But fit matters more. That is why the best businesses work with a ***lead generation agency*** or ***paid advertising agency*** that understands how the full system works — from click to close.</p>
+
+      {/* Final CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Choose the Right Platform and Scale?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We are a ***tampa digital marketing agency*** that builds <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> for established businesses — Google, Meta, or both — designed for real ***customer acquisition***, not vanity metrics.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* FAQ */}
+      <h2 id="faq-gf" className="flex items-center gap-3">
+        ❓ FAQ
+      </h2>
+      <div className="space-y-6 my-8">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Is Google Ads better than Facebook Ads?</h4>
+          <p className="text-muted-foreground mb-0">For high-intent local services where people are already searching, Google usually performs better. For brand awareness and creative-led offers, Meta often works better. The best choice depends on your specific business model.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">How much should I spend on Google Ads or Facebook Ads?</h4>
+          <p className="text-muted-foreground mb-0">At minimum $2,000/month per platform. Below that, you usually do not get enough data to optimize properly. Read our <Link to="/blog/how-much-should-tampa-businesses-spend-on-ads-2026" className="text-primary hover:underline">full budget breakdown</Link>.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Can I run both Google Ads and Facebook Ads at the same time?</h4>
+          <p className="text-muted-foreground mb-0">Yes, and for most established businesses it is the strongest approach. Google captures demand while Meta builds awareness and retargets. Together they create a more complete acquisition system.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Why are my Facebook Ads not generating quality leads?</h4>
+          <p className="text-muted-foreground mb-0">Usually it is not the platform — it is weak creative, poor offer positioning, or slow follow-up. Check your <Link to="/blog/contact-social-media-leads-tampa-bay-businesses" className="text-primary hover:underline">speed-to-lead process</Link> and your ad messaging before blaming the channel.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Which platform works best for home service businesses?</h4>
+          <p className="text-muted-foreground mb-0">Google Ads typically works better as the primary channel because homeowners search for contractors when they have an immediate need. Meta works well as a secondary channel for retargeting and brand visibility.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const articleData = slug ? articles[slug] : null;
