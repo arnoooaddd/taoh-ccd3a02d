@@ -2409,7 +2409,7 @@ function DigitalAcquisitionTimelineArticle() {
             { id: 'measure-dat', label: '11. What to Actually Measure' },
             { id: 'faq-dat', label: 'FAQ' },
           ].map((item) => (
-            <a key={item.id} href={\`#\${item.id}\`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
+            <a key={item.id} href={`#${item.id}`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
               <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
               {item.label}
             </a>
