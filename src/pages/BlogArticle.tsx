@@ -81,6 +81,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'lead generation agency, digital marketing agency tampa, customer acquisition, sales funnel agency, lead generation services, conversion rate optimization, cost per lead marketing',
     },
   },
+  'contact-social-media-leads-tampa-bay-businesses': {
+    component: SocialMediaLeadSpeedArticle,
+    meta: {
+      title: 'How Fast Should You Contact Facebook Leads in Tampa Bay? | TAOH',
+      description: 'Learn how Tampa Bay businesses should follow up with social media leads, including response time, SMS workflows, appointment reminders, and better conversion systems.',
+      keywords: 'facebook ads agency, lead generation agency, digital marketing agency tampa, customer acquisition, paid advertising agency, cost per lead marketing',
+    },
+  },
 };
 
 function AdBudgetArticle() {
