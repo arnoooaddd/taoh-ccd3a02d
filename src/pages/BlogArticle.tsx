@@ -5182,7 +5182,8 @@ const BlogArticle = () => {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <Navbar />
-      <article className="pt-32 pb-20 px-4 md:px-8">
+      {/* Dark header area for breadcrumb + article title */}
+      <div className="pt-32 pb-12 px-4 md:px-8 bg-background">
         <div className="container mx-auto max-w-3xl">
           {/* Breadcrumb */}
           <motion.div
@@ -5202,7 +5203,6 @@ const BlogArticle = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
           >
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
@@ -5217,12 +5217,16 @@ const BlogArticle = () => {
                 {articleMeta.readTime}
               </span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               {articleMeta.title}
             </h1>
           </motion.div>
+        </div>
+      </div>
 
-          {/* Content */}
+      {/* Light theme article content */}
+      <article className="blog-light py-12 md:py-16 px-4 md:px-8">
+        <div className="container mx-auto max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -5236,9 +5240,9 @@ const BlogArticle = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mt-16 pt-8 border-t border-border"
+            className="mt-16 pt-8 border-t"
           >
-            <Link to="/blog" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/blog" className="flex items-center gap-2 hover:text-primary transition-colors" style={{ color: 'hsl(215 15% 45%)' }}>
               <ArrowLeft className="w-4 h-4" />
               Back to all articles
             </Link>
