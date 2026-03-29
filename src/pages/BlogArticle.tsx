@@ -328,7 +328,10 @@ function AdBudgetArticle() {
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">Google Ads:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoGoogleAds} alt="Google Ads" className="w-5 h-5 object-contain" />
+              <p className="text-sm font-semibold text-primary m-0">Google Ads:</p>
+            </div>
             <ul className="space-y-1 list-none p-0 m-0 text-sm">
               <li>✅ Captures active demand</li>
               <li>✅ Targets people already searching</li>
@@ -337,7 +340,10 @@ function AdBudgetArticle() {
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">Meta Ads:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoFacebook} alt="Facebook Ads" className="w-5 h-5 object-contain rounded" />
+              <p className="text-sm font-semibold text-primary m-0">Meta Ads:</p>
+            </div>
             <ul className="space-y-1 list-none p-0 m-0 text-sm">
               <li>✅ Builds awareness</li>
               <li>✅ Creates market visibility</li>
