@@ -7,6 +7,15 @@ import { Helmet } from 'react-helmet-async';
 
 export const blogArticles = [
   {
+    slug: 'google-ads-vs-facebook-ads-tampa-2026',
+    title: 'Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026?',
+    excerpt: 'It is not "Which platform is better?" It is "Which platform fits your buying cycle, sales process, and growth goal?" Here is how to decide.',
+    date: '2026-03-29',
+    readTime: '12 min read',
+    category: 'Paid Advertising',
+    keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
+  },
+  {
     slug: 'why-paid-advertising-beats-random-lead-tactics-tampa-2026',
     title: 'Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses in 2026',
     excerpt: 'Most businesses do not have a lead problem. They have a system problem. Here is how to build a real acquisition engine with paid ads, funnels, and brand visibility.',

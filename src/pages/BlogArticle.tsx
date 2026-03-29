@@ -9,6 +9,14 @@ import { blogArticles } from './Blog';
 
 // Article content components
 const articles: Record<string, { component: React.FC; meta: { title: string; description: string; keywords: string } }> = {
+  'google-ads-vs-facebook-ads-tampa-2026': {
+    component: GoogleVsFacebookArticle,
+    meta: {
+      title: 'Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026? | TAOH',
+      description: 'Google captures intent. Facebook builds demand. Learn which platform fits your business, realistic budgets, and how to use both for predictable growth in Tampa Bay.',
+      keywords: 'google ads agency, facebook ads agency, paid advertising agency, digital marketing agency tampa, ppc agency, paid ads management',
+    },
+  },
   'why-paid-advertising-beats-random-lead-tactics-tampa-2026': {
     component: PaidAdvertisingArticle,
     meta: {
