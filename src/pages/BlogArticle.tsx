@@ -9,6 +9,14 @@ import { blogArticles } from './Blog';
 
 // Article content components
 const articles: Record<string, { component: React.FC; meta: { title: string; description: string; keywords: string } }> = {
+  'how-much-should-tampa-businesses-spend-on-ads-2026': {
+    component: AdBudgetArticle,
+    meta: {
+      title: 'How Much Should Tampa Bay Businesses Spend on Ads in 2026? | TAOH',
+      description: 'Realistic ad budgets for Tampa businesses: Meta Ads from $2,500/mo, Google Ads from $3,000/mo. Learn CPL benchmarks and how to build a system that scales.',
+      keywords: 'paid advertising agency, google ads agency, facebook ads agency, digital marketing agency tampa, paid ads management, cost per lead marketing',
+    },
+  },
   'google-ads-vs-facebook-ads-tampa-2026': {
     component: GoogleVsFacebookArticle,
     meta: {
