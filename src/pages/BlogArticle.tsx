@@ -73,6 +73,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'digital marketing agency tampa, tampa digital marketing agency, lead generation agency, paid advertising agency, website design agency, video marketing agency, sales funnel agency',
     },
   },
+  'lead-qualification-levels-tampa-bay-businesses': {
+    component: LeadQualificationArticle,
+    meta: {
+      title: 'Not All Leads Are Equal: 4 Lead Qualification Levels for Tampa Bay Businesses | TAOH',
+      description: 'Learn the 4 lead qualification levels Tampa Bay businesses should use to improve lead quality, sales follow-up, and customer acquisition from paid marketing.',
+      keywords: 'lead generation agency, digital marketing agency tampa, customer acquisition, sales funnel agency, lead generation services, conversion rate optimization, cost per lead marketing',
+    },
+  },
 };
 
 function AdBudgetArticle() {
