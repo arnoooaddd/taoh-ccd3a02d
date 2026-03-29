@@ -97,6 +97,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'google ads agency, facebook ads agency, paid advertising agency, digital marketing agency tampa, ppc agency, paid ads management, lead generation agency',
     },
   },
+  'retargeting-paid-ads-tampa-bay-businesses': {
+    component: RetargetingArticle,
+    meta: {
+      title: 'Why Retargeting Matters for Tampa Bay Businesses Running Paid Ads | TAOH',
+      description: 'Learn how retargeting helps Tampa Bay businesses improve paid ads ROI, recover lost prospects, and turn more traffic into qualified leads and sales.',
+      keywords: 'paid advertising agency, lead generation agency, digital marketing agency tampa, customer acquisition, paid ads management, conversion rate optimization, roi of paid ads',
+    },
+  },
 };
 
 function AdBudgetArticle() {
