@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import VideoShooting from "./pages/VideoShooting";
@@ -12,6 +13,8 @@ import WebsiteCreation from "./pages/WebsiteCreation";
 import AdsManagement from "./pages/AdsManagement";
 import ArnoCard from "./pages/ArnoCard";
 import KerimCard from "./pages/KerimCard";
+import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
 
 const queryClient = new QueryClient();
 
