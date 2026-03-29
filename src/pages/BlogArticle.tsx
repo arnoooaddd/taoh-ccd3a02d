@@ -89,6 +89,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'facebook ads agency, lead generation agency, digital marketing agency tampa, customer acquisition, paid advertising agency, cost per lead marketing',
     },
   },
+  'google-ads-vs-facebook-ads-tampa-businesses': {
+    component: GoogleVsFacebookPlatformArticle,
+    meta: {
+      title: 'Google Ads vs Facebook Ads for Tampa Bay Businesses: Which Should You Choose? | TAOH',
+      description: 'Not sure whether to invest in Google Ads or Facebook Ads? Here is how Tampa Bay businesses spending $2,000+ per month should choose the right platform for lead generation and growth.',
+      keywords: 'google ads agency, facebook ads agency, paid advertising agency, digital marketing agency tampa, ppc agency, paid ads management, lead generation agency',
+    },
+  },
 };
 
 function AdBudgetArticle() {
