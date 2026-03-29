@@ -96,6 +96,15 @@ export const blogArticles = [
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'facebook ads agency', 'customer acquisition', 'digital marketing agency tampa'],
   },
+  {
+    slug: 'google-ads-vs-facebook-ads-tampa-businesses',
+    title: 'Google Ads or Facebook Ads: Which Platform Makes More Sense for Tampa Bay Businesses?',
+    excerpt: 'If your business is ready to spend at least $2,000/month on advertising, platform choice starts to matter. Here is how to decide based on your offer, sales cycle, and buyer intent.',
+    date: '2026-03-29',
+    readTime: '13 min read',
+    category: 'Paid Advertising',
+    keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
+  },
 ];
 
 const Blog = () => {
