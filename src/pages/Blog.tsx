@@ -87,6 +87,15 @@ export const blogArticles = [
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'sales funnel agency'],
   },
+  {
+    slug: 'contact-social-media-leads-tampa-bay-businesses',
+    title: 'How Fast Should You Contact Social Media Leads? What Tampa Bay Businesses Need to Know',
+    excerpt: 'Most businesses lose social media leads not because the lead was bad, but because they waited too long and followed up poorly. Here is the speed-to-lead system that wins.',
+    date: '2026-03-29',
+    readTime: '12 min read',
+    category: 'Lead Generation',
+    keywords: ['lead generation agency', 'facebook ads agency', 'customer acquisition', 'digital marketing agency tampa'],
+  },
 ];
 
 const Blog = () => {
