@@ -6,6 +6,10 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { ArrowLeft, Clock, Calendar, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { blogArticles } from './Blog';
+import logoGoogleAds from '@/assets/logo-google-ads.png';
+import logoFacebook from '@/assets/logo-facebook.png';
+import logoLinkedin from '@/assets/logo-linkedin.png';
+import logoYoutube from '@/assets/logo-youtube.png';
 
 // Article content components
 const articles: Record<string, { component: React.FC; meta: { title: string; description: string; keywords: string } }> = {
@@ -129,7 +133,7 @@ function AdBudgetArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Most businesses do not fail with ads because they spend too much. They fail because they spend too little, expect results too fast, and judge performance before the system has enough data. This article gives Tampa Bay businesses realistic budget benchmarks for Meta and Google Ads, CPL ranges, and a framework for building a ***paid advertising agency***-grade system that actually scales. Note: these are general benchmarks — actual budgets depend on your industry, ticket size, and competition level.
+          Most businesses do not fail with ads because they spend too much. They fail because they spend too little, expect results too fast, and judge performance before the system has enough data. This article gives Tampa Bay businesses realistic budget benchmarks for Meta and Google Ads, CPL ranges, and a framework for building a <strong>paid advertising agency</strong>-grade system that actually scales. Note: these are general benchmarks — actual budgets depend on your industry, ticket size, and competition level.
         </p>
       </div>
 
@@ -170,7 +174,7 @@ function AdBudgetArticle() {
           <li>👉 <strong>Service area:</strong> broader geographic targeting increases required budget</li>
         </ul>
         <p className="mt-3 mb-0 text-sm text-muted-foreground">
-          A ***construction digital marketing agency*** or ***hvac digital marketing agency*** client will typically need higher budgets than a local service provider with a smaller ticket. Use these ranges as a starting point, then adjust based on your specific market conditions.
+          A <strong>construction digital marketing agency</strong> or <strong>hvac digital marketing agency</strong> client will typically need higher budgets than a local service provider with a smaller ticket. Use these ranges as a starting point, then adjust based on your specific market conditions.
         </p>
       </div>
 
@@ -253,7 +257,7 @@ function AdBudgetArticle() {
           </div>
         </div>
         <p className="mt-4 text-sm text-muted-foreground mb-0">
-          That is usually what it takes to buy enough clicks, gather conversion data, test landing pages, optimize search terms, and make real decisions. Higher-ticket industries like construction or manufacturing may need to invest more — a ***construction digital marketing agency*** client often requires $5,000+ to compete effectively.
+          That is usually what it takes to buy enough clicks, gather conversion data, test landing pages, optimize search terms, and make real decisions. Higher-ticket industries like construction or manufacturing may need to invest more — a <strong>construction digital marketing agency</strong> client often requires $5,000+ to compete effectively.
         </p>
       </div>
 
@@ -270,10 +274,10 @@ function AdBudgetArticle() {
       </p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need Help Building Your Ad Budget Strategy?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established Tampa Bay businesses structure ***paid ads management*** systems across Google and Facebook — built for real ***customer acquisition***, not just clicks.
+          We help established Tampa Bay businesses structure <strong>paid ads management</strong> systems across Google and Facebook — built for real <strong>customer acquisition</strong>, not just clicks.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -295,7 +299,7 @@ function AdBudgetArticle() {
           <li>❌ Generic landing page</li>
         </ul>
       </div>
-      <p>Then the business says: "Meta leads are junk," "Google is too expensive," or ***"paid ads do not work in Tampa."***</p>
+      <p>Then the business says: "Meta leads are junk," "Google is too expensive," or <strong>"paid ads do not work in Tampa."</strong></p>
       <p>Usually that is not true. The setup failed before the channel even had a real chance.</p>
 
       {/* Learning Phase */}
@@ -314,7 +318,7 @@ function AdBudgetArticle() {
           <li>✔️ Which channel drives better quality</li>
         </ul>
       </div>
-      <p>That means the first weeks are not just about volume — they are about clarity. A strong ***paid advertising agency*** or ***lead generation agency*** should be using this phase to make better decisions, not just report impressions and clicks.</p>
+      <p>That means the first weeks are not just about volume — they are about clarity. A strong <strong>paid advertising agency</strong> or <strong>lead generation agency</strong> should be using this phase to make better decisions, not just report impressions and clicks.</p>
 
       {/* Both Channels */}
       <h2 id="both-channels-ab" className="flex items-center gap-3">
@@ -324,16 +328,22 @@ function AdBudgetArticle() {
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">Google Ads:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoGoogleAds} alt="Google Ads" className="w-5 h-5 object-contain" />
+              <p className="text-sm font-semibold text-primary m-0">Google Ads:</p>
+            </div>
             <ul className="space-y-1 list-none p-0 m-0 text-sm">
               <li>✅ Captures active demand</li>
               <li>✅ Targets people already searching</li>
               <li>✅ Drives high-intent inbound traffic</li>
-              <li>✅ Supports fast ***lead generation services***</li>
+              <li>✅ Supports fast <strong>lead generation services</strong></li>
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">Meta Ads:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoFacebook} alt="Facebook Ads" className="w-5 h-5 object-contain rounded" />
+              <p className="text-sm font-semibold text-primary m-0">Meta Ads:</p>
+            </div>
             <ul className="space-y-1 list-none p-0 m-0 text-sm">
               <li>✅ Builds awareness</li>
               <li>✅ Creates market visibility</li>
@@ -371,7 +381,7 @@ function AdBudgetArticle() {
           </div>
           <div>
             <h4 className="font-bold mb-2 mt-0">Option 2: Google-First Approach</h4>
-            <p className="text-sm text-muted-foreground mb-2">Best for high-intent traffic, faster ***lead generation***, direct-response results, demand capture.</p>
+            <p className="text-sm text-muted-foreground mb-2">Best for high-intent traffic, faster <strong>lead generation</strong>, direct-response results, demand capture.</p>
             <p className="font-semibold">Start at $3,000/month → aim for $3,500–$6,000/month for stronger structure</p>
           </div>
           <div>
@@ -398,7 +408,7 @@ function AdBudgetArticle() {
           <li>✅ Close rate</li>
           <li>✅ Revenue by channel</li>
           <li>✅ Cost per acquisition</li>
-          <li>✅ ***ROI of paid ads***</li>
+          <li>✅ <strong>ROI of paid ads</strong></li>
         </ul>
       </div>
       <p>If you only track top-of-funnel numbers, you will make bad decisions with good-looking dashboards.</p>
@@ -414,7 +424,7 @@ function AdBudgetArticle() {
           <li>✅ Generate more revenue</li>
         </ul>
         <p className="mt-3 mb-0 text-sm text-muted-foreground">
-          That is why ***cost per lead marketing*** only matters when it is tied to quality. The cheapest lead is often the most expensive one in the end.
+          That is why <strong>cost per lead marketing</strong> only matters when it is tied to quality. The cheapest lead is often the most expensive one in the end.
         </p>
       </div>
 
@@ -429,7 +439,7 @@ function AdBudgetArticle() {
           <li>✅ Good Google leads often land around <strong>$50–$120</strong></li>
         </ul>
         <p className="mb-0 font-semibold text-primary">
-          These are general benchmarks — higher-ticket industries will often need more. The better strategy is usually not choosing one platform. It is launching with both and building a complete acquisition system around visibility, intent, follow-up, and conversion. That is what a real ***digital marketing agency tampa***, ***google ads agency***, or ***lead generation agency*** should help you build.
+          These are general benchmarks — higher-ticket industries will often need more. The better strategy is usually not choosing one platform. It is launching with both and building a complete acquisition system around visibility, intent, follow-up, and conversion. That is what a real <strong>digital marketing agency tampa</strong>, <strong>google ads agency</strong>, or <strong>lead generation agency</strong> should help you build.
         </p>
       </div>
 
@@ -466,7 +476,7 @@ function AdBudgetArticle() {
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">Should businesses launch Google Ads and Facebook Ads together?</h4>
           <p className="m-0 text-muted-foreground">
-            Usually yes. Google captures active demand, while Meta builds visibility and supports retargeting. Together, they create a stronger ***customer acquisition*** system.
+            Usually yes. Google captures active demand, while Meta builds visibility and supports retargeting. Together, they create a stronger <strong>customer acquisition</strong> system.
           </p>
         </div>
         <div className="glass-card">
@@ -497,10 +507,10 @@ function AdBudgetArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Paid Ads Strategy for Tampa Bay</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established businesses structure ***paid ads management*** systems across Google and Facebook — calibrated for your industry, your ticket size, and your revenue goals.
+          We help established businesses structure <strong>paid ads management</strong> systems across Google and Facebook — calibrated for your industry, your ticket size, and your revenue goals.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="btn-hero-primary">
@@ -521,7 +531,7 @@ function GoogleVsFacebookArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Most businesses ask the wrong question. It is not "Which platform is better?" It is "Which platform fits our buying cycle, sales process, and growth goal?" For Tampa Bay businesses, both Google Ads and Facebook Ads can drive results — but they do very different jobs. This article breaks down when to use each, realistic budgets, and how a ***digital marketing agency tampa*** businesses trust would structure both for maximum ***customer acquisition***.
+          Most businesses ask the wrong question. It is not "Which platform is better?" It is "Which platform fits our buying cycle, sales process, and growth goal?" For Tampa Bay businesses, both Google Ads and Facebook Ads can drive results — but they do very different jobs. This article breaks down when to use each, realistic budgets, and how a <strong>digital marketing agency tampa</strong> businesses trust would structure both for maximum <strong>customer acquisition</strong>.
         </p>
       </div>
 
@@ -557,11 +567,17 @@ function GoogleVsFacebookArticle() {
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">✅ Use Google Ads when:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoGoogleAds} alt="Google Ads" className="w-5 h-5 object-contain" />
+              <p className="text-sm font-semibold text-primary m-0">✅ Use Google Ads when:</p>
+            </div>
             <p className="m-0 text-sm">People already know what they want and are actively searching for a solution or provider.</p>
           </div>
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">✅ Use Facebook Ads when:</p>
+            <div className="flex items-center gap-2 mb-2">
+              <img src={logoFacebook} alt="Facebook Ads" className="w-5 h-5 object-contain rounded" />
+              <p className="text-sm font-semibold text-primary m-0">✅ Use Facebook Ads when:</p>
+            </div>
             <p className="m-0 text-sm">You need to create demand, build awareness, and stay visible before the buyer is ready.</p>
           </div>
         </div>
@@ -573,7 +589,7 @@ function GoogleVsFacebookArticle() {
         🔴 1. Google Ads Captures Intent
       </h2>
       <p>Google Ads is built for demand capture. People go to Google when they are already looking for a solution, a provider, a quote, or a service near them.</p>
-      <p>That makes Google one of the strongest channels for direct-response ***lead generation services***.</p>
+      <p>That makes Google one of the strongest channels for direct-response <strong>lead generation services</strong>.</p>
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
         <h4 className="font-bold mb-3 mt-0">✅ Google Ads is usually best for:</h4>
         <ul className="space-y-2 m-0 list-none p-0">
@@ -585,7 +601,7 @@ function GoogleVsFacebookArticle() {
           <li>✅ Bottom-of-funnel traffic</li>
         </ul>
       </div>
-      <p>This is why many companies work with a ***google ads agency*** or ***ppc agency*** first when they want faster lead flow.</p>
+      <p>This is why many companies work with a <strong>google ads agency</strong> or <strong>ppc agency</strong> first when they want faster lead flow.</p>
 
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <h4 className="font-bold mb-3 mt-0">⚠️ Where Google Ads gets harder:</h4>
@@ -615,7 +631,7 @@ function GoogleVsFacebookArticle() {
           <li>✅ Lower-cost traffic</li>
         </ul>
       </div>
-      <p>That is why a strong ***facebook ads agency*** is not just buying media — it is combining targeting, message, and creative.</p>
+      <p>That is why a strong <strong>facebook ads agency</strong> is not just buying media — it is combining targeting, message, and creative.</p>
 
       <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
         <h4 className="font-bold mb-3 mt-0">⚠️ Where Facebook Ads gets harder:</h4>
@@ -664,10 +680,10 @@ function GoogleVsFacebookArticle() {
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Not Sure Which Platform Fits Your Business?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established Tampa Bay businesses build ***paid ads management*** systems across Google and Facebook — structured for real ***client acquisition***, not just clicks.
+          We help established Tampa Bay businesses build <strong>paid ads management</strong> systems across Google and Facebook — structured for real <strong>client acquisition</strong>, not just clicks.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -689,7 +705,7 @@ function GoogleVsFacebookArticle() {
         </ul>
       </div>
       <p>
-        This is where a ***paid advertising agency*** or ***lead generation agency*** can structure campaigns around actual search intent instead of broad traffic.
+        This is where a <strong>paid advertising agency</strong> or <strong>lead generation agency</strong> can structure campaigns around actual search intent instead of broad traffic.
       </p>
 
       {/* Visibility */}
@@ -703,7 +719,7 @@ function GoogleVsFacebookArticle() {
           <strong>Best known beats best.</strong> The most visible brand often gets the first call, even if another company is technically better.
         </p>
         <p className="mb-0 text-sm text-muted-foreground">
-          This is why Facebook is often stronger for brand-building, trust-building with ***video ads creation***, repeated exposure, and retargeting non-buyers. For Tampa Bay businesses, that local visibility compounds over time.
+          This is why Facebook is often stronger for brand-building, trust-building with <strong>video ads creation</strong>, repeated exposure, and retargeting non-buyers. For Tampa Bay businesses, that local visibility compounds over time.
         </p>
       </div>
 
@@ -719,11 +735,11 @@ function GoogleVsFacebookArticle() {
           <li>✅ Use <Link to="/services/ads-management" className="text-primary hover:underline">Facebook Ads</Link> to create demand and stay remembered</li>
         </ul>
         <p className="mt-4 mb-0 text-sm text-muted-foreground">
-          That gives you bottom-funnel lead capture, top-of-funnel attention, stronger retargeting, lower dependence on one channel, and better total ***customer acquisition*** performance.
+          That gives you bottom-funnel lead capture, top-of-funnel attention, stronger retargeting, lower dependence on one channel, and better total <strong>customer acquisition</strong> performance.
         </p>
       </div>
       <p>
-        This is where a strong ***digital marketing agency tampa*** or ***tampa digital marketing agency*** becomes useful. The goal is not channel management — it is channel orchestration.
+        This is where a strong <strong>digital marketing agency tampa</strong> or <strong>tampa digital marketing agency</strong> becomes useful. The goal is not channel management — it is channel orchestration.
       </p>
 
       {/* Funnel Roles */}
@@ -775,7 +791,7 @@ function GoogleVsFacebookArticle() {
           <li>❌ No retargeting</li>
         </ul>
       </div>
-      <p>Then they say: "Google leads are too expensive" or "Facebook leads are low quality" or ***"ads are not working."***</p>
+      <p>Then they say: "Google leads are too expensive" or "Facebook leads are low quality" or <strong>"ads are not working."</strong></p>
       <p>Most of the time, the platform is not the core issue. The acquisition system is.</p>
 
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
@@ -790,7 +806,7 @@ function GoogleVsFacebookArticle() {
         </ul>
       </div>
       <p>
-        That is where ***landing page optimization***, ***conversion rate optimization***, and ***paid ads management*** all connect.
+        That is where <strong>landing page optimization</strong>, <strong>conversion rate optimization</strong>, and <strong>paid ads management</strong> all connect.
       </p>
 
       {/* Decision Framework */}
@@ -831,7 +847,7 @@ function GoogleVsFacebookArticle() {
           Google Ads and Facebook Ads do not compete as much as business owners think. Google captures intent. Facebook builds demand.
         </p>
         <p className="mb-0 font-semibold text-primary">
-          If you are a Tampa Bay business trying to grow in 2026, the best move is usually not picking a winner. It is using each platform for the job it does best. That is how a serious ***google ads agency***, ***facebook ads agency***, ***paid advertising agency***, or ***lead generation agency*** should approach growth.
+          If you are a Tampa Bay business trying to grow in 2026, the best move is usually not picking a winner. It is using each platform for the job it does best. That is how a serious <strong>google ads agency</strong>, <strong>facebook ads agency</strong>, <strong>paid advertising agency</strong>, or <strong>lead generation agency</strong> should approach growth.
         </p>
       </div>
 
@@ -893,10 +909,10 @@ function GoogleVsFacebookArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Paid Ads Growth System</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established Tampa Bay businesses build predictable ***lead generation*** systems using Google Ads and Facebook Ads — structured for revenue, not vanity metrics.
+          We help established Tampa Bay businesses build predictable <strong>lead generation</strong> systems using Google Ads and Facebook Ads — structured for revenue, not vanity metrics.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="btn-hero-primary">
@@ -917,7 +933,7 @@ function PaidAdvertisingArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Most businesses do not have a lead problem. They have a system problem. If your growth depends on inconsistent referrals, third-party lead sources, or unstructured marketing, you do not have a scalable acquisition engine. This article breaks down why a ***paid advertising agency*** approach — connected to funnels, landing pages, and brand visibility — outperforms scattered tactics for Tampa Bay businesses in 2026.
+          Most businesses do not have a lead problem. They have a system problem. If your growth depends on inconsistent referrals, third-party lead sources, or unstructured marketing, you do not have a scalable acquisition engine. This article breaks down why a <strong>paid advertising agency</strong> approach — connected to funnels, landing pages, and brand visibility — outperforms scattered tactics for Tampa Bay businesses in 2026.
         </p>
       </div>
 
@@ -978,7 +994,7 @@ function PaidAdvertisingArticle() {
       </div>
       <p>That model creates inconsistent volume, poor sales efficiency, low trust, wasted ad spend, and weak ROI.</p>
       <p>
-        This is usually ***why ads are not working***. The traffic is not always the problem. The system behind the traffic is.
+        This is usually <strong>why ads are not working</strong>. The traffic is not always the problem. The system behind the traffic is.
       </p>
 
       {/* Section 3 */}
@@ -997,7 +1013,7 @@ function PaidAdvertisingArticle() {
         </ul>
       </div>
       <p>
-        This is why serious businesses work with a ***paid advertising agency***, ***google ads agency***, or ***facebook ads agency*** instead of treating ads like a side task.
+        This is why serious businesses work with a <strong>paid advertising agency</strong>, <strong>google ads agency</strong>, or <strong>facebook ads agency</strong> instead of treating ads like a side task.
       </p>
 
       {/* Section 4 */}
@@ -1023,7 +1039,7 @@ function PaidAdvertisingArticle() {
       <h2 id="best-known-pa" className="flex items-center gap-3">
         🔴 4. Best Known Beats Best
       </h2>
-      <p>This is the ***branding agency*** reality most owners ignore.</p>
+      <p>This is the <strong>branding agency</strong> reality most owners ignore.</p>
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <h3 className="text-lg font-bold mb-4 mt-0">🎯 The Visibility Advantage</h3>
         <p className="mb-3">
@@ -1034,14 +1050,14 @@ function PaidAdvertisingArticle() {
         </p>
       </div>
       <p>
-        For Tampa Bay businesses, growth is not just about "running ads." It is about becoming the company people already recognize when they are ready to buy. This is where ***brand positioning services*** and consistent visibility create real competitive advantage.
+        For Tampa Bay businesses, growth is not just about "running ads." It is about becoming the company people already recognize when they are ready to buy. This is where <strong>brand positioning services</strong> and consistent visibility create real competitive advantage.
       </p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Build a Real Growth System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established Tampa Bay businesses build branded ***customer acquisition*** systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
+          We help established Tampa Bay businesses build branded <strong>customer acquisition</strong> systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -1064,7 +1080,7 @@ function PaidAdvertisingArticle() {
           <li>✔️ Branded search support</li>
         </ul>
       </div>
-      <p>This is where a strong ***ppc agency*** or ***paid ads management*** partner matters.</p>
+      <p>This is where a strong <strong>ppc agency</strong> or <strong>paid ads management</strong> partner matters.</p>
 
       <h3>🔧 Part 2: A Real Offer</h3>
       <p>Most campaigns fail because the offer is weak or generic. Your messaging needs to answer:</p>
@@ -1090,7 +1106,7 @@ function PaidAdvertisingArticle() {
         </ul>
       </div>
       <p>
-        This is where ***landing page optimization***, ***website conversion optimization***, and ***conversion rate optimization*** directly affect revenue.
+        This is where <strong>landing page optimization</strong>, <strong>website conversion optimization</strong>, and <strong>conversion rate optimization</strong> directly affect revenue.
       </p>
 
       <h3>🔧 Part 4: Fast and Structured Follow-Up</h3>
@@ -1140,7 +1156,7 @@ function PaidAdvertisingArticle() {
           <li>❌ No sales funnel</li>
         </ul>
         <p className="mt-4 text-sm text-muted-foreground mb-0">
-          The owner says: "Paid ads do not work in our market." That is usually false. What failed was the system. This is exactly why many businesses eventually look for a ***digital marketing agency tampa*** with real performance experience.
+          The owner says: "Paid ads do not work in our market." That is usually false. What failed was the system. This is exactly why many businesses eventually look for a <strong>digital marketing agency tampa</strong> with real performance experience.
         </p>
       </div>
 
@@ -1148,7 +1164,7 @@ function PaidAdvertisingArticle() {
       <h2 id="funnel-pa" className="flex items-center gap-3">
         🟠 7. Why a Funnel Matters More Than Most Businesses Think
       </h2>
-      <p>Traffic alone does not create pipeline. A proper ***lead generation funnel*** does the heavy lifting between the click and the sale:</p>
+      <p>Traffic alone does not create pipeline. A proper <strong>lead generation funnel</strong> does the heavy lifting between the click and the sale:</p>
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✅ Filtering weak leads</li>
@@ -1160,7 +1176,7 @@ function PaidAdvertisingArticle() {
         </ul>
       </div>
       <p>
-        This is why a strong ***sales funnel agency*** or ***lead generation agency*** usually outperforms a business that just "runs ads."
+        This is why a strong <strong>sales funnel agency</strong> or <strong>lead generation agency</strong> usually outperforms a business that just "runs ads."
       </p>
 
       {/* Section 9 - Website */}
@@ -1173,11 +1189,11 @@ function PaidAdvertisingArticle() {
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">That is why businesses often need:</p>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✔️ <Link to="/services/website-creation" className="text-primary hover:underline">***Website design agency*** support</Link></li>
-          <li>✔️ ***Marketing website design***</li>
-          <li>✔️ ***Conversion focused web design***</li>
-          <li>✔️ ***Website redesign services***</li>
-          <li>✔️ ***Custom website development***</li>
+          <li>✔️ <Link to="/services/website-creation" className="text-primary hover:underline"><strong>Website design agency</strong> support</Link></li>
+          <li>✔️ <strong>Marketing website design</strong></li>
+          <li>✔️ <strong>Conversion focused web design</strong></li>
+          <li>✔️ <strong>Website redesign services</strong></li>
+          <li>✔️ <strong>Custom website development</strong></li>
         </ul>
       </div>
       <p>Your website should help close demand, not leak it.</p>
@@ -1207,7 +1223,7 @@ function PaidAdvertisingArticle() {
           If your marketing depends on isolated tactics, weak websites, or random lead sources — you will stay stuck in inconsistent growth.
         </p>
         <p className="mb-0 font-semibold text-primary">
-          The smarter move: build a branded acquisition engine that turns paid traffic into qualified leads, booked appointments, and revenue. That is what a real ***tampa digital marketing agency***, ***lead generation agency***, or ***sales funnel agency*** should help you do.
+          The smarter move: build a branded acquisition engine that turns paid traffic into qualified leads, booked appointments, and revenue. That is what a real <strong>tampa digital marketing agency</strong>, <strong>lead generation agency</strong>, or <strong>sales funnel agency</strong> should help you do.
         </p>
       </div>
 
@@ -1238,13 +1254,13 @@ function PaidAdvertisingArticle() {
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">What should Tampa Bay businesses focus on first?</h4>
           <p className="m-0 text-muted-foreground">
-            Focus on offer clarity, <Link to="/services/ads-management" className="text-primary hover:underline">paid traffic</Link>, ***landing page optimization***, fast follow-up, and local trust-building.
+            Focus on offer clarity, <Link to="/services/ads-management" className="text-primary hover:underline">paid traffic</Link>, <strong>landing page optimization</strong>, fast follow-up, and local trust-building.
           </p>
         </div>
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">Who is this model best for?</h4>
           <p className="m-0 text-muted-foreground">
-            Service businesses, established SMBs, contractors, home service companies, and other Tampa Bay businesses that want predictable ***lead generation*** and stronger ***ROI of paid ads***.
+            Service businesses, established SMBs, contractors, home service companies, and other Tampa Bay businesses that want predictable <strong>lead generation</strong> and stronger <strong>ROI of paid ads</strong>.
           </p>
         </div>
       </div>
@@ -1269,10 +1285,10 @@ function PaidAdvertisingArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Growth Engine in Tampa Bay</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established businesses build predictable, brand-led ***lead generation*** systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
+          We help established businesses build predictable, brand-led <strong>lead generation</strong> systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="btn-hero-primary">
@@ -1293,8 +1309,8 @@ function MarketingManagerArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Hiring a marketing manager feels like control. In most cases, it gives you one salary, partial execution, and no real ***client acquisition*** system.
-          If you are running an established business in Tampa Bay, this article breaks down when in-house makes sense — and when a ***digital marketing agency tampa*** businesses trust will deliver faster, stronger results.
+          Hiring a marketing manager feels like control. In most cases, it gives you one salary, partial execution, and no real <strong>client acquisition</strong> system.
+          If you are running an established business in Tampa Bay, this article breaks down when in-house makes sense — and when a <strong>digital marketing agency tampa</strong> businesses trust will deliver faster, stronger results.
         </p>
       </div>
 
@@ -1333,11 +1349,11 @@ function MarketingManagerArticle() {
       <p>That system is usually built from several moving parts:</p>
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
         <ul className="space-y-2 m-0 list-none p-0">
-          <li>✅ ***Paid ads management***</li>
+          <li>✅ <strong>Paid ads management</strong></li>
           <li>✅ Funnel strategy</li>
-          <li>✅ ***Landing page optimization***</li>
-          <li>✅ ***Website conversion optimization***</li>
-          <li>✅ Ad creative and ***video ads creation***</li>
+          <li>✅ <strong>Landing page optimization</strong></li>
+          <li>✅ <strong>Website conversion optimization</strong></li>
+          <li>✅ Ad creative and <strong>video ads creation</strong></li>
           <li>✅ CRM and lead tracking</li>
           <li>✅ Reporting tied to revenue, not vanity metrics</li>
         </ul>
@@ -1381,8 +1397,8 @@ function MarketingManagerArticle() {
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <div className="grid md:grid-cols-2 gap-4">
           <ul className="space-y-2 list-none p-0 m-0">
-            <li>👉 ***Google Ads management***</li>
-            <li>👉 ***Facebook Ads management***</li>
+            <li>👉 <strong>Google Ads management</strong></li>
+            <li>👉 <strong>Facebook Ads management</strong></li>
             <li>👉 Landing pages</li>
             <li>👉 CRM automations</li>
             <li>👉 Website updates</li>
@@ -1391,13 +1407,13 @@ function MarketingManagerArticle() {
             <li>👉 Copywriting</li>
             <li>👉 Email marketing</li>
             <li>👉 Reporting</li>
-            <li>👉 ***Video content creation***</li>
+            <li>👉 <strong>Video content creation</strong></li>
             <li>👉 Campaign strategy</li>
           </ul>
         </div>
       </div>
       <p>
-        That is not one job. That is a blend of what a ***lead generation agency***, ***paid advertising agency***, ***sales funnel agency***, conversion optimization agency, and video marketing agency would cover together.
+        That is not one job. That is a blend of what a <strong>lead generation agency</strong>, <strong>paid advertising agency</strong>, <strong>sales funnel agency</strong>, conversion optimization agency, and video marketing agency would cover together.
       </p>
 
       {/* Example Card */}
@@ -1437,7 +1453,7 @@ function MarketingManagerArticle() {
         </ul>
       </div>
       <p>
-        That is why many companies start searching for a ***digital marketing agency tampa*** instead of trying to solve growth with one internal generalist.
+        That is why many companies start searching for a <strong>digital marketing agency tampa</strong> instead of trying to solve growth with one internal generalist.
       </p>
 
       {/* Section 5 */}
@@ -1468,14 +1484,14 @@ function MarketingManagerArticle() {
         </div>
       </div>
       <p>
-        A strong ***growth marketing services*** partner can usually replace multiple execution gaps at once — especially when the business needs faster testing, better attribution, and lower acquisition costs.
+        A strong <strong>growth marketing services</strong> partner can usually replace multiple execution gaps at once — especially when the business needs faster testing, better attribution, and lower acquisition costs.
       </p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need a Growth System, Not Just a Hire?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established Tampa Bay businesses build full ***customer acquisition*** systems — from paid ads to landing pages to video to CRM.
+          We help established Tampa Bay businesses build full <strong>customer acquisition</strong> systems — from paid ads to landing pages to video to CRM.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -1517,7 +1533,7 @@ function MarketingManagerArticle() {
         </ul>
       </div>
       <p>
-        At that stage, the company does not need headcount first. It needs a working acquisition system. That is where a ***lead generation agency*** or ***paid advertising agency*** creates more value than an employee.
+        At that stage, the company does not need headcount first. It needs a working acquisition system. That is where a <strong>lead generation agency</strong> or <strong>paid advertising agency</strong> creates more value than an employee.
       </p>
 
       {/* Section 8 */}
@@ -1528,11 +1544,11 @@ function MarketingManagerArticle() {
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">A real acquisition system needs execution in:</p>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✔️ ***Google Ads management***</li>
-          <li>✔️ ***Facebook Ads management***</li>
+          <li>✔️ <strong>Google Ads management</strong></li>
+          <li>✔️ <strong>Facebook Ads management</strong></li>
           <li>✔️ Offer positioning</li>
-          <li>✔️ ***Landing page optimization***</li>
-          <li>✔️ ***Conversion rate optimization***</li>
+          <li>✔️ <strong>Landing page optimization</strong></li>
+          <li>✔️ <strong>Conversion rate optimization</strong></li>
           <li>✔️ Creative testing</li>
           <li>✔️ Follow-up systems</li>
           <li>✔️ Reporting tied to sales outcomes</li>
@@ -1542,7 +1558,7 @@ function MarketingManagerArticle() {
         That is why businesses often end up hiring externally after hiring internally. They realize the salary did not solve the system problem.
       </p>
       <p>
-        This is even more obvious in service businesses: ***contractor marketing agency*** support matters when local demand is competitive, and ***home service marketing agency*** expertise matters when speed-to-lead affects close rate.
+        This is even more obvious in service businesses: <strong>contractor marketing agency</strong> support matters when local demand is competitive, and <strong>home service marketing agency</strong> expertise matters when speed-to-lead affects close rate.
       </p>
 
       {/* Better Model */}
@@ -1550,15 +1566,15 @@ function MarketingManagerArticle() {
         🎯 What a Better Model Looks Like
       </h2>
       <p>
-        A stronger model is to work with a performance-focused partner that already has the pieces in place. That may look like a ***tampa digital marketing agency*** businesses use for:
+        A stronger model is to work with a performance-focused partner that already has the pieces in place. That may look like a <strong>tampa digital marketing agency</strong> businesses use for:
       </p>
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✅ <Link to="/services/ads-management" className="text-primary hover:underline">Paid ads management</Link></li>
           <li>✅ <Link to="/services/website-creation" className="text-primary hover:underline">Landing page optimization & funnel building</Link></li>
-          <li>✅ ***Website conversion optimization***</li>
+          <li>✅ <strong>Website conversion optimization</strong></li>
           <li>✅ <Link to="/services/video-shooting" className="text-primary hover:underline">Video ads creation</Link></li>
-          <li>✅ Campaign management & ***performance advertising services***</li>
+          <li>✅ Campaign management & <strong>performance advertising services</strong></li>
         </ul>
       </div>
 
@@ -1602,7 +1618,7 @@ function MarketingManagerArticle() {
           <li>✔️ Lead-to-appointment rate</li>
           <li>✔️ Appointment-to-sale rate</li>
           <li>✔️ Cost per acquisition</li>
-          <li>✔️ ***ROI of paid ads***</li>
+          <li>✔️ <strong>ROI of paid ads</strong></li>
           <li>✔️ Revenue per channel</li>
           <li>✔️ Time to launch and optimize campaigns</li>
         </ul>
@@ -1613,7 +1629,7 @@ function MarketingManagerArticle() {
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
         <h3 className="text-xl font-bold mb-3 mt-0">📌 Bottom Line</h3>
         <p className="mb-0">
-          Hiring a marketing manager in-house is not automatically a growth move. For many companies, it is just a more expensive way to keep an incomplete system. If your goal is more qualified leads, better conversion, and predictable pipeline growth — the better question is: <strong>who can build the stronger acquisition engine?</strong> In many cases, that is not one employee. It is a specialist partner with the capabilities of a ***digital marketing agency tampa***, ***lead generation agency***, ***ppc agency***, ***google ads agency***, ***facebook ads agency***, and ***sales funnel agency*** working together.
+          Hiring a marketing manager in-house is not automatically a growth move. For many companies, it is just a more expensive way to keep an incomplete system. If your goal is more qualified leads, better conversion, and predictable pipeline growth — the better question is: <strong>who can build the stronger acquisition engine?</strong> In many cases, that is not one employee. It is a specialist partner with the capabilities of a <strong>digital marketing agency tampa</strong>, <strong>lead generation agency</strong>, <strong>ppc agency</strong>, <strong>google ads agency</strong>, <strong>facebook ads agency</strong>, and <strong>sales funnel agency</strong> working together.
         </p>
       </div>
 
@@ -1638,28 +1654,28 @@ function MarketingManagerArticle() {
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">Why do many businesses choose a digital marketing agency in Tampa instead?</h4>
           <p className="m-0 text-muted-foreground">
-            Because a strong ***digital marketing agency tampa*** businesses trust can provide strategy, <Link to="/services/ads-management" className="text-primary hover:underline">paid media</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">funnel optimization</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">creative</Link>, and reporting faster than an internal hire can build it.
+            Because a strong <strong>digital marketing agency tampa</strong> businesses trust can provide strategy, <Link to="/services/ads-management" className="text-primary hover:underline">paid media</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">funnel optimization</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">creative</Link>, and reporting faster than an internal hire can build it.
           </p>
         </div>
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">Is this only relevant for home service companies?</h4>
           <p className="m-0 text-muted-foreground">
-            No. It applies to service businesses, contractors, manufacturers, financial firms, and established companies that need predictable ***customer acquisition***.
+            No. It applies to service businesses, contractors, manufacturers, financial firms, and established companies that need predictable <strong>customer acquisition</strong>.
           </p>
         </div>
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">What is the smarter alternative to hiring one marketing manager?</h4>
           <p className="m-0 text-muted-foreground">
-            Build a system first. That often means using a ***lead generation agency***, ***paid advertising agency***, or ***sales funnel agency*** that can handle execution across channels while your business keeps strategic control.
+            Build a system first. That often means using a <strong>lead generation agency</strong>, <strong>paid advertising agency</strong>, or <strong>sales funnel agency</strong> that can handle execution across channels while your business keeps strategic control.
           </p>
         </div>
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Growth Engine — Without the Wrong Hire</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established businesses build predictable, branded ***lead generation*** systems — from paid ads to landing pages to video to CRM.
+          We help established businesses build predictable, branded <strong>lead generation</strong> systems — from paid ads to landing pages to video to CRM.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="btn-hero-primary">
@@ -1699,7 +1715,7 @@ function BuyingLeadsTampaArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Buying leads feels easy. You pay, get contacts, call them, and hope some turn into revenue. In reality, for most businesses in Tampa Bay, bought leads destroy margin, weaken brand value, and keep you dependent on platforms you do not control. If you are running an established business, this article breaks down why a branded ***customer acquisition*** system will always outperform rented lead lists — and what a ***digital marketing agency tampa*** businesses trust would build instead.
+          Buying leads feels easy. You pay, get contacts, call them, and hope some turn into revenue. In reality, for most businesses in Tampa Bay, bought leads destroy margin, weaken brand value, and keep you dependent on platforms you do not control. If you are running an established business, this article breaks down why a branded <strong>customer acquisition</strong> system will always outperform rented lead lists — and what a <strong>digital marketing agency tampa</strong> businesses trust would build instead.
         </p>
       </div>
 
@@ -1741,7 +1757,7 @@ function BuyingLeadsTampaArticle() {
         </ul>
       </div>
       <p>
-        That is not a durable ***client acquisition*** strategy. It is borrowed pipeline.
+        That is not a durable <strong>client acquisition</strong> strategy. It is borrowed pipeline.
       </p>
 
       {/* Section 2 */}
@@ -1774,7 +1790,7 @@ function BuyingLeadsTampaArticle() {
           <li>❌ More wasted follow-up</li>
         </ul>
       </div>
-      <p>It is not a market problem. It is a bad ***customer acquisition*** model.</p>
+      <p>It is not a market problem. It is a bad <strong>customer acquisition</strong> model.</p>
 
       {/* Section 3 */}
       <h2 id="cold-leads-bl" className="flex items-center gap-3">
@@ -1791,7 +1807,7 @@ function BuyingLeadsTampaArticle() {
           <strong>Best known beats best.</strong> A business can have the better offer, the better team, and the better service. But if another company is more visible, more familiar, and more remembered — that company wins first attention.
         </p>
         <p className="mb-0 text-sm text-muted-foreground">
-          The most seen brand often beats the technically better business. This is where ***brand positioning services*** and consistent visibility create real competitive advantage.
+          The most seen brand often beats the technically better business. This is where <strong>brand positioning services</strong> and consistent visibility create real competitive advantage.
         </p>
       </div>
 
@@ -1802,7 +1818,7 @@ function BuyingLeadsTampaArticle() {
         <li>⚠️ Lower-trust conversations</li>
         <li>⚠️ More price-sensitive deals</li>
       </ul>
-      <p>That is bad ***lead generation services*** economics.</p>
+      <p>That is bad <strong>lead generation services</strong> economics.</p>
 
       {/* Section 4 */}
       <h2 id="commodity-bl" className="flex items-center gap-3">
@@ -1835,7 +1851,7 @@ function BuyingLeadsTampaArticle() {
           </div>
         </div>
         <p className="mt-4 text-sm text-muted-foreground mb-0">
-          A lead that looks cheap at top of funnel becomes expensive once you measure actual revenue and margin. That is why many companies focus on ***cost per lead marketing*** while missing the real metric: cost per closed profitable job.
+          A lead that looks cheap at top of funnel becomes expensive once you measure actual revenue and margin. That is why many companies focus on <strong>cost per lead marketing</strong> while missing the real metric: cost per closed profitable job.
         </p>
       </div>
 
@@ -1853,7 +1869,7 @@ function BuyingLeadsTampaArticle() {
         </ul>
       </div>
       <p>
-        That means you do not have a marketing system. You have a rented faucet. A real ***growth marketing services*** system should build compounding value over time.
+        That means you do not have a marketing system. You have a rented faucet. A real <strong>growth marketing services</strong> system should build compounding value over time.
       </p>
       <p>Bought leads do not build:</p>
       <ul className="space-y-2 list-none p-0">
@@ -1867,10 +1883,10 @@ function BuyingLeadsTampaArticle() {
       <p>Every month starts from zero. For businesses around Tampa Bay, that is a weak position to scale from.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Own Your Growth?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established Tampa Bay businesses build branded ***lead generation*** systems that compound over time — not rented lead lists that reset every month.
+          We help established Tampa Bay businesses build branded <strong>lead generation</strong> systems that compound over time — not rented lead lists that reset every month.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -1895,7 +1911,7 @@ function BuyingLeadsTampaArticle() {
         </ul>
       </div>
       <p>
-        <strong>Best known beats best.</strong> Strong ***branding agency*** execution does not replace performance — it multiplies it. The businesses that win combine visibility, trust, speed, process, and conversion systems.
+        <strong>Best known beats best.</strong> Strong <strong>branding agency</strong> execution does not replace performance — it multiplies it. The businesses that win combine visibility, trust, speed, process, and conversion systems.
       </p>
 
       {/* Section 7 */}
@@ -1925,7 +1941,7 @@ function BuyingLeadsTampaArticle() {
         🎯 What to Build Instead: Your Own Branded Acquisition System
       </h2>
       <p>
-        Stopping lead buying does not mean stopping growth investment. It means changing the model: move from renting prospects to owning the ***client acquisition*** engine.
+        Stopping lead buying does not mean stopping growth investment. It means changing the model: move from renting prospects to owning the <strong>client acquisition</strong> engine.
       </p>
 
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
@@ -1935,7 +1951,7 @@ function BuyingLeadsTampaArticle() {
           <li>✅ <Link to="/services/ads-management" className="text-primary hover:underline">Facebook Ads</Link> for local awareness and retargeting</li>
           <li>✅ <Link to="/services/website-creation" className="text-primary hover:underline">Branded landing pages</Link> built around your offer and proof</li>
           <li>✅ <Link to="/services/video-shooting" className="text-primary hover:underline">Video ads creation</Link> — founder videos, testimonials, walkthroughs</li>
-          <li>✅ ***Lead generation funnel*** with structured follow-up</li>
+          <li>✅ <strong>Lead generation funnel</strong> with structured follow-up</li>
           <li>✅ CRM tracking from lead to sale</li>
           <li>✅ Premium appointment workflows</li>
         </ul>
@@ -1943,11 +1959,11 @@ function BuyingLeadsTampaArticle() {
 
       <h3>🔧 1. Paid Traffic Under Your Brand</h3>
       <p>
-        Use a ***paid advertising agency*** or ***google ads agency*** approach to drive intent-based traffic into your ecosystem. The goal is not just clicks — it is branded demand, better-fit prospects, and stronger local recognition.
+        Use a <strong>paid advertising agency</strong> or <strong>google ads agency</strong> approach to drive intent-based traffic into your ecosystem. The goal is not just clicks — it is branded demand, better-fit prospects, and stronger local recognition.
       </p>
 
       <h3>🔧 2. A Real Lead Generation Funnel</h3>
-      <p>A proper ***lead generation funnel*** should include:</p>
+      <p>A proper <strong>lead generation funnel</strong> should include:</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✔️ Clear offer positioning</li>
@@ -1957,24 +1973,24 @@ function BuyingLeadsTampaArticle() {
           <li>✔️ Tracking by source and outcome</li>
         </ul>
       </div>
-      <p>Without funnel structure, you just buy traffic and lose efficiency. This is where ***sales funnel agency*** logic matters.</p>
+      <p>Without funnel structure, you just buy traffic and lose efficiency. This is where <strong>sales funnel agency</strong> logic matters.</p>
 
       <h3>🔧 3. Conversion-Focused Landing Pages</h3>
       <p>
-        A high-converting page should quickly answer: who you help, what you do, why someone should trust you, and what happens next. This is where ***landing page optimization*** and ***conversion rate optimization*** directly affect revenue.
+        A high-converting page should quickly answer: who you help, what you do, why someone should trust you, and what happens next. This is where <strong>landing page optimization</strong> and <strong>conversion rate optimization</strong> directly affect revenue.
       </p>
 
       <h3>🔧 4. Creative That Makes the Brand Memorable</h3>
       <p>In 2026, attention goes to brands that feel real:</p>
       <ul className="space-y-2 list-none p-0">
-        <li>✅ ***Short form video ads***</li>
+        <li>✅ <strong>Short form video ads</strong></li>
         <li>✅ Founder or team videos</li>
         <li>✅ Real customer proof</li>
         <li>✅ Visual trust cues</li>
         <li>✅ Local market positioning</li>
       </ul>
       <p>
-        This is where a ***video marketing agency*** or ***video production agency*** helps. Visibility is not accidental — it is engineered.
+        This is where a <strong>video marketing agency</strong> or <strong>video production agency</strong> helps. Visibility is not accidental — it is engineered.
       </p>
 
       <h3>🔧 5. Premium Follow-Up and Appointment Handling</h3>
@@ -2023,7 +2039,7 @@ function BuyingLeadsTampaArticle() {
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">What is better than buying leads?</h4>
           <p className="m-0 text-muted-foreground">
-            A branded ***customer acquisition*** system built through <Link to="/services/ads-management" className="text-primary hover:underline">paid traffic</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">high-converting landing pages</Link>, remarketing, <Link to="/services/video-shooting" className="text-primary hover:underline">premium creative</Link>, and structured follow-up.
+            A branded <strong>customer acquisition</strong> system built through <Link to="/services/ads-management" className="text-primary hover:underline">paid traffic</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">high-converting landing pages</Link>, remarketing, <Link to="/services/video-shooting" className="text-primary hover:underline">premium creative</Link>, and structured follow-up.
           </p>
         </div>
         <div className="glass-card">
@@ -2035,7 +2051,7 @@ function BuyingLeadsTampaArticle() {
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">What should a Tampa business focus on instead of lead buying?</h4>
           <p className="m-0 text-muted-foreground">
-            Focus on branded traffic, ***lead generation services*** under your own name, premium appointment experience, SMS and WhatsApp follow-up, conversion-focused pages, remarketing, and local authority building.
+            Focus on branded traffic, <strong>lead generation services</strong> under your own name, premium appointment experience, SMS and WhatsApp follow-up, conversion-focused pages, remarketing, and local authority building.
           </p>
         </div>
       </div>
@@ -2054,10 +2070,10 @@ function BuyingLeadsTampaArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Branded Growth Engine in Tampa Bay</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established businesses build predictable, brand-led ***lead generation*** systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
+          We help established businesses build predictable, brand-led <strong>lead generation</strong> systems — from <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> to <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> to <Link to="/services/video-shooting" className="text-primary hover:underline">video</Link> to CRM.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="btn-hero-primary">
@@ -2079,7 +2095,7 @@ function RenovationLeadsArticle() {
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Buying leads looks efficient. In practice, it usually wrecks margin, weakens your brand, and keeps your sales team stuck chasing low-intent prospects. 
-          If you run a renovation company doing $1M+, this article explains why a ***home service marketing agency*** approach built on owned assets will always outperform rented lead lists — and what to build instead.
+          If you run a renovation company doing $1M+, this article explains why a <strong>home service marketing agency</strong> approach built on owned assets will always outperform rented lead lists — and what to build instead.
         </p>
       </div>
 
@@ -2151,7 +2167,7 @@ function RenovationLeadsArticle() {
         <li>⚠️ The conversation starts with price pressure</li>
         <li>⚠️ Your team spends time chasing people already comparing quotes</li>
       </ul>
-      <p>This is not a sales problem. It is a bad ***customer acquisition*** model.</p>
+      <p>This is not a sales problem. It is a bad <strong>customer acquisition</strong> model.</p>
 
       {/* Example Card */}
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
@@ -2189,7 +2205,7 @@ function RenovationLeadsArticle() {
       <p>
         The best prospects do not convert on sketchy or generic forms. The stronger homeowners tend to respond to businesses that look credible, visible, and established.
       </p>
-      <p>So when you buy leads, you often attract colder prospects, more hesitant buyers, lower-trust conversations, and more price-sensitive deals. That is bad ***lead generation services*** economics.</p>
+      <p>So when you buy leads, you often attract colder prospects, more hesitant buyers, lower-trust conversations, and more price-sensitive deals. That is bad <strong>lead generation services</strong> economics.</p>
 
       {/* Section 4 */}
       <h2 id="margin-destruction" className="flex items-center gap-3">
@@ -2230,15 +2246,15 @@ function RenovationLeadsArticle() {
           </div>
         </div>
         <p className="mt-4 text-sm text-muted-foreground mb-0">
-          A lead that looks cheap at top of funnel becomes expensive once you measure actual revenue and margin. That is why many companies complain about ***cost per lead marketing*** while missing the real metric: cost per closed profitable job.
+          A lead that looks cheap at top of funnel becomes expensive once you measure actual revenue and margin. That is why many companies complain about <strong>cost per lead marketing</strong> while missing the real metric: cost per closed profitable job.
         </p>
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Stop Renting Leads?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established renovation and home service businesses build their own ***lead generation*** engine — with predictable results and real margin.
+          We help established renovation and home service businesses build their own <strong>lead generation</strong> engine — with predictable results and real margin.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -2259,7 +2275,7 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        That means you do not have a marketing system. You have a paid tap. A real ***growth marketing services*** system should keep building value over time. Bought leads do the opposite.
+        That means you do not have a marketing system. You have a paid tap. A real <strong>growth marketing services</strong> system should keep building value over time. Bought leads do the opposite.
       </p>
       <p>You do not build:</p>
       <ul className="space-y-2 list-none p-0">
@@ -2289,7 +2305,7 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        This is often the hidden answer behind ***why ads are not working*** or why the sales team says "the leads are bad." The issue is usually not demand alone. It is the system behind the lead.
+        This is often the hidden answer behind <strong>why ads are not working</strong> or why the sales team says "the leads are bad." The issue is usually not demand alone. It is the system behind the lead.
       </p>
 
       {/* Section 7 - What to Do Instead */}
@@ -2332,7 +2348,7 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        Include local proof, before/after visuals, reviews, offer clarity, financing details, and a short form with a clear CTA. This is where ***landing page optimization*** and ***conversion rate optimization*** directly affect revenue.
+        Include local proof, before/after visuals, reviews, offer clarity, financing details, and a short form with a clear CTA. This is where <strong>landing page optimization</strong> and <strong>conversion rate optimization</strong> directly affect revenue.
       </p>
 
       <h3>🔧 3. Creative That Builds Trust Before the Sales Call</h3>
@@ -2346,7 +2362,7 @@ function RenovationLeadsArticle() {
         <li>✅ Before/after transformations</li>
         <li>✅ Simple explanation of process and guarantees</li>
       </ul>
-      <p>Good ***video content creation*** pre-sells the prospect before your rep even calls.</p>
+      <p>Good <strong>video content creation</strong> pre-sells the prospect before your rep even calls.</p>
 
       <h3>🔧 4. Follow-Up That Matches Lead Speed</h3>
       <p>Even good leads die with bad process. Minimum standard:</p>
@@ -2372,7 +2388,7 @@ function RenovationLeadsArticle() {
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
         <h3 className="text-xl font-bold mb-3 mt-0">📌 Bottom Line</h3>
         <p className="mb-0">
-          Buying renovation leads can fill short-term gaps. It does not create durable growth. If you want to scale a serious home service business in 2026, the goal is not to buy more names. The goal is to own the full path from traffic to trust to booked appointment to closed revenue. That is how real ***lead generation services*** should work.
+          Buying renovation leads can fill short-term gaps. It does not create durable growth. If you want to scale a serious home service business in 2026, the goal is not to buy more names. The goal is to own the full path from traffic to trust to booked appointment to closed revenue. That is how real <strong>lead generation services</strong> should work.
         </p>
       </div>
 
@@ -2397,7 +2413,7 @@ function RenovationLeadsArticle() {
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">What is better than buying leads for contractors?</h4>
           <p className="m-0 text-muted-foreground">
-            Building your own ***contractor marketing agency***-grade system with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, branded <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link>, strong <Link to="/services/video-shooting" className="text-primary hover:underline">creative</Link>, and structured follow-up.
+            Building your own <strong>contractor marketing agency</strong>-grade system with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, branded <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link>, strong <Link to="/services/video-shooting" className="text-primary hover:underline">creative</Link>, and structured follow-up.
           </p>
         </div>
         <div className="glass-card">
@@ -2431,10 +2447,10 @@ function RenovationLeadsArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Own Growth Engine</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established businesses build predictable, branded ***lead generation*** systems — from paid ads to landing pages to video to CRM.
+          We help established businesses build predictable, branded <strong>lead generation</strong> systems — from paid ads to landing pages to video to CRM.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="btn-hero-primary">
@@ -2455,7 +2471,7 @@ function DigitalAcquisitionTimelineArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Most Tampa Bay businesses expect paid marketing to work too fast. That is usually the first mistake. Digital acquisition can generate traction quickly, but predictable results come from testing, learning, fixing conversion leaks, and building a full ***customer acquisition*** system. This article breaks down realistic timelines, lead costs, appointment costs, and what to actually measure.
+          Most Tampa Bay businesses expect paid marketing to work too fast. That is usually the first mistake. Digital acquisition can generate traction quickly, but predictable results come from testing, learning, fixing conversion leaks, and building a full <strong>customer acquisition</strong> system. This article breaks down realistic timelines, lead costs, appointment costs, and what to actually measure.
         </p>
       </div>
 
@@ -2530,7 +2546,7 @@ function DigitalAcquisitionTimelineArticle() {
           <li>✔️ Which channel produces better sales quality</li>
         </ul>
       </div>
-      <p>This is why businesses often think ads are failing when they are really just early. A strong ***lead generation agency*** or ***paid advertising agency*** knows the first job is not "spend more." It is "find signal fast."</p>
+      <p>This is why businesses often think ads are failing when they are really just early. A strong <strong>lead generation agency</strong> or <strong>paid advertising agency</strong> knows the first job is not "spend more." It is "find signal fast."</p>
 
       {/* First 30 Days */}
       <h2 id="first-30-dat" className="flex items-center gap-3">
@@ -2548,7 +2564,7 @@ function DigitalAcquisitionTimelineArticle() {
           <li>✔️ Tightening follow-up</li>
         </ul>
       </div>
-      <p>At this stage, the goal is not perfect ***roi of paid ads***. The goal is to answer: Are we attracting the right people? Are they converting? Are they qualified? Are they booking?</p>
+      <p>At this stage, the goal is not perfect <strong>roi of paid ads</strong>. The goal is to answer: Are we attracting the right people? Are they converting? Are they qualified? Are they booking?</p>
       <p>If you cannot answer those, you do not have a performance problem yet. You have a visibility problem.</p>
 
       {/* Meta Ads */}
@@ -2603,10 +2619,10 @@ function DigitalAcquisitionTimelineArticle() {
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want a Realistic Acquisition Plan for Your Business?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established Tampa Bay businesses build ***paid ads management*** systems across Google and Facebook — with real timelines and ***conversion rate optimization*** baked in.
+          We help established Tampa Bay businesses build <strong>paid ads management</strong> systems across Google and Facebook — with real timelines and <strong>conversion rate optimization</strong> baked in.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -2635,7 +2651,7 @@ function DigitalAcquisitionTimelineArticle() {
       <h2 id="wrong-diagnosis-dat" className="flex items-center gap-3">
         🔴 6. Why "Ads Are Not Working" Is Usually the Wrong Diagnosis
       </h2>
-      <p>When businesses say ***ads are not working***, the real issue is often one of these:</p>
+      <p>When businesses say <strong>ads are not working</strong>, the real issue is often one of these:</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <ul className="space-y-2 list-none p-0 m-0">
           <li>👉 Poor offer positioning</li>
@@ -2648,7 +2664,7 @@ function DigitalAcquisitionTimelineArticle() {
           <li>👉 Not enough budget to learn</li>
         </ul>
       </div>
-      <p>That is why a ***digital marketing agency tampa*** businesses trust should not just run media. It should manage the full path from click to lead to appointment to pipeline.</p>
+      <p>That is why a <strong>digital marketing agency tampa</strong> businesses trust should not just run media. It should manage the full path from click to lead to appointment to pipeline.</p>
 
       {/* Full System */}
       <h2 id="full-system-dat" className="flex items-center gap-3">
@@ -2677,7 +2693,7 @@ function DigitalAcquisitionTimelineArticle() {
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <p className="mb-3 font-semibold text-primary text-lg">Best known beats best.</p>
         <p className="text-muted-foreground mb-0">
-          That is why early paid acquisition is not just about immediate leads. It is also about visibility, trust, repeated exposure, market familiarity, and ***brand positioning services***. This is especially powerful for Tampa-based businesses competing in crowded local categories.
+          That is why early paid acquisition is not just about immediate leads. It is also about visibility, trust, repeated exposure, market familiarity, and <strong>brand positioning services</strong>. This is especially powerful for Tampa-based businesses competing in crowded local categories.
         </p>
       </div>
 
@@ -2706,7 +2722,7 @@ function DigitalAcquisitionTimelineArticle() {
             </ul>
           </div>
         </div>
-        <p className="mt-4 text-sm text-muted-foreground mb-0">Together, they create a more complete ***customer acquisition*** system. That is why many businesses should not think in channels — they should think in ***marketing funnel services***.</p>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">Together, they create a more complete <strong>customer acquisition</strong> system. That is why many businesses should not think in channels — they should think in <strong>marketing funnel services</strong>.</p>
       </div>
 
       {/* 90-Day Framework */}
@@ -2721,7 +2737,7 @@ function DigitalAcquisitionTimelineArticle() {
             <li>✔️ Audience feedback</li>
             <li>✔️ Lead flow</li>
             <li>✔️ Tracking fixes</li>
-            <li>✔️ First ***conversion rate optimization*** improvements</li>
+            <li>✔️ First <strong>conversion rate optimization</strong> improvements</li>
           </ul>
         </div>
         <div className="bg-secondary/30 border border-border rounded-2xl p-6">
@@ -2729,7 +2745,7 @@ function DigitalAcquisitionTimelineArticle() {
           <ul className="space-y-1 list-none p-0 m-0 text-sm">
             <li>✔️ Improving lead quality</li>
             <li>✔️ Cutting weak segments</li>
-            <li>✔️ Improving ***high converting landing pages***</li>
+            <li>✔️ Improving <strong>high converting landing pages</strong></li>
             <li>✔️ Tightening follow-up</li>
             <li>✔️ Understanding cost per appointment</li>
           </ul>
@@ -2738,10 +2754,10 @@ function DigitalAcquisitionTimelineArticle() {
           <h4 className="font-bold mb-3 mt-0">Days 60 to 90</h4>
           <ul className="space-y-1 list-none p-0 m-0 text-sm">
             <li>✔️ Scaling stronger campaigns</li>
-            <li>✔️ Improving ***customer acquisition*** efficiency</li>
+            <li>✔️ Improving <strong>customer acquisition</strong> efficiency</li>
             <li>✔️ Comparing channels</li>
             <li>✔️ Tying marketing to revenue</li>
-            <li>✔️ Building more predictable ***pipeline generation services***</li>
+            <li>✔️ Building more predictable <strong>pipeline generation services</strong></li>
           </ul>
         </div>
       </div>
@@ -2751,7 +2767,7 @@ function DigitalAcquisitionTimelineArticle() {
       <h2 id="measure-dat" className="flex items-center gap-3">
         🎯 11. What Tampa Bay Businesses Should Actually Measure
       </h2>
-      <p>Do not stop at ***cost per lead marketing*** numbers.</p>
+      <p>Do not stop at <strong>cost per lead marketing</strong> numbers.</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">Track:</p>
         <ul className="space-y-2 list-none p-0 m-0">
@@ -2761,7 +2777,7 @@ function DigitalAcquisitionTimelineArticle() {
           <li>✔️ Appointment-to-sale rate</li>
           <li>✔️ Cost per acquisition</li>
           <li>✔️ Revenue per channel</li>
-          <li>✔️ ***ROI of paid ads***</li>
+          <li>✔️ <strong>ROI of paid ads</strong></li>
         </ul>
       </div>
       <p>A business that only looks at lead count makes bad decisions fast. A business that looks at qualified pipeline makes better decisions slower — and wins bigger.</p>
@@ -2798,10 +2814,10 @@ function DigitalAcquisitionTimelineArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Build a Real Acquisition System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help Tampa Bay businesses launch <Link to="/services/ads-management" className="text-primary hover:underline">Google and Meta campaigns</Link> designed for qualified ***lead generation services*** — with proper timelines, tracking, and follow-up built in.
+          We help Tampa Bay businesses launch <Link to="/services/ads-management" className="text-primary hover:underline">Google and Meta campaigns</Link> designed for qualified <strong>lead generation services</strong> — with proper timelines, tracking, and follow-up built in.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -2832,7 +2848,7 @@ function DigitalAcquisitionTimelineArticle() {
         </div>
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
           <h4 className="font-bold mb-2 mt-0">Should a business run both Google Ads and Facebook Ads?</h4>
-          <p className="text-muted-foreground mb-0">Usually yes. Google captures active demand while Meta builds familiarity and supports retargeting. Together they create a stronger ***customer acquisition*** system.</p>
+          <p className="text-muted-foreground mb-0">Usually yes. Google captures active demand while Meta builds familiarity and supports retargeting. Together they create a stronger <strong>customer acquisition</strong> system.</p>
         </div>
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
           <h4 className="font-bold mb-2 mt-0">Why do ads fail even when the budget is right?</h4>
@@ -2849,7 +2865,7 @@ function ChooseAgencyArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Most businesses do not need another agency that talks well. They need a team that understands their market, produces strong creative, and helps turn traffic into real customers. If you are hiring a ***digital marketing agency tampa*** businesses rely on, this guide shows you exactly what to look for — and what to avoid.
+          Most businesses do not need another agency that talks well. They need a team that understands their market, produces strong creative, and helps turn traffic into real customers. If you are hiring a <strong>digital marketing agency tampa</strong> businesses rely on, this guide shows you exactly what to look for — and what to avoid.
         </p>
       </div>
 
@@ -2899,7 +2915,7 @@ function ChooseAgencyArticle() {
       <h2 id="no-template-ca" className="flex items-center gap-3">
         🔴 2. Do Not Hire an Agency That Treats Every Business the Same
       </h2>
-      <p>A serious ***tampa digital marketing agency*** should not force every client into the same playbook. Your business is not a template.</p>
+      <p>A serious <strong>tampa digital marketing agency</strong> should not force every client into the same playbook. Your business is not a template.</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">A good agency should understand:</p>
         <ul className="space-y-2 list-none p-0 m-0">
@@ -2925,18 +2941,18 @@ function ChooseAgencyArticle() {
             <li>✅ Local service businesses</li>
             <li>✅ B2B companies</li>
             <li>✅ Established SMBs</li>
-            <li>✅ ***Lead generation services***</li>
+            <li>✅ <strong>Lead generation services</strong></li>
           </ul>
           <ul className="space-y-1 list-none p-0 m-0 text-sm">
-            <li>✅ ***Paid ads management***</li>
-            <li>✅ ***Website conversion optimization***</li>
-            <li>✅ ***Sales funnel*** design</li>
-            <li>✅ ***Creative agency services***</li>
+            <li>✅ <strong>Paid ads management</strong></li>
+            <li>✅ <strong>Website conversion optimization</strong></li>
+            <li>✅ <strong>Sales funnel</strong> design</li>
+            <li>✅ <strong>Creative agency services</strong></li>
           </ul>
         </div>
       </div>
-      <p>If they have worked with businesses similar to yours, they will understand things like lead quality vs. lead volume, booking friction, follow-up gaps, quote-to-close rates, and ***why ads are not working***.</p>
-      <p>That is what separates a real ***lead generation agency*** from an agency that just sells activity.</p>
+      <p>If they have worked with businesses similar to yours, they will understand things like lead quality vs. lead volume, booking friction, follow-up gaps, quote-to-close rates, and <strong>why ads are not working</strong>.</p>
+      <p>That is what separates a real <strong>lead generation agency</strong> from an agency that just sells activity.</p>
 
       {/* Section 4 */}
       <h2 id="content-ca" className="flex items-center gap-3">
@@ -2949,13 +2965,13 @@ function ChooseAgencyArticle() {
           <li>✔️ Original website copy</li>
           <li>✔️ Strong ad creative</li>
           <li>✔️ Brand-relevant messaging</li>
-          <li>✔️ Real customer-facing ***video content creation***</li>
-          <li>✔️ Sales-driven ***high converting landing pages***</li>
+          <li>✔️ Real customer-facing <strong>video content creation</strong></li>
+          <li>✔️ Sales-driven <strong>high converting landing pages</strong></li>
           <li>✔️ Useful local content</li>
           <li>✔️ Case-study style assets that build trust</li>
         </ul>
       </div>
-      <p>For Tampa Bay businesses, this matters even more when buyers are comparing multiple providers online. Generic content makes you forgettable. Better ***brand positioning services*** make you easier to trust.</p>
+      <p>For Tampa Bay businesses, this matters even more when buyers are comparing multiple providers online. Generic content makes you forgettable. Better <strong>brand positioning services</strong> make you easier to trust.</p>
 
       {/* Section 5 */}
       <h2 id="questions-ca" className="flex items-center gap-3">
@@ -2974,13 +2990,13 @@ function ChooseAgencyArticle() {
           <li>👉 What do you use AI for, and what do you not use it for?</li>
         </ul>
       </div>
-      <p>If you want better leads, better ***conversion rate optimization***, and better brand perception, the agency needs to know how to turn your actual business into strong marketing assets.</p>
+      <p>If you want better leads, better <strong>conversion rate optimization</strong>, and better brand perception, the agency needs to know how to turn your actual business into strong marketing assets.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Looking for a Tampa Agency That Actually Delivers?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established businesses build ***customer acquisition*** systems through <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">websites</Link>, funnels, and <Link to="/services/video-shooting" className="text-primary hover:underline">creative production</Link>.
+          We help established businesses build <strong>customer acquisition</strong> systems through <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">websites</Link>, funnels, and <Link to="/services/video-shooting" className="text-primary hover:underline">creative production</Link>.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -2993,9 +3009,9 @@ function ChooseAgencyArticle() {
       </h2>
       <p>A lot of agencies are decent at getting attention. Far fewer are good at turning attention into revenue.</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
-        <p className="font-semibold mb-3">A capable ***paid advertising agency*** or ***google ads agency*** should care about:</p>
+        <p className="font-semibold mb-3">A capable <strong>paid advertising agency</strong> or <strong>google ads agency</strong> should care about:</p>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✔️ ***Landing page optimization***</li>
+          <li>✔️ <strong>Landing page optimization</strong></li>
           <li>✔️ Form structure</li>
           <li>✔️ Call handling</li>
           <li>✔️ Speed to lead</li>
@@ -3005,7 +3021,7 @@ function ChooseAgencyArticle() {
           <li>✔️ Sales pipeline handoff</li>
         </ul>
       </div>
-      <p>If they are only focused on media buying, you are only getting part of the solution. Good growth comes from the full system. That is why the best agencies also think like a ***sales funnel agency***, not just an ad manager.</p>
+      <p>If they are only focused on media buying, you are only getting part of the solution. Good growth comes from the full system. That is why the best agencies also think like a <strong>sales funnel agency</strong>, not just an ad manager.</p>
 
       {/* Section 7 */}
       <h2 id="proof-ca" className="flex items-center gap-3">
@@ -3018,14 +3034,14 @@ function ChooseAgencyArticle() {
           <li>✔️ Landing pages</li>
           <li>✔️ Website pages</li>
           <li>✔️ Ad creatives</li>
-          <li>✔️ ***Video ads creation*** examples</li>
+          <li>✔️ <strong>Video ads creation</strong> examples</li>
           <li>✔️ Messaging angles</li>
           <li>✔️ Email sequences</li>
           <li>✔️ Reporting examples</li>
-          <li>✔️ ***Funnel building services*** strategy examples</li>
+          <li>✔️ <strong>Funnel building services</strong> strategy examples</li>
         </ul>
       </div>
-      <p>You are not just hiring for ideas. You are hiring for output. A strong ***website design agency*** or ***video marketing agency*** should show work that looks sharp, feels credible, and is clearly built to convert.</p>
+      <p>You are not just hiring for ideas. You are hiring for output. A strong <strong>website design agency</strong> or <strong>video marketing agency</strong> should show work that looks sharp, feels credible, and is clearly built to convert.</p>
 
       {/* Section 8 */}
       <h2 id="challenge-ca" className="flex items-center gap-3">
@@ -3039,7 +3055,7 @@ function ChooseAgencyArticle() {
           <li>⚠️ Your website is leaking conversions</li>
           <li>⚠️ Your ad creative is bland</li>
           <li>⚠️ Your follow-up process is too slow</li>
-          <li>⚠️ Your ***brand positioning services*** are unclear</li>
+          <li>⚠️ Your <strong>brand positioning services</strong> are unclear</li>
           <li>⚠️ Your sales process is hurting close rates</li>
           <li>⚠️ Your budget is spread too thin across channels</li>
         </ul>
@@ -3054,22 +3070,22 @@ function ChooseAgencyArticle() {
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
         <p className="font-semibold mb-3 text-primary">They should combine:</p>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✅ ***Marketing strategy services***</li>
-          <li>✅ ***Creative agency services***</li>
-          <li>✅ ***Paid ads management***</li>
-          <li>✅ ***Conversion focused web design***</li>
-          <li>✅ ***Conversion rate optimization***</li>
-          <li>✅ ***Lead generation services***</li>
+          <li>✅ <strong>Marketing strategy services</strong></li>
+          <li>✅ <strong>Creative agency services</strong></li>
+          <li>✅ <strong>Paid ads management</strong></li>
+          <li>✅ <strong>Conversion focused web design</strong></li>
+          <li>✅ <strong>Conversion rate optimization</strong></li>
+          <li>✅ <strong>Lead generation services</strong></li>
         </ul>
       </div>
       <p>Not more noise. Not more filler. Not another agency selling dashboards. They need a team that can help them acquire customers more predictably.</p>
 
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <h4 className="font-bold mb-3 mt-0">Final Filter Before You Sign</h4>
-        <p className="mb-3">Before hiring any ***digital marketing agency for small businesses*** or established local brand, ask yourself one question:</p>
+        <p className="mb-3">Before hiring any <strong>digital marketing agency for small businesses</strong> or established local brand, ask yourself one question:</p>
         <p className="font-semibold text-primary text-lg mb-0">Do they understand our business well enough to create marketing that could not belong to anyone else?</p>
       </div>
-      <p>If the answer is no, keep looking. The agencies that drive real growth do not just make content — they build market-specific positioning, stronger ***customer acquisition services***, and better conversion paths.</p>
+      <p>If the answer is no, keep looking. The agencies that drive real growth do not just make content — they build market-specific positioning, stronger <strong>customer acquisition services</strong>, and better conversion paths.</p>
 
       {/* Related Articles */}
       <div className="glass-card my-8">
@@ -3088,10 +3104,10 @@ function ChooseAgencyArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Work With an Agency That Gets Results?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We are a ***tampa digital marketing agency*** built for established businesses that want predictable ***client acquisition*** — through ads, funnels, websites, and creative.
+          We are a <strong>tampa digital marketing agency</strong> built for established businesses that want predictable <strong>client acquisition</strong> — through ads, funnels, websites, and creative.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -3165,18 +3181,18 @@ function LeadQualificationArticle() {
       <h2 id="why-lq" className="flex items-center gap-3">
         🎯 Why Lead Qualification Matters
       </h2>
-      <p>If your business runs Google Ads, Meta ads, landing pages, or any kind of ***lead generation funnel***, you need a clear way to separate people who are just browsing from people who are ready to take action now.</p>
+      <p>If your business runs Google Ads, Meta ads, landing pages, or any kind of <strong>lead generation funnel</strong>, you need a clear way to separate people who are just browsing from people who are ready to take action now.</p>
       <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
         <h4 className="font-bold mb-3 mt-0">Without that system, the usual problems show up fast:</h4>
         <ul className="space-y-2 list-none p-0 m-0">
           <li>❌ Sales wastes time chasing weak leads</li>
           <li>❌ Good leads get slow follow-up</li>
           <li>❌ Your close rate stays inconsistent</li>
-          <li>❌ Your ***cost per lead marketing*** looks acceptable, but cost per customer is terrible</li>
+          <li>❌ Your <strong>cost per lead marketing</strong> looks acceptable, but cost per customer is terrible</li>
           <li>❌ You blame the ads when the real issue is qualification</li>
         </ul>
       </div>
-      <p>This is where a serious ***lead generation agency*** or ***tampa digital marketing agency*** makes a real difference. Good marketing does not stop at generating interest — it builds the filtering, messaging, and follow-up process that turns traffic into qualified pipeline.</p>
+      <p>This is where a serious <strong>lead generation agency</strong> or <strong>tampa digital marketing agency</strong> makes a real difference. Good marketing does not stop at generating interest — it builds the filtering, messaging, and follow-up process that turns traffic into qualified pipeline.</p>
 
       {/* Level 1 */}
       <h2 id="level-1-lq" className="flex items-center gap-3">
@@ -3222,10 +3238,10 @@ function LeadQualificationArticle() {
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">Examples:</p>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>👉 A local law firm looking for ***lead generation services***</li>
-          <li>👉 A multi-location home service company that wants ***paid ads management***</li>
-          <li>👉 A ***manufacturing digital marketing agency*** prospect looking for a website redesign</li>
-          <li>👉 A medical practice in Tampa Bay looking for better ***customer acquisition***</li>
+          <li>👉 A local law firm looking for <strong>lead generation services</strong></li>
+          <li>👉 A multi-location home service company that wants <strong>paid ads management</strong></li>
+          <li>👉 A <strong>manufacturing digital marketing agency</strong> prospect looking for a website redesign</li>
+          <li>👉 A medical practice in Tampa Bay looking for better <strong>customer acquisition</strong></li>
         </ul>
       </div>
       <p>This step matters because plenty of leads show interest but were never a fit in the first place.</p>
@@ -3250,8 +3266,8 @@ function LeadQualificationArticle() {
         <ul className="space-y-2 list-none p-0 m-0 italic text-foreground/80">
           <li>"Our ads are running, but we're not getting qualified calls."</li>
           <li>"We need more booked appointments, not just traffic."</li>
-          <li>"Our website gets visits, but ***conversion rate*** is weak."</li>
-          <li>"We've tried agencies before and need a system that actually tracks ***ROI of paid ads***."</li>
+          <li>"Our website gets visits, but <strong>conversion rate</strong> is weak."</li>
+          <li>"We've tried agencies before and need a system that actually tracks <strong>ROI of paid ads</strong>."</li>
         </ul>
       </div>
       <p>At this stage, the lead should move into a real sales process — discovery call, audit, strategy call, or proposal process. This is also where many businesses realize the problem is not only lead volume — it is lead quality, conversion process, or sales follow-up.</p>
@@ -3266,7 +3282,7 @@ function LeadQualificationArticle() {
         <ul className="space-y-2 list-none p-0 m-0 italic text-foreground/80">
           <li>"We want to start this month."</li>
           <li>"Can you send a proposal?"</li>
-          <li>"We need help with ***google ads management*** now."</li>
+          <li>"We need help with <strong>google ads management</strong> now."</li>
           <li>"We're ready to rebuild our funnel."</li>
           <li>"Can we book a meeting this week?"</li>
         </ul>
@@ -3284,10 +3300,10 @@ function LeadQualificationArticle() {
       <p>For local Tampa Bay businesses, this matters even more in competitive categories. The faster and cleaner your response, the more likely you are to win.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want Better Lead Quality From Your Campaigns?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help Tampa Bay businesses build ***lead generation services*** systems that filter, qualify, and convert — not just generate form fills.
+          We help Tampa Bay businesses build <strong>lead generation services</strong> systems that filter, qualify, and convert — not just generate form fills.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -3342,7 +3358,7 @@ function LeadQualificationArticle() {
           <li>✔️ Conversion tracking</li>
         </ul>
       </div>
-      <p>This is ***why ads are not working*** for many businesses — it is not the channel, it is a broken lead handling process.</p>
+      <p>This is <strong>why ads are not working</strong> for many businesses — it is not the channel, it is a broken lead handling process.</p>
       <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
         <h4 className="font-bold mb-3 mt-0">If campaigns generate leads but revenue is inconsistent, check these first:</h4>
         <ul className="space-y-2 list-none p-0 m-0">
@@ -3353,7 +3369,7 @@ function LeadQualificationArticle() {
           <li>⚠️ Are you measuring booked calls and closed deals, not just CPL?</li>
         </ul>
       </div>
-      <p>That is the difference between running ads and building a ***customer acquisition*** system.</p>
+      <p>That is the difference between running ads and building a <strong>customer acquisition</strong> system.</p>
 
       {/* Practice */}
       <h2 id="practice-lq" className="flex items-center gap-3">
@@ -3366,7 +3382,7 @@ function LeadQualificationArticle() {
           <ul className="space-y-1 list-none p-0 m-0 text-sm">
             <li>✔️ Clarify who you serve</li>
             <li>✔️ Make your offer more specific</li>
-            <li>✔️ Use stronger ***landing page optimization***</li>
+            <li>✔️ Use stronger <strong>landing page optimization</strong></li>
             <li>✔️ Add qualifying questions to forms</li>
             <li>✔️ Align ad messaging with buyer intent</li>
           </ul>
@@ -3390,12 +3406,12 @@ function LeadQualificationArticle() {
           </ul>
         </div>
       </div>
-      <p>A strong ***digital marketing agency for small businesses*** should be able to help with all three.</p>
+      <p>A strong <strong>digital marketing agency for small businesses</strong> should be able to help with all three.</p>
 
       {/* Bottom Line */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-12">
         <h3 className="text-xl font-bold mb-4 mt-0 text-primary">The Real Goal Is Not More Leads</h3>
-        <p className="mb-3">It is more qualified opportunities. The businesses that grow consistently are not the ones generating the most names in a spreadsheet. They are the ones with a better filter, faster follow-up, and a tighter ***sales funnel***.</p>
+        <p className="mb-3">It is more qualified opportunities. The businesses that grow consistently are not the ones generating the most names in a spreadsheet. They are the ones with a better filter, faster follow-up, and a tighter <strong>sales funnel</strong>.</p>
         <p className="mb-0 text-muted-foreground">Once your qualification system is clear, every part of your marketing gets easier to improve.</p>
       </div>
 
@@ -3416,7 +3432,7 @@ function LeadQualificationArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Fix Your Lead Quality?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with built-in lead qualification — so your sales team only talks to people worth talking to.
@@ -3529,7 +3545,7 @@ function SocialMediaLeadSpeedArticle() {
           </div>
         </div>
       </div>
-      <p>The longer you wait, the more likely the lead will ignore the call, forget the form, speak to another company, or lose buying intent. A strong ***facebook ads agency*** or ***lead generation agency*** should not just generate leads — it should help design the response process.</p>
+      <p>The longer you wait, the more likely the lead will ignore the call, forget the form, speak to another company, or lose buying intent. A strong <strong>facebook ads agency</strong> or <strong>lead generation agency</strong> should not just generate leads — it should help design the response process.</p>
 
       {/* Section 3 */}
       <h2 id="call-first-sl" className="flex items-center gap-3">
@@ -3577,7 +3593,7 @@ function SocialMediaLeadSpeedArticle() {
       </div>
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <p className="mb-3 font-semibold text-primary text-lg">Best known beats best.</p>
-        <p className="text-muted-foreground mb-0">If the prospect recognizes your brand, your contact rate improves. If they do not remember you, the lead feels colder immediately. This is why ***brand positioning services*** and local visibility compound over time.</p>
+        <p className="text-muted-foreground mb-0">If the prospect recognizes your brand, your contact rate improves. If they do not remember you, the lead feels colder immediately. This is why <strong>brand positioning services</strong> and local visibility compound over time.</p>
       </div>
 
       {/* Section 6 */}
@@ -3599,10 +3615,10 @@ function SocialMediaLeadSpeedArticle() {
       <p>That is not overkill. That is how serious businesses reduce no-shows and improve conversion.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need a Follow-Up System That Actually Converts?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help Tampa Bay businesses build ***customer acquisition*** systems that go beyond the click — with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, lead routing, and follow-up processes built for real appointments.
+          We help Tampa Bay businesses build <strong>customer acquisition</strong> systems that go beyond the click — with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, lead routing, and follow-up processes built for real appointments.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -3622,7 +3638,7 @@ function SocialMediaLeadSpeedArticle() {
           <li>🔵 <strong>Low intent:</strong> nurture, do not force</li>
         </ul>
       </div>
-      <p>This is where a strong ***sales funnel*** and lead handling process matters. If every lead gets the same response, your team wastes time and loses good opportunities. Read more about <Link to="/blog/lead-qualification-levels-tampa-bay-businesses" className="text-primary hover:underline">the 4 lead qualification levels</Link>.</p>
+      <p>This is where a strong <strong>sales funnel</strong> and lead handling process matters. If every lead gets the same response, your team wastes time and loses good opportunities. Read more about <Link to="/blog/lead-qualification-levels-tampa-bay-businesses" className="text-primary hover:underline">the 4 lead qualification levels</Link>.</p>
 
       {/* Section 8 */}
       <h2 id="structure-sl" className="flex items-center gap-3">
@@ -3651,13 +3667,13 @@ function SocialMediaLeadSpeedArticle() {
           <li>✔️ Follow-up cadence for non-responders</li>
         </ul>
       </div>
-      <p>That is where ***paid ads management*** connects with ***customer acquisition***. The ad generates attention. The process turns it into pipeline.</p>
+      <p>That is where <strong>paid ads management</strong> connects with <strong>customer acquisition</strong>. The ad generates attention. The process turns it into pipeline.</p>
 
       {/* Section 9 */}
       <h2 id="cpl-sl" className="flex items-center gap-3">
         ⚠️ 9. A Weak Response Process Makes Your CPL Look Worse Than It Is
       </h2>
-      <p>This is where businesses misread performance. They say "the leads are bad" or "***ads are not working***" when the real issue is simple:</p>
+      <p>This is where businesses misread performance. They say "the leads are bad" or "<strong>ads are not working</strong>" when the real issue is simple:</p>
       <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
         <ul className="space-y-2 list-none p-0 m-0">
           <li>⚠️ The team called too late</li>
@@ -3667,7 +3683,7 @@ function SocialMediaLeadSpeedArticle() {
         </ul>
       </div>
       <p>A $50 lead can become expensive if your team contacts it badly. A $70 lead can be extremely profitable if your response system is tight.</p>
-      <p>That is why ***cost per lead marketing*** alone is not enough. You have to measure cost per contact, cost per appointment, and cost per sale.</p>
+      <p>That is why <strong>cost per lead marketing</strong> alone is not enough. You have to measure cost per contact, cost per appointment, and cost per sale.</p>
 
       {/* Section 10 */}
       <h2 id="system-sl" className="flex items-center gap-3">
@@ -3708,7 +3724,7 @@ function SocialMediaLeadSpeedArticle() {
           </ul>
         </div>
       </div>
-      <p>This is the kind of system a serious ***digital marketing agency tampa*** partner should build. Not just ad clicks — full lead-to-appointment process.</p>
+      <p>This is the kind of system a serious <strong>digital marketing agency tampa</strong> partner should build. Not just ad clicks — full lead-to-appointment process.</p>
 
       {/* Bottom Line */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-12">
@@ -3742,10 +3758,10 @@ function SocialMediaLeadSpeedArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Turn More Leads Into Appointments?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with follow-up processes designed for real ***customer acquisition*** — not just form fills.
+          We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with follow-up processes designed for real <strong>customer acquisition</strong> — not just form fills.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -3864,12 +3880,12 @@ function GoogleVsFacebookPlatformArticle() {
         <ul className="space-y-2 list-none p-0 m-0">
           <li>❌ Low lead quality</li>
           <li>❌ Weak conversion rates</li>
-          <li>❌ Inflated ***cost per lead marketing***</li>
+          <li>❌ Inflated <strong>cost per lead marketing</strong></li>
           <li>❌ Poor follow-up performance</li>
-          <li>❌ The false belief that ***ads are not working***</li>
+          <li>❌ The false belief that <strong>ads are not working</strong></li>
         </ul>
       </div>
-      <p>Usually the problem is not the channel by itself. It is the match between platform, offer, audience, and funnel. That is exactly where a solid ***paid advertising agency*** or ***lead generation agency*** should be useful.</p>
+      <p>Usually the problem is not the channel by itself. It is the match between platform, offer, audience, and funnel. That is exactly where a solid <strong>paid advertising agency</strong> or <strong>lead generation agency</strong> should be useful.</p>
 
       {/* Section 3 */}
       <h2 id="google-best-gf" className="flex items-center gap-3">
@@ -3887,7 +3903,7 @@ function GoogleVsFacebookPlatformArticle() {
           <li>✔️ A team that can handle inbound leads well</li>
         </ul>
       </div>
-      <p>If you are hiring a ***google ads agency***, this is what they should be optimizing around. Not just clicks — actual lead flow and downstream conversion.</p>
+      <p>If you are hiring a <strong>google ads agency</strong>, this is what they should be optimizing around. Not just clicks — actual lead flow and downstream conversion.</p>
 
       {/* Section 4 */}
       <h2 id="meta-best-gf" className="flex items-center gap-3">
@@ -3895,13 +3911,13 @@ function GoogleVsFacebookPlatformArticle() {
       </h2>
       <p>Meta can work extremely well, but only when the offer and the creative are strong enough to stop attention and create interest.</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
-        <p className="font-semibold mb-3">A strong ***facebook ads agency*** should build ads around:</p>
+        <p className="font-semibold mb-3">A strong <strong>facebook ads agency</strong> should build ads around:</p>
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✔️ Pain points</li>
           <li>✔️ Transformation</li>
           <li>✔️ Proof and authority</li>
           <li>✔️ Local relevance</li>
-          <li>✔️ ***Short form video ads***</li>
+          <li>✔️ <strong>Short form video ads</strong></li>
           <li>✔️ Clear calls to action</li>
         </ul>
       </div>
@@ -3931,15 +3947,15 @@ function GoogleVsFacebookPlatformArticle() {
               <li>✅ Retargeting</li>
               <li>✅ Offer education</li>
               <li>✅ Social proof</li>
-              <li>✅ ***Video ads creation***-led trust building</li>
+              <li>✅ <strong>Video ads creation</strong>-led trust building</li>
             </ul>
           </div>
         </div>
-        <p className="mt-4 text-sm text-muted-foreground mb-0">This is where good ***paid ads management*** becomes real strategy, not channel babysitting.</p>
+        <p className="mt-4 text-sm text-muted-foreground mb-0">This is where good <strong>paid ads management</strong> becomes real strategy, not channel babysitting.</p>
       </div>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Not Sure Which Platform Fits Your Business?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses choose and execute the right <Link to="/services/ads-management" className="text-primary hover:underline">paid advertising strategy</Link> — Google, Meta, or both — based on your offer, market, and growth goals.
@@ -4012,7 +4028,7 @@ function GoogleVsFacebookPlatformArticle() {
           <li>✅ You already have strong customer proof and content</li>
         </ul>
       </div>
-      <p>For the right business, Meta can become a powerful ***customer acquisition services*** channel — but only if the offer and creative are good enough to carry the campaign.</p>
+      <p>For the right business, Meta can become a powerful <strong>customer acquisition services</strong> channel — but only if the offer and creative are good enough to carry the campaign.</p>
 
       {/* Section 10 */}
       <h2 id="not-working-gf" className="flex items-center gap-3">
@@ -4032,7 +4048,7 @@ function GoogleVsFacebookPlatformArticle() {
           <li>❌ No clear conversion tracking</li>
         </ul>
       </div>
-      <p>The better question is: Which platform fits our business model, our buyer behavior, and our current ability to convert leads? That is the question that leads to better ***roi of paid ads***.</p>
+      <p>The better question is: Which platform fits our business model, our buyer behavior, and our current ability to convert leads? That is the question that leads to better <strong>roi of paid ads</strong>.</p>
 
       {/* Section 11 */}
       <h2 id="recommendation-gf" className="flex items-center gap-3">
@@ -4058,13 +4074,13 @@ function GoogleVsFacebookPlatformArticle() {
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
           <h4 className="font-bold mb-3 mt-0">Use both if:</h4>
           <ul className="space-y-1 list-none p-0 m-0 text-sm">
-            <li>✔️ You want to build a full ***customer acquisition*** system</li>
+            <li>✔️ You want to build a full <strong>customer acquisition</strong> system</li>
             <li>✔️ You have enough budget to support funnel depth</li>
             <li>✔️ You are serious about scaling</li>
           </ul>
         </div>
       </div>
-      <p>The platform matters. But fit matters more. That is why the best businesses work with a ***lead generation agency*** or ***paid advertising agency*** that understands how the full system works — from click to close.</p>
+      <p>The platform matters. But fit matters more. That is why the best businesses work with a <strong>lead generation agency</strong> or <strong>paid advertising agency</strong> that understands how the full system works — from click to close.</p>
 
       {/* Related Articles */}
       <div className="glass-card my-8">
@@ -4083,10 +4099,10 @@ function GoogleVsFacebookPlatformArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Choose the Right Platform and Scale?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We are a ***tampa digital marketing agency*** that builds <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> for established businesses — Google, Meta, or both — designed for real ***customer acquisition***, not vanity metrics.
+          We are a <strong>tampa digital marketing agency</strong> that builds <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> for established businesses — Google, Meta, or both — designed for real <strong>customer acquisition</strong>, not vanity metrics.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -4174,7 +4190,7 @@ function RetargetingArticle() {
       </div>
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
         <p className="font-semibold text-primary text-lg mb-2">The first click creates awareness.</p>
-        <p className="mb-0">Retargeting creates repetition, trust, and action. That is where a real ***paid advertising agency*** earns its keep.</p>
+        <p className="mb-0">Retargeting creates repetition, trust, and action. That is where a real <strong>paid advertising agency</strong> earns its keep.</p>
       </div>
 
       {/* Section 2 */}
@@ -4185,14 +4201,14 @@ function RetargetingArticle() {
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">If your business is spending across:</p>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✔️ ***Google Ads***</li>
+          <li>✔️ <strong>Google Ads</strong></li>
           <li>✔️ Facebook and Instagram Ads</li>
           <li>✔️ YouTube</li>
           <li>✔️ Landing page traffic campaigns</li>
-          <li>✔️ ***Lead generation funnels***</li>
+          <li>✔️ <strong>Lead generation funnels</strong></li>
         </ul>
       </div>
-      <p>…then retargeting is one of the easiest ways to improve ***roi of paid ads*** without increasing top-of-funnel spend.</p>
+      <p>…then retargeting is one of the easiest ways to improve <strong>roi of paid ads</strong> without increasing top-of-funnel spend.</p>
 
       {/* Section 3 */}
       <h2 id="lose-prospects-rt" className="flex items-center gap-3">
@@ -4204,7 +4220,7 @@ function RetargetingArticle() {
         <ul className="space-y-2 list-none p-0 m-0">
           <li>❌ "Our ads are getting clicks, but not enough leads."</li>
           <li>❌ "We get traffic, but conversion is weak."</li>
-          <li>❌ "The ***cost per lead marketing*** feels too high."</li>
+          <li>❌ "The <strong>cost per lead marketing</strong> feels too high."</li>
           <li>❌ "People visit the site, then disappear."</li>
         </ul>
       </div>
@@ -4224,7 +4240,7 @@ function RetargetingArticle() {
             <li>✔️ Service page visitors</li>
             <li>✔️ Pricing page visitors</li>
             <li>✔️ Contact page visitors</li>
-            <li>✔️ ***Landing page*** visitors</li>
+            <li>✔️ <strong>Landing page</strong> visitors</li>
           </ul>
           <p className="text-xs text-muted-foreground mt-2 mb-0">The deeper the page intent, the stronger the audience.</p>
         </div>
@@ -4240,7 +4256,7 @@ function RetargetingArticle() {
         </div>
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
           <h4 className="font-bold mb-3 mt-0">Video Viewers</h4>
-          <p className="text-sm mb-2">If your business uses ***video ads creation*** or short-form content, someone who watched 50-95% of a video has shown real interest. Follow up with:</p>
+          <p className="text-sm mb-2">If your business uses <strong>video ads creation</strong> or short-form content, someone who watched 50-95% of a video has shown real interest. Follow up with:</p>
           <ul className="space-y-1 list-none p-0 m-0 text-sm">
             <li>✔️ Book a call</li>
             <li>✔️ Request a quote</li>
@@ -4308,7 +4324,7 @@ function RetargetingArticle() {
       <p>A good retargeting ad is not just "come back." It is "here is why you should take the next step now."</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want to Stop Leaking Revenue from Paid Traffic?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">retargeting systems</Link> that turn wasted clicks into qualified leads and booked appointments.
@@ -4327,7 +4343,7 @@ function RetargetingArticle() {
         <p className="font-semibold mb-3">Better options include:</p>
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✔️ Sending them back to the exact offer page</li>
-          <li>✔️ Using a shorter ***lead generation funnel***</li>
+          <li>✔️ Using a shorter <strong>lead generation funnel</strong></li>
           <li>✔️ Routing them to a booking page</li>
           <li>✔️ Showing a tailored <Link to="/services/website-creation" className="text-primary hover:underline">landing page</Link> with stronger proof</li>
           <li>✔️ Presenting a clearer service angle for their stage of awareness</li>
@@ -4368,12 +4384,12 @@ function RetargetingArticle() {
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✔️ Your traffic volume is growing</li>
           <li>✔️ Your offer is already validated</li>
-          <li>✔️ Your ***high converting landing pages*** are decent</li>
+          <li>✔️ Your <strong>high converting landing pages</strong> are decent</li>
           <li>✔️ You have enough visitors to build audiences</li>
           <li>✔️ Your business wants better efficiency, not just more clicks</li>
         </ul>
       </div>
-      <p>At that stage, you are no longer just buying traffic. You are building a ***customer acquisition*** system. This is why businesses spending $3,000+ per month should almost always test retargeting seriously.</p>
+      <p>At that stage, you are no longer just buying traffic. You are building a <strong>customer acquisition</strong> system. This is why businesses spending $3,000+ per month should almost always test retargeting seriously.</p>
 
       {/* Section 9 */}
       <h2 id="not-fix-rt" className="flex items-center gap-3">
@@ -4381,7 +4397,7 @@ function RetargetingArticle() {
       </h2>
       <p>Retargeting can improve performance, but it cannot rescue weak positioning, bad landing pages, irrelevant traffic, or slow sales follow-up.</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
-        <p className="font-semibold mb-3">A serious ***lead generation agency*** or ***sales funnel agency*** looks at the full funnel:</p>
+        <p className="font-semibold mb-3">A serious <strong>lead generation agency</strong> or <strong>sales funnel agency</strong> looks at the full funnel:</p>
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✔️ Traffic quality</li>
           <li>✔️ Audience intent</li>
@@ -4389,7 +4405,7 @@ function RetargetingArticle() {
           <li>✔️ Lead handling</li>
           <li>✔️ Speed to contact</li>
           <li>✔️ Follow-up sequence</li>
-          <li>✔️ ***Conversion rate optimization***</li>
+          <li>✔️ <strong>Conversion rate optimization</strong></li>
         </ul>
       </div>
       <p>Retargeting works best when it sits inside a solid system.</p>
@@ -4406,7 +4422,7 @@ function RetargetingArticle() {
           <li>✅ Are we spending enough monthly to make retargeting worthwhile?</li>
           <li>✅ Are we tracking booked calls, leads, and actual closed revenue?</li>
         </ul>
-        <p className="mt-4 mb-0 text-muted-foreground">If the answer is no to most of these, there is a good chance your ***paid ads management*** is leaving money on the table. Retargeting is not the flashy part of paid advertising — it is the part that makes your traffic work harder.</p>
+        <p className="mt-4 mb-0 text-muted-foreground">If the answer is no to most of these, there is a good chance your <strong>paid ads management</strong> is leaving money on the table. Retargeting is not the flashy part of paid advertising — it is the part that makes your traffic work harder.</p>
       </div>
 
       {/* Related Articles */}
@@ -4426,10 +4442,10 @@ function RetargetingArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Make Your Paid Traffic Work Harder?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We are a ***tampa digital marketing agency*** that builds complete <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> — including retargeting, ***landing page optimization***, and full-funnel ***customer acquisition***.
+          We are a <strong>tampa digital marketing agency</strong> that builds complete <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> — including retargeting, <strong>landing page optimization</strong>, and full-funnel <strong>customer acquisition</strong>.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -4514,7 +4530,7 @@ function ContentPaidAds2026Article() {
           <li>✔️ YouTube</li>
           <li>✔️ Email</li>
           <li>✔️ Retargeting</li>
-          <li>✔️ ***Short form video ads***</li>
+          <li>✔️ <strong>Short form video ads</strong></li>
           <li>✔️ Local brand mentions</li>
         </ul>
       </div>
@@ -4528,15 +4544,15 @@ function ContentPaidAds2026Article() {
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">Businesses that combine these elements usually outperform those that only buy traffic:</p>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✔️ ***Paid advertising***</li>
-          <li>✔️ ***Content marketing services***</li>
+          <li>✔️ <strong>Paid advertising</strong></li>
+          <li>✔️ <strong>Content marketing services</strong></li>
           <li>✔️ Organic visibility</li>
           <li>✔️ Retargeting</li>
           <li>✔️ Local authority</li>
           <li>✔️ Brand repetition</li>
         </ul>
       </div>
-      <p>This is exactly why a strong ***digital marketing agency tampa*** businesses trust should not only run campaigns — it should build a system that increases visibility before the lead is ready to buy.</p>
+      <p>This is exactly why a strong <strong>digital marketing agency tampa</strong> businesses trust should not only run campaigns — it should build a system that increases visibility before the lead is ready to buy.</p>
 
       {/* Section 3 */}
       <h2 id="best-known-cp" className="flex items-center gap-3">
@@ -4546,7 +4562,7 @@ function ContentPaidAds2026Article() {
         <p className="font-semibold text-primary text-lg mb-2">This is the real rule in 2026.</p>
         <p className="mb-0">You may have a better service, a stronger team, better operations, and a better customer experience. But if another business is seen more often and remembered faster, that business usually gets the first click, first inquiry, and first chance to close.</p>
       </div>
-      <p>For Tampa Bay businesses, ***brand positioning services*** and branding are no longer optional. They are part of ***customer acquisition***.</p>
+      <p>For Tampa Bay businesses, <strong>brand positioning services</strong> and branding are no longer optional. They are part of <strong>customer acquisition</strong>.</p>
 
       {/* Section 4 */}
       <h2 id="compounding-cp" className="flex items-center gap-3">
@@ -4601,15 +4617,17 @@ function ContentPaidAds2026Article() {
       <p>Being present on one platform is not enough. Buyers move across channels. Your brand needs to move with them.</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">A serious multichannel strategy should include:</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+          <div className="flex items-center gap-2 text-sm"><img src={logoGoogleAds} alt="Google Ads" className="w-5 h-5 object-contain" /> Google Ads</div>
+          <div className="flex items-center gap-2 text-sm"><img src={logoFacebook} alt="Facebook" className="w-5 h-5 object-contain rounded" /> Facebook / Meta</div>
+          <div className="flex items-center gap-2 text-sm"><img src={logoYoutube} alt="YouTube" className="w-5 h-5 object-contain" /> YouTube</div>
+          <div className="flex items-center gap-2 text-sm"><img src={logoLinkedin} alt="LinkedIn" className="w-5 h-5 object-contain rounded" /> LinkedIn</div>
+        </div>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✔️ ***Google ads management***</li>
-          <li>✔️ ***Facebook ads management***</li>
           <li>✔️ Instagram</li>
-          <li>✔️ LinkedIn if relevant</li>
-          <li>✔️ YouTube</li>
           <li>✔️ Email</li>
           <li>✔️ Retargeting</li>
-          <li>✔️ ***Short form video ads***</li>
+          <li>✔️ <strong>Short form video ads</strong></li>
         </ul>
       </div>
       <p>Content should not live in silos. That is why many teams use tools like Sprout, MyDrop, or Later to publish across platforms from one system. Consistency usually beats intensity.</p>
@@ -4618,11 +4636,11 @@ function ContentPaidAds2026Article() {
       <h2 id="warming-cp" className="flex items-center gap-3">
         🔥 7. Paid Ads Work Better When Content Does the Warming
       </h2>
-      <p>A lot of businesses ask ***why ads are not working***. Usually the issue is not just the ad account — it is that the market is cold.</p>
+      <p>A lot of businesses ask <strong>why ads are not working</strong>. Usually the issue is not just the ad account — it is that the market is cold.</p>
       <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
         <h4 className="font-bold mb-3 mt-0">If people see an ad from a brand they have never seen before, conversion is harder. But if they already saw:</h4>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✅ ***Video content creation*** from your brand</li>
+          <li>✅ <strong>Video content creation</strong> from your brand</li>
           <li>✅ Social proof</li>
           <li>✅ Brand content</li>
           <li>✅ Founder content</li>
@@ -4630,10 +4648,10 @@ function ContentPaidAds2026Article() {
           <li>✅ Retargeting touchpoints</li>
         </ul>
       </div>
-      <p>…the click is easier, the lead is warmer, and the sales process is smoother. This is why ***content marketing services***, ***video marketing agency*** support, and ***paid ads management*** should work together.</p>
+      <p>…the click is easier, the lead is warmer, and the sales process is smoother. This is why <strong>content marketing services</strong>, <strong>video marketing agency</strong> support, and <strong>paid ads management</strong> should work together.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Build a Real Marketing System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses combine <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, content, and <Link to="/services/website-creation" className="text-primary hover:underline">conversion-focused websites</Link> into one growth engine.
@@ -4682,7 +4700,7 @@ function ContentPaidAds2026Article() {
         <div className="bg-secondary/30 border border-border rounded-2xl p-6">
           <h4 className="font-bold mb-3 mt-0">2. Paid Ads for Acceleration</h4>
           <ul className="space-y-1 list-none p-0 m-0 text-sm">
-            <li>✔️ ***Google Ads*** for demand capture</li>
+            <li>✔️ <strong>Google Ads</strong> for demand capture</li>
             <li>✔️ Meta Ads for awareness and retargeting</li>
             <li>✔️ YouTube for video visibility</li>
             <li>✔️ Paid amplification of strong organic content</li>
@@ -4695,7 +4713,7 @@ function ContentPaidAds2026Article() {
             <li>✔️ Strong positioning</li>
             <li>✔️ Trust signals</li>
             <li>✔️ Fast load speed</li>
-            <li>✔️ ***Landing page optimization***</li>
+            <li>✔️ <strong>Landing page optimization</strong></li>
             <li>✔️ Clear CTA</li>
           </ul>
         </div>
@@ -4711,7 +4729,7 @@ function ContentPaidAds2026Article() {
           </ul>
         </div>
       </div>
-      <p>That is how visibility turns into revenue. This is where ***conversion rate optimization*** and ***landing page optimization*** directly affect results.</p>
+      <p>That is how visibility turns into revenue. This is where <strong>conversion rate optimization</strong> and <strong>landing page optimization</strong> directly affect results.</p>
 
       {/* Section 10 */}
       <h2 id="what-now-cp" className="flex items-center gap-3">
@@ -4722,13 +4740,13 @@ function ContentPaidAds2026Article() {
         <p className="font-semibold mb-3">Focus on:</p>
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✔️ Consistent weekly content</li>
-          <li>✔️ ***Short form video*** production</li>
+          <li>✔️ <strong>Short form video</strong> production</li>
           <li>✔️ Multichannel publishing</li>
           <li>✔️ Audience building</li>
           <li>✔️ Retargeting</li>
           <li>✔️ Data collection</li>
           <li>✔️ Paid distribution</li>
-          <li>✔️ ***Conversion focused web design***</li>
+          <li>✔️ <strong>Conversion focused web design</strong></li>
         </ul>
       </div>
       <p>That is the modern growth stack. Not random activity — structured visibility.</p>
@@ -4745,7 +4763,7 @@ function ContentPaidAds2026Article() {
           <li>✅ Support everything with paid media</li>
           <li>✅ Convert attention with better funnels and follow-up</li>
         </ul>
-        <p className="mt-4 mb-0 text-muted-foreground">That is how a real ***tampa digital marketing agency*** should think. Because in 2026, if your business is not showing up consistently, your competitors are building memory while you are waiting for leads.</p>
+        <p className="mt-4 mb-0 text-muted-foreground">That is how a real <strong>tampa digital marketing agency</strong> should think. Because in 2026, if your business is not showing up consistently, your competitors are building memory while you are waiting for leads.</p>
       </div>
 
       {/* Related Articles */}
@@ -4765,10 +4783,10 @@ function ContentPaidAds2026Article() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Build Your Growth System?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We are a ***digital marketing agency tampa*** businesses trust to build complete multichannel systems — <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">video production</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">conversion websites</Link>, and full-funnel ***customer acquisition***.
+          We are a <strong>digital marketing agency tampa</strong> businesses trust to build complete multichannel systems — <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">video production</Link>, <Link to="/services/website-creation" className="text-primary hover:underline">conversion websites</Link>, and full-funnel <strong>customer acquisition</strong>.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -4874,7 +4892,7 @@ function StandOutTrustArticle() {
           <li>✔️ Consistent communication</li>
         </ul>
       </div>
-      <p>This is what a real ***lead generation agency*** should understand. ***Lead generation services*** are not just about sending traffic to a page — they are about reducing resistance at every step.</p>
+      <p>This is what a real <strong>lead generation agency</strong> should understand. <strong>Lead generation services</strong> are not just about sending traffic to a page — they are about reducing resistance at every step.</p>
 
       {/* Section 3 */}
       <h2 id="generic-suspicious-tr" className="flex items-center gap-3">
@@ -4915,7 +4933,7 @@ function StandOutTrustArticle() {
           <li>✔️ Transparent next steps</li>
         </ul>
       </div>
-      <p>This is where a strong ***digital marketing agency tampa*** approach works better than generic outsourced content. Local prospects want signals that your business is established, reachable, and accountable.</p>
+      <p>This is where a strong <strong>digital marketing agency tampa</strong> approach works better than generic outsourced content. Local prospects want signals that your business is established, reachable, and accountable.</p>
 
       {/* Section 5 */}
       <h2 id="website-fears-tr" className="flex items-center gap-3">
@@ -4973,7 +4991,7 @@ function StandOutTrustArticle() {
       <p>That is part of conversion. Not admin.</p>
 
       {/* Mid-Article CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want Marketing That Builds Trust and Converts?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
           We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with trust-first positioning, strong creative, and <Link to="/services/website-creation" className="text-primary hover:underline">conversion-focused websites</Link>.
@@ -4997,7 +5015,7 @@ function StandOutTrustArticle() {
           <li>✔️ Why your business is more credible than lower-trust alternatives</li>
         </ul>
       </div>
-      <p>Good ***brand positioning services*** help reduce the feeling of risk. That is one of the most overlooked growth levers in local marketing.</p>
+      <p>Good <strong>brand positioning services</strong> help reduce the feeling of risk. That is one of the most overlooked growth levers in local marketing.</p>
 
       {/* Section 8 */}
       <h2 id="content-real-tr" className="flex items-center gap-3">
@@ -5016,7 +5034,7 @@ function StandOutTrustArticle() {
           <li>✔️ Simple breakdowns of common buyer mistakes</li>
         </ul>
       </div>
-      <p>This is where a good ***video marketing agency*** or ***content marketing services*** partner creates leverage — not by flooding the internet with filler, but by helping the market see how your business thinks, works, and communicates.</p>
+      <p>This is where a good <strong>video marketing agency</strong> or <strong>content marketing services</strong> partner creates leverage — not by flooding the internet with filler, but by helping the market see how your business thinks, works, and communicates.</p>
 
       {/* Section 9 */}
       <h2 id="ads-trust-tr" className="flex items-center gap-3">
@@ -5045,7 +5063,7 @@ function StandOutTrustArticle() {
           <li>✅ Tighten the post-lead experience</li>
         </ul>
       </div>
-      <p>That is how you fix the deeper issue behind ***why ads are not working***.</p>
+      <p>That is how you fix the deeper issue behind <strong>why ads are not working</strong>.</p>
 
       {/* Section 10 */}
       <h2 id="standing-out-tr" className="flex items-center gap-3">
@@ -5096,10 +5114,10 @@ function StandOutTrustArticle() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+      <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Stand Out in Tampa Bay?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We are a ***digital marketing agency tampa*** businesses trust to build credible brands, <Link to="/services/ads-management" className="text-primary hover:underline">high-performing ads</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">trust-building video</Link>, and full ***client acquisition services*** systems.
+          We are a <strong>digital marketing agency tampa</strong> businesses trust to build credible brands, <Link to="/services/ads-management" className="text-primary hover:underline">high-performing ads</Link>, <Link to="/services/video-shooting" className="text-primary hover:underline">trust-building video</Link>, and full <strong>client acquisition services</strong> systems.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -5182,7 +5200,8 @@ const BlogArticle = () => {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <Navbar />
-      <article className="pt-32 pb-20 px-4 md:px-8">
+      {/* Dark header area for breadcrumb + article title */}
+      <div className="pt-32 pb-12 px-4 md:px-8 bg-background">
         <div className="container mx-auto max-w-3xl">
           {/* Breadcrumb */}
           <motion.div
@@ -5202,7 +5221,6 @@ const BlogArticle = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
           >
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
@@ -5217,12 +5235,16 @@ const BlogArticle = () => {
                 {articleMeta.readTime}
               </span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               {articleMeta.title}
             </h1>
           </motion.div>
+        </div>
+      </div>
 
-          {/* Content */}
+      {/* Light theme article content */}
+      <article className="blog-light py-12 md:py-16 px-4 md:px-8">
+        <div className="container mx-auto max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -5236,9 +5258,9 @@ const BlogArticle = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mt-16 pt-8 border-t border-border"
+            className="mt-16 pt-8 border-t"
           >
-            <Link to="/blog" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/blog" className="flex items-center gap-2 hover:text-primary transition-colors" style={{ color: 'hsl(215 15% 45%)' }}>
               <ArrowLeft className="w-4 h-4" />
               Back to all articles
             </Link>
