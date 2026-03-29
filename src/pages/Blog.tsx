@@ -60,6 +60,15 @@ export const blogArticles = [
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
   },
+  {
+    slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
+    title: 'How Long Does It Take to See Results From Digital Acquisition in 2026?',
+    excerpt: 'Most Tampa Bay businesses expect paid marketing to work too fast. Here is a realistic 90-day timeline for Meta Ads and Google Ads, including lead costs, appointment costs, and what to actually measure.',
+    date: '2026-03-29',
+    readTime: '14 min read',
+    category: 'Paid Advertising',
+    keywords: ['paid advertising agency', 'digital marketing agency tampa', 'lead generation agency', 'google ads agency', 'facebook ads agency'],
+  },
 ];
 
 const Blog = () => {

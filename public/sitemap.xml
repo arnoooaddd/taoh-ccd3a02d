@@ -65,4 +65,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://thealphaomegahub.com/blog/digital-acquisition-results-timeline-tampa-bay-businesses</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

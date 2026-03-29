@@ -57,6 +57,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'lead generation agency, contractor marketing agency, home service marketing agency, cost per lead marketing, why ads are not working',
     },
   },
+  'digital-acquisition-results-timeline-tampa-bay-businesses': {
+    component: DigitalAcquisitionTimelineArticle,
+    meta: {
+      title: 'How Long Do Paid Ads Take to Work for Tampa Bay Businesses? | TAOH',
+      description: 'Learn how long Meta Ads and Google Ads really take to produce results for Tampa Bay businesses, including realistic lead costs, appointment costs, and learning-phase expectations.',
+      keywords: 'paid advertising agency, digital marketing agency tampa, lead generation agency, google ads agency, facebook ads agency, cost per lead marketing, roi of paid ads',
+    },
+  },
 };
 
 function AdBudgetArticle() {
