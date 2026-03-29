@@ -3331,6 +3331,316 @@ function LeadQualificationArticle() {
   );
 }
 
+function SocialMediaLeadSpeedArticle() {
+  return (
+    <div className="prose-custom">
+      {/* Summary */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <p className="text-lg leading-relaxed text-foreground/90 m-0">
+          Most businesses do not lose social media leads because the lead was bad. They lose the lead because they waited too long, followed up poorly, or treated a warm inquiry like a cold list. If you generate leads through Facebook or Instagram, speed and process matter more than most Tampa Bay businesses think.
+        </p>
+      </div>
+
+      {/* Table of Contents */}
+      <div className="glass-card mb-12">
+        <h2 className="text-xl font-bold mb-4 mt-0">📑 Table of Contents</h2>
+        <nav className="space-y-2">
+          {[
+            { id: 'cold-fast-sl', label: '1. Social Media Leads Go Cold Fast' },
+            { id: 'immediate-sl', label: '2. The First Contact Should Happen Immediately' },
+            { id: 'call-first-sl', label: '3. Call First, Then Support with Text' },
+            { id: 'first-message-sl', label: '4. Your First Message Should Be Simple' },
+            { id: 'reassurance-sl', label: '5. Social Leads Need More Reassurance' },
+            { id: 'booking-sl', label: '6. The Booking Experience Matters' },
+            { id: 'buckets-sl', label: '7. Do Not Send Every Lead Into the Same Script' },
+            { id: 'structure-sl', label: '8. Speed Without Structure Still Fails' },
+            { id: 'cpl-sl', label: '9. A Weak Response Makes Your CPL Look Worse' },
+            { id: 'system-sl', label: '10. What a Good Follow-Up System Looks Like' },
+            { id: 'faq-sl', label: 'FAQ' },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
+              <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Section 1 */}
+      <h2 id="cold-fast-sl" className="flex items-center gap-3">
+        ⏱️ 1. Social Media Leads Go Cold Fast
+      </h2>
+      <p>A lead from social media is not the same as a referral or an inbound search lead. That person usually filled out a form quickly, was interrupted while scrolling, may be comparing several businesses, and can forget your brand within minutes.</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">If you wait too long:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ Response rates fall</li>
+          <li>❌ Show rates drop</li>
+          <li>❌ Trust weakens</li>
+          <li>❌ Sales calls get harder</li>
+        </ul>
+      </div>
+      <p>This is one of the main reasons businesses think Facebook leads are weak. Most of the time, the issue is not the platform — it is the follow-up system.</p>
+
+      {/* Section 2 */}
+      <h2 id="immediate-sl" className="flex items-center gap-3">
+        🔴 2. The First Contact Should Happen Immediately
+      </h2>
+      <p>If a lead comes in from social media, the first move should happen as fast as possible.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
+        <h4 className="font-bold mb-4 mt-0 text-primary">Ideal Response Windows</h4>
+        <div className="space-y-4">
+          <div className="flex items-start gap-3">
+            <span className="text-primary font-bold whitespace-nowrap">Ideal:</span>
+            <span>Immediate — within seconds if possible</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-primary font-bold whitespace-nowrap">Good:</span>
+            <span>Within 5 minutes if your team is structured</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-primary font-bold whitespace-nowrap">Maximum:</span>
+            <span>Within 15 minutes during business hours</span>
+          </div>
+        </div>
+      </div>
+      <p>The longer you wait, the more likely the lead will ignore the call, forget the form, speak to another company, or lose buying intent. A strong ***facebook ads agency*** or ***lead generation agency*** should not just generate leads — it should help design the response process.</p>
+
+      {/* Section 3 */}
+      <h2 id="call-first-sl" className="flex items-center gap-3">
+        📞 3. Call First, Then Support with Text
+      </h2>
+      <p>For most Tampa Bay businesses, the best follow-up sequence starts with a direct call. A call confirms the lead is real, starts qualification, and moves the prospect toward an appointment.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">A better sequence looks like this:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>1️⃣ First phone call</li>
+          <li>2️⃣ Immediate SMS if no answer</li>
+          <li>3️⃣ Second call attempt</li>
+          <li>4️⃣ Short follow-up email if relevant</li>
+          <li>5️⃣ Reminder text later the same day</li>
+        </ul>
+      </div>
+      <p>That is how you increase contact rate without sounding chaotic.</p>
+
+      {/* Section 4 */}
+      <h2 id="first-message-sl" className="flex items-center gap-3">
+        💬 4. Your First Message Should Be Simple
+      </h2>
+      <p>The first text or voicemail should not sound robotic. It should identify your business clearly, reference the request, and make the next step easy.</p>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
+        <h4 className="font-bold mb-3 mt-0">Example SMS:</h4>
+        <p className="italic text-foreground/80 mb-0">"Hi [First Name], this is [Name] from [Company]. You requested information a few minutes ago. I just tried to reach you. Feel free to reply here or call me back at [number]."</p>
+      </div>
+      <p>The goal is not to sell in the first message. The goal is to start the conversation.</p>
+
+      {/* Section 5 */}
+      <h2 id="reassurance-sl" className="flex items-center gap-3">
+        🟠 5. Social Media Leads Need More Reassurance Than Search Leads
+      </h2>
+      <p>A Google lead often has stronger intent. A social lead often needs more context and more confidence before booking.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Your contact process should include trust signals early:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Your company name clearly</li>
+          <li>✔️ A real rep name</li>
+          <li>✔️ Simple explanation of why you are contacting them</li>
+          <li>✔️ Fast confirmation of next steps</li>
+          <li>✔️ Professional tone</li>
+          <li>✔️ A consistent local brand presence</li>
+        </ul>
+      </div>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
+        <p className="mb-3 font-semibold text-primary text-lg">Best known beats best.</p>
+        <p className="text-muted-foreground mb-0">If the prospect recognizes your brand, your contact rate improves. If they do not remember you, the lead feels colder immediately. This is why ***brand positioning services*** and local visibility compound over time.</p>
+      </div>
+
+      {/* Section 6 */}
+      <h2 id="booking-sl" className="flex items-center gap-3">
+        🎯 6. The Booking Experience Matters as Much as the First Call
+      </h2>
+      <p>Most businesses stop at "did we contact the lead?" That is not enough. The better question is: did we create enough confidence to get the appointment?</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <p className="font-semibold mb-3 text-primary">A premium booking process should include:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✅ Immediate confirmation by SMS</li>
+          <li>✅ Reminder text before the appointment</li>
+          <li>✅ Optional email confirmation</li>
+          <li>✅ WhatsApp follow-up when relevant</li>
+          <li>✅ Clear appointment window</li>
+          <li>✅ Easy reschedule path</li>
+        </ul>
+      </div>
+      <p>That is not overkill. That is how serious businesses reduce no-shows and improve conversion.</p>
+
+      {/* Mid-Article CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Need a Follow-Up System That Actually Converts?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help Tampa Bay businesses build ***customer acquisition*** systems that go beyond the click — with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, lead routing, and follow-up processes built for real appointments.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* Section 7 */}
+      <h2 id="buckets-sl" className="flex items-center gap-3">
+        🟠 7. Do Not Send Every Lead Into the Same Script
+      </h2>
+      <p>Not every social lead has the same intent. Some are ready to talk now. Some need more reassurance. Some are only curious.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Separate leads into simple buckets:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>🔴 <strong>Hot:</strong> answer now, book now</li>
+          <li>🟡 <strong>Warm:</strong> qualify and follow up fast</li>
+          <li>🔵 <strong>Low intent:</strong> nurture, do not force</li>
+        </ul>
+      </div>
+      <p>This is where a strong ***sales funnel*** and lead handling process matters. If every lead gets the same response, your team wastes time and loses good opportunities. Read more about <Link to="/blog/lead-qualification-levels-tampa-bay-businesses" className="text-primary hover:underline">the 4 lead qualification levels</Link>.</p>
+
+      {/* Section 8 */}
+      <h2 id="structure-sl" className="flex items-center gap-3">
+        🔴 8. Speed Without Structure Still Fails
+      </h2>
+      <p>Some businesses respond quickly and still get poor results. Why? Because fast follow-up without a clear process creates friction.</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">Bad examples:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ Too many calls with no context</li>
+          <li>❌ Generic automated texts</li>
+          <li>❌ No clear appointment offer</li>
+          <li>❌ No reminders</li>
+          <li>❌ No ownership inside the team</li>
+        </ul>
+      </div>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">A better system includes:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Clear first-contact script</li>
+          <li>✔️ Clear qualification flow</li>
+          <li>✔️ CRM logging</li>
+          <li>✔️ Assigned rep ownership</li>
+          <li>✔️ Reminder process</li>
+          <li>✔️ Missed-call text automation</li>
+          <li>✔️ Follow-up cadence for non-responders</li>
+        </ul>
+      </div>
+      <p>That is where ***paid ads management*** connects with ***customer acquisition***. The ad generates attention. The process turns it into pipeline.</p>
+
+      {/* Section 9 */}
+      <h2 id="cpl-sl" className="flex items-center gap-3">
+        ⚠️ 9. A Weak Response Process Makes Your CPL Look Worse Than It Is
+      </h2>
+      <p>This is where businesses misread performance. They say "the leads are bad" or "***ads are not working***" when the real issue is simple:</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>⚠️ The team called too late</li>
+          <li>⚠️ There was no text follow-up</li>
+          <li>⚠️ Nobody confirmed the appointment properly</li>
+          <li>⚠️ The handoff from marketing to sales was weak</li>
+        </ul>
+      </div>
+      <p>A $50 lead can become expensive if your team contacts it badly. A $70 lead can be extremely profitable if your response system is tight.</p>
+      <p>That is why ***cost per lead marketing*** alone is not enough. You have to measure cost per contact, cost per appointment, and cost per sale.</p>
+
+      {/* Section 10 */}
+      <h2 id="system-sl" className="flex items-center gap-3">
+        🎯 10. What a Good Social Lead Follow-Up System Looks Like
+      </h2>
+      <div className="space-y-6 my-8">
+        <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0 text-primary">Within 0 to 5 Minutes</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ First call</li>
+            <li>✔️ SMS if no answer</li>
+            <li>✔️ Rep assigned immediately</li>
+          </ul>
+        </div>
+        <div className="bg-secondary/30 border border-border rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Within 15 to 30 Minutes</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Second attempt</li>
+            <li>✔️ Short voicemail if needed</li>
+            <li>✔️ Note in CRM</li>
+          </ul>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Same Day</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Another text or call attempt</li>
+            <li>✔️ Appointment push if interest is clear</li>
+            <li>✔️ Reminder of brand and reason for contact</li>
+          </ul>
+        </div>
+        <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0 text-primary">After Booking</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Confirmation text</li>
+            <li>✔️ Reminder the day before</li>
+            <li>✔️ Same-day reminder</li>
+            <li>✔️ Rep identity confirmation</li>
+          </ul>
+        </div>
+      </div>
+      <p>This is the kind of system a serious ***digital marketing agency tampa*** partner should build. Not just ad clicks — full lead-to-appointment process.</p>
+
+      {/* Bottom Line */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-12">
+        <h3 className="text-xl font-bold mb-4 mt-0 text-primary">Bottom Line</h3>
+        <p className="mb-3">If you generate leads from social media, the contact process is part of the marketing system. For most Tampa Bay businesses, the winning formula is:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✅ Respond fast</li>
+          <li>✅ Call first</li>
+          <li>✅ Support with SMS</li>
+          <li>✅ Confirm clearly</li>
+          <li>✅ Remind professionally</li>
+          <li>✅ Create a premium appointment experience</li>
+        </ul>
+        <p className="mt-4 mb-0 text-muted-foreground">A lead is not valuable when it comes in. It becomes valuable when your business turns it into a real conversation.</p>
+      </div>
+
+      {/* Final CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Turn More Leads Into Appointments?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with follow-up processes designed for real ***customer acquisition*** — not just form fills.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* FAQ */}
+      <h2 id="faq-sl" className="flex items-center gap-3">
+        ❓ FAQ
+      </h2>
+      <div className="space-y-6 my-8">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">How fast should I contact a Facebook lead?</h4>
+          <p className="text-muted-foreground mb-0">Ideally within 5 minutes. The longer you wait, the more likely the lead will forget, lose interest, or speak with a competitor first.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Should I call or text social media leads first?</h4>
+          <p className="text-muted-foreground mb-0">Call first to start qualification and build a real connection. If no answer, follow up immediately with a short, clear SMS referencing their request.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Why do my Facebook leads seem low quality?</h4>
+          <p className="text-muted-foreground mb-0">Most of the time the leads are not bad — the follow-up process is. Slow response, generic messaging, and weak booking flows make good leads look worse than they are.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">How many follow-up attempts should I make?</h4>
+          <p className="text-muted-foreground mb-0">At minimum 3 to 5 attempts across calls and texts on the same day. Most leads are not ignoring you — they are busy. Persistence with professionalism wins.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Does speed-to-lead really affect conversion?</h4>
+          <p className="text-muted-foreground mb-0">Yes. Businesses that contact leads within 5 minutes are dramatically more likely to have a real conversation and book an appointment than those who wait hours or days.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const articleData = slug ? articles[slug] : null;
