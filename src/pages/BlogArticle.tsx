@@ -3725,6 +3725,22 @@ function SocialMediaLeadSpeedArticle() {
         <p className="mt-4 mb-0 text-muted-foreground">A lead is not valuable when it comes in. It becomes valuable when your business turns it into a real conversation.</p>
       </div>
 
+      {/* Related Articles */}
+      <div className="glass-card my-8">
+        <p className="text-sm text-muted-foreground mb-3">📚 Related Articles</p>
+        <div className="space-y-2">
+          <Link to="/blog/lead-qualification-levels-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
+            Not All Leads Are Equal: The 4 Qualification Levels Tampa Bay Businesses Need →
+          </Link>
+          <Link to="/blog/retargeting-paid-ads-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
+            Why Retargeting Matters for Tampa Bay Businesses Running Paid Ads →
+          </Link>
+          <Link to="/blog/digital-acquisition-results-timeline-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
+            How Long Does It Take to See Results From Digital Acquisition? →
+          </Link>
+        </div>
+      </div>
+
       {/* Final CTA */}
       <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
         <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Turn More Leads Into Appointments?</h3>
