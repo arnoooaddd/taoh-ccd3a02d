@@ -4617,12 +4617,14 @@ function ContentPaidAds2026Article() {
       <p>Being present on one platform is not enough. Buyers move across channels. Your brand needs to move with them.</p>
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
         <p className="font-semibold mb-3">A serious multichannel strategy should include:</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+          <div className="flex items-center gap-2 text-sm"><img src={logoGoogleAds} alt="Google Ads" className="w-5 h-5 object-contain" /> Google Ads</div>
+          <div className="flex items-center gap-2 text-sm"><img src={logoFacebook} alt="Facebook" className="w-5 h-5 object-contain rounded" /> Facebook / Meta</div>
+          <div className="flex items-center gap-2 text-sm"><img src={logoYoutube} alt="YouTube" className="w-5 h-5 object-contain" /> YouTube</div>
+          <div className="flex items-center gap-2 text-sm"><img src={logoLinkedin} alt="LinkedIn" className="w-5 h-5 object-contain rounded" /> LinkedIn</div>
+        </div>
         <ul className="space-y-2 list-none p-0 m-0">
-          <li>✔️ <strong>Google ads management</strong></li>
-          <li>✔️ <strong>Facebook ads management</strong></li>
           <li>✔️ Instagram</li>
-          <li>✔️ LinkedIn if relevant</li>
-          <li>✔️ YouTube</li>
           <li>✔️ Email</li>
           <li>✔️ Retargeting</li>
           <li>✔️ <strong>Short form video ads</strong></li>
