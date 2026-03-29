@@ -105,6 +105,15 @@ export const blogArticles = [
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
   },
+  {
+    slug: 'retargeting-paid-ads-tampa-bay-businesses',
+    title: 'Why Retargeting Matters for Tampa Bay Businesses Running Paid Ads',
+    excerpt: 'Most prospects do not buy the first time they see you. If your business is spending on paid traffic and not retargeting, you are leaking revenue every day.',
+    date: '2026-03-29',
+    readTime: '13 min read',
+    category: 'Paid Advertising',
+    keywords: ['paid advertising agency', 'lead generation agency', 'digital marketing agency tampa', 'customer acquisition'],
+  },
 ];
 
 const Blog = () => {
