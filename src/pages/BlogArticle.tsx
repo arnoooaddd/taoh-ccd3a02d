@@ -73,6 +73,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'digital marketing agency tampa, tampa digital marketing agency, lead generation agency, paid advertising agency, website design agency, video marketing agency, sales funnel agency',
     },
   },
+  'lead-qualification-levels-tampa-bay-businesses': {
+    component: LeadQualificationArticle,
+    meta: {
+      title: 'Not All Leads Are Equal: 4 Lead Qualification Levels for Tampa Bay Businesses | TAOH',
+      description: 'Learn the 4 lead qualification levels Tampa Bay businesses should use to improve lead quality, sales follow-up, and customer acquisition from paid marketing.',
+      keywords: 'lead generation agency, digital marketing agency tampa, customer acquisition, sales funnel agency, lead generation services, conversion rate optimization, cost per lead marketing',
+    },
+  },
 };
 
 function AdBudgetArticle() {
@@ -2997,6 +3005,318 @@ function ChooseAgencyArticle() {
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
           <h4 className="font-bold mb-2 mt-0">What is the biggest red flag when evaluating an agency?</h4>
           <p className="text-muted-foreground mb-0">If their work looks generic — same landing pages, same ad angles, same content for every client — the results will probably be generic too.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function LeadQualificationArticle() {
+  return (
+    <div className="prose-custom">
+      {/* Summary */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <p className="text-lg leading-relaxed text-foreground/90 m-0">
+          Most businesses don't have a lead problem. They have a lead sorting problem. A Tampa Bay business can generate 100 leads and still struggle to grow if the team treats every contact the same. This article breaks down the 4 qualification levels that help you prioritize faster, follow up better, and stop wasting ad spend on low-intent opportunities.
+        </p>
+      </div>
+
+      {/* Table of Contents */}
+      <div className="glass-card mb-12">
+        <h2 className="text-xl font-bold mb-4 mt-0">📑 Table of Contents</h2>
+        <nav className="space-y-2">
+          {[
+            { id: 'why-lq', label: 'Why Lead Qualification Matters' },
+            { id: 'level-1-lq', label: 'Level 1: Raw Lead' },
+            { id: 'level-2-lq', label: 'Level 2: Target-Fit Lead' },
+            { id: 'level-3-lq', label: 'Level 3: Qualified Opportunity' },
+            { id: 'level-4-lq', label: 'Level 4: Sales-Ready Lead' },
+            { id: 'scoring-lq', label: 'A Simple Way to Score Leads' },
+            { id: 'after-click-lq', label: 'Why Most Campaigns Break After the Click' },
+            { id: 'practice-lq', label: 'How to Use This in Practice' },
+            { id: 'faq-lq', label: 'FAQ' },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm md:text-base">
+              <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Why It Matters */}
+      <h2 id="why-lq" className="flex items-center gap-3">
+        🎯 Why Lead Qualification Matters
+      </h2>
+      <p>If your business runs Google Ads, Meta ads, landing pages, or any kind of ***lead generation funnel***, you need a clear way to separate people who are just browsing from people who are ready to take action now.</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">Without that system, the usual problems show up fast:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>❌ Sales wastes time chasing weak leads</li>
+          <li>❌ Good leads get slow follow-up</li>
+          <li>❌ Your close rate stays inconsistent</li>
+          <li>❌ Your ***cost per lead marketing*** looks acceptable, but cost per customer is terrible</li>
+          <li>❌ You blame the ads when the real issue is qualification</li>
+        </ul>
+      </div>
+      <p>This is where a serious ***lead generation agency*** or ***tampa digital marketing agency*** makes a real difference. Good marketing does not stop at generating interest — it builds the filtering, messaging, and follow-up process that turns traffic into qualified pipeline.</p>
+
+      {/* Level 1 */}
+      <h2 id="level-1-lq" className="flex items-center gap-3">
+        🔵 Level 1: Raw Lead
+      </h2>
+      <p>This is the first touch. The person filled out a form, clicked an ad, called your business, or asked for information. That's it.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Typical examples:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>👉 Someone asks for pricing without context</li>
+          <li>👉 Someone downloads a guide</li>
+          <li>👉 Someone fills out a contact form with one sentence</li>
+          <li>👉 Someone clicks from an ad and asks for "more info"</li>
+        </ul>
+      </div>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3 text-primary">What to do next:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Respond fast</li>
+          <li>✔️ Confirm basic need</li>
+          <li>✔️ Identify source</li>
+          <li>✔️ Collect missing info</li>
+          <li>✔️ Avoid sending them straight to sales unless intent is obvious</li>
+        </ul>
+      </div>
+      <p>A raw lead is not worthless. But it is not qualified yet.</p>
+
+      {/* Level 2 */}
+      <h2 id="level-2-lq" className="flex items-center gap-3">
+        🟡 Level 2: Target-Fit Lead
+      </h2>
+      <p>Now you know the person or business fits your market. They match the type of customer you actually want.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">For a Tampa Bay business, that could mean:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ They are in your service area</li>
+          <li>✔️ They fit your business model</li>
+          <li>✔️ They need the type of service you sell</li>
+          <li>✔️ They are the right company size or buyer type</li>
+          <li>✔️ They are not looking for something outside your scope</li>
+        </ul>
+      </div>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Examples:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>👉 A local law firm looking for ***lead generation services***</li>
+          <li>👉 A multi-location home service company that wants ***paid ads management***</li>
+          <li>👉 A ***manufacturing digital marketing agency*** prospect looking for a website redesign</li>
+          <li>👉 A medical practice in Tampa Bay looking for better ***customer acquisition***</li>
+        </ul>
+      </div>
+      <p>This step matters because plenty of leads show interest but were never a fit in the first place.</p>
+
+      {/* Level 3 */}
+      <h2 id="level-3-lq" className="flex items-center gap-3">
+        🟠 Level 3: Qualified Opportunity
+      </h2>
+      <p>This is where things get serious. The lead is a fit and has a real business need, with enough urgency or pain to justify action.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Signs of a qualified opportunity:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ They want to solve a specific problem</li>
+          <li>✔️ They ask smart buying questions</li>
+          <li>✔️ They have a timeline</li>
+          <li>✔️ They have access to budget</li>
+          <li>✔️ They are comparing providers or trying to fix an underperforming channel</li>
+        </ul>
+      </div>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <p className="font-semibold mb-3 text-primary">Typical quotes from qualified opportunities:</p>
+        <ul className="space-y-2 list-none p-0 m-0 italic text-foreground/80">
+          <li>"Our ads are running, but we're not getting qualified calls."</li>
+          <li>"We need more booked appointments, not just traffic."</li>
+          <li>"Our website gets visits, but ***conversion rate*** is weak."</li>
+          <li>"We've tried agencies before and need a system that actually tracks ***ROI of paid ads***."</li>
+        </ul>
+      </div>
+      <p>At this stage, the lead should move into a real sales process — discovery call, audit, strategy call, or proposal process. This is also where many businesses realize the problem is not only lead volume — it is lead quality, conversion process, or sales follow-up.</p>
+
+      {/* Level 4 */}
+      <h2 id="level-4-lq" className="flex items-center gap-3">
+        🔴 Level 4: Sales-Ready Lead
+      </h2>
+      <p>This is the lead your team should move on immediately. They are qualified, motivated, and close to a buying decision.</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <p className="font-semibold mb-3 text-primary">These are the people who say things like:</p>
+        <ul className="space-y-2 list-none p-0 m-0 italic text-foreground/80">
+          <li>"We want to start this month."</li>
+          <li>"Can you send a proposal?"</li>
+          <li>"We need help with ***google ads management*** now."</li>
+          <li>"We're ready to rebuild our funnel."</li>
+          <li>"Can we book a meeting this week?"</li>
+        </ul>
+      </div>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">Best practice follow-up:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Call quickly</li>
+          <li>✔️ Send SMS confirmation</li>
+          <li>✔️ Email calendar invite</li>
+          <li>✔️ Use a clean booking process</li>
+          <li>✔️ Confirm next step with zero friction</li>
+        </ul>
+      </div>
+      <p>For local Tampa Bay businesses, this matters even more in competitive categories. The faster and cleaner your response, the more likely you are to win.</p>
+
+      {/* Mid-Article CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Want Better Lead Quality From Your Campaigns?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help Tampa Bay businesses build ***lead generation services*** systems that filter, qualify, and convert — not just generate form fills.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* Scoring */}
+      <h2 id="scoring-lq" className="flex items-center gap-3">
+        🎯 A Simple Way to Score Leads
+      </h2>
+      <p>You do not need a complicated CRM setup to start. Use four practical filters:</p>
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">1. Fit</p>
+            <p className="text-sm mb-4">Are they the right type of customer?</p>
+            <p className="text-sm font-semibold text-primary mb-2">2. Need</p>
+            <p className="text-sm mb-0">Do they actually have the problem you solve?</p>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-primary mb-2">3. Timing</p>
+            <p className="text-sm mb-4">Is this something they want to act on soon?</p>
+            <p className="text-sm font-semibold text-primary mb-2">4. Buying Power</p>
+            <p className="text-sm mb-0">Can they approve or influence the purchase?</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
+        <h4 className="font-bold mb-3 mt-0">Example scorecard:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li><span className="text-muted-foreground">Low score:</span> browsing, unclear need, no timeline</li>
+          <li><span className="text-yellow-500 font-semibold">Medium score:</span> good fit, moderate interest, still researching</li>
+          <li><span className="text-primary font-semibold">High score:</span> clear need, urgency, likely buyer</li>
+          <li><span className="text-green-500 font-semibold">Immediate priority:</span> ready for a call, quote, or proposal now</li>
+        </ul>
+      </div>
+
+      {/* After the Click */}
+      <h2 id="after-click-lq" className="flex items-center gap-3">
+        🔴 Why Most Lead Gen Campaigns Break After the Click
+      </h2>
+      <p>A lot of businesses think lead generation ends when the form is submitted. That is amateur thinking.</p>
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+        <p className="font-semibold mb-3">The real performance comes from what happens after the lead arrives:</p>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>✔️ Qualification</li>
+          <li>✔️ Routing</li>
+          <li>✔️ Speed to contact</li>
+          <li>✔️ Nurture sequence</li>
+          <li>✔️ Sales script</li>
+          <li>✔️ Appointment handling</li>
+          <li>✔️ Conversion tracking</li>
+        </ul>
+      </div>
+      <p>This is ***why ads are not working*** for many businesses — it is not the channel, it is a broken lead handling process.</p>
+      <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
+        <h4 className="font-bold mb-3 mt-0">If campaigns generate leads but revenue is inconsistent, check these first:</h4>
+        <ul className="space-y-2 list-none p-0 m-0">
+          <li>⚠️ Are you asking the right pre-qualification questions?</li>
+          <li>⚠️ Are you tagging leads by level?</li>
+          <li>⚠️ Are your sales reps following up based on intent?</li>
+          <li>⚠️ Are your <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link> filtering out poor-fit traffic?</li>
+          <li>⚠️ Are you measuring booked calls and closed deals, not just CPL?</li>
+        </ul>
+      </div>
+      <p>That is the difference between running ads and building a ***customer acquisition*** system.</p>
+
+      {/* Practice */}
+      <h2 id="practice-lq" className="flex items-center gap-3">
+        🟠 How Tampa Bay Businesses Can Use This in Practice
+      </h2>
+      <p>If you want better lead quality, do not just buy more traffic. Tighten the system.</p>
+      <div className="space-y-6 my-8">
+        <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0 text-primary">Improve the Front End</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Clarify who you serve</li>
+            <li>✔️ Make your offer more specific</li>
+            <li>✔️ Use stronger ***landing page optimization***</li>
+            <li>✔️ Add qualifying questions to forms</li>
+            <li>✔️ Align ad messaging with buyer intent</li>
+          </ul>
+        </div>
+        <div className="bg-secondary/30 border border-border rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Improve the Middle</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Score leads by level</li>
+            <li>✔️ Route hot leads faster</li>
+            <li>✔️ Create separate follow-up for cold and warm leads</li>
+            <li>✔️ Train the team on what makes a lead sales-ready</li>
+          </ul>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-3 mt-0">Improve the Back End</h4>
+          <ul className="space-y-1 list-none p-0 m-0 text-sm">
+            <li>✔️ Track source to sale</li>
+            <li>✔️ Review close rates by lead type</li>
+            <li>✔️ Cut channels that bring volume without revenue</li>
+            <li>✔️ Invest more in campaigns that bring qualified opportunities</li>
+          </ul>
+        </div>
+      </div>
+      <p>A strong ***digital marketing agency for small businesses*** should be able to help with all three.</p>
+
+      {/* Bottom Line */}
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-12">
+        <h3 className="text-xl font-bold mb-4 mt-0 text-primary">The Real Goal Is Not More Leads</h3>
+        <p className="mb-3">It is more qualified opportunities. The businesses that grow consistently are not the ones generating the most names in a spreadsheet. They are the ones with a better filter, faster follow-up, and a tighter ***sales funnel***.</p>
+        <p className="mb-0 text-muted-foreground">Once your qualification system is clear, every part of your marketing gets easier to improve.</p>
+      </div>
+
+      {/* Final CTA */}
+      <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
+        <h3 className="text-2xl font-bold mb-3 mt-0">🚀 Ready to Fix Your Lead Quality?</h3>
+        <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+          We help Tampa Bay businesses build <Link to="/services/ads-management" className="text-primary hover:underline">paid acquisition systems</Link> with built-in lead qualification — so your sales team only talks to people worth talking to.
+        </p>
+        <Link to="/#contact" className="btn-hero-primary inline-block">
+          Talk to Our Team
+        </Link>
+      </div>
+
+      {/* FAQ */}
+      <h2 id="faq-lq" className="flex items-center gap-3">
+        ❓ FAQ
+      </h2>
+      <div className="space-y-6 my-8">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">What are lead qualification levels?</h4>
+          <p className="text-muted-foreground mb-0">They are categories that help your team sort leads by readiness — from raw inquiries to sales-ready buyers. This prevents wasting time on low-intent contacts.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Why do my ads generate leads but not sales?</h4>
+          <p className="text-muted-foreground mb-0">Usually because there is no qualification process after the lead arrives. Without scoring, routing, and proper follow-up, good leads get lost and weak leads waste sales time.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">How do I improve lead quality from paid ads?</h4>
+          <p className="text-muted-foreground mb-0">Add qualifying questions to your forms, tighten your targeting, improve your landing page messaging, and build a follow-up system that prioritizes high-intent leads.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">Do I need a CRM to qualify leads?</h4>
+          <p className="text-muted-foreground mb-0">A CRM helps, but even a simple scorecard based on fit, need, timing, and buying power can dramatically improve how your team handles inbound leads.</p>
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 className="font-bold mb-2 mt-0">What is the difference between a lead and a qualified opportunity?</h4>
+          <p className="text-muted-foreground mb-0">A lead is anyone who shows interest. A qualified opportunity is someone who fits your market, has a real need, and is actively evaluating a solution with budget and timeline.</p>
         </div>
       </div>
     </div>

@@ -78,6 +78,15 @@ export const blogArticles = [
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'tampa digital marketing agency', 'lead generation agency', 'website design agency'],
   },
+  {
+    slug: 'lead-qualification-levels-tampa-bay-businesses',
+    title: 'Not All Leads Are Equal: The 4 Qualification Levels Tampa Bay Businesses Need to Use',
+    excerpt: 'Most businesses don\'t have a lead problem. They have a lead sorting problem. Here are the 4 qualification levels that separate wasted ad spend from real pipeline.',
+    date: '2026-03-29',
+    readTime: '13 min read',
+    category: 'Lead Generation',
+    keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'sales funnel agency'],
+  },
 ];
 
 const Blog = () => {
