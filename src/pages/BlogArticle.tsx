@@ -65,6 +65,14 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
       keywords: 'paid advertising agency, digital marketing agency tampa, lead generation agency, google ads agency, facebook ads agency, cost per lead marketing, roi of paid ads',
     },
   },
+  'how-to-choose-a-digital-marketing-agency-in-tampa': {
+    component: ChooseAgencyArticle,
+    meta: {
+      title: 'How to Choose a Digital Marketing Agency in Tampa That Drives Real Growth | TAOH',
+      description: 'Learn how Tampa Bay businesses can choose the right digital marketing agency for lead generation, paid ads, websites, content, and conversion-focused growth.',
+      keywords: 'digital marketing agency tampa, tampa digital marketing agency, lead generation agency, paid advertising agency, website design agency, video marketing agency, sales funnel agency',
+    },
+  },
 };
 
 function AdBudgetArticle() {
