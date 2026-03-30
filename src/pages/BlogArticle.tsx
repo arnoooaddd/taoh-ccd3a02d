@@ -56,9 +56,9 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
   'why-buying-home-renovation-leads-is-bad-strategy-2026': {
     component: RenovationLeadsArticle,
     meta: {
-      title: 'Why Buying Home Renovation Leads Is a Bad Strategy in 2026 | TAOH',
-      description: 'Discover why buying renovation leads wrecks margin and weakens your brand. Learn how to build your own contractor lead generation system for predictable growth.',
-      keywords: 'lead generation agency, contractor marketing agency, home service marketing agency, cost per lead marketing, why ads are not working',
+      title: 'Why Buying Leads Is a Losing Strategy for Tampa Bay Businesses Spending $2K+/Mo on Ads | TAOH',
+      description: 'If your Tampa Bay business spends $2,000+ per month on ads and still buys third-party leads, you are paying twice for prospects you do not own. Here is how to build your own system instead.',
+      keywords: 'lead generation agency, digital marketing agency tampa, customer acquisition, paid advertising agency, cost per lead marketing',
     },
   },
   'digital-acquisition-results-timeline-tampa-bay-businesses': {
