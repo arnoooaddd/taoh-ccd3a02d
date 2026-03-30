@@ -56,9 +56,9 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
   'why-buying-home-renovation-leads-is-bad-strategy-2026': {
     component: RenovationLeadsArticle,
     meta: {
-      title: 'Why Buying Home Renovation Leads Is a Bad Strategy in 2026 | TAOH',
-      description: 'Discover why buying renovation leads wrecks margin and weakens your brand. Learn how to build your own contractor lead generation system for predictable growth.',
-      keywords: 'lead generation agency, contractor marketing agency, home service marketing agency, cost per lead marketing, why ads are not working',
+      title: 'Why Buying Leads Is a Losing Strategy for Tampa Bay Businesses Spending $2K+/Mo on Ads | TAOH',
+      description: 'If your Tampa Bay business spends $2,000+ per month on ads and still buys third-party leads, you are paying twice for prospects you do not own. Here is how to build your own system instead.',
+      keywords: 'lead generation agency, digital marketing agency tampa, customer acquisition, paid advertising agency, cost per lead marketing',
     },
   },
   'digital-acquisition-results-timeline-tampa-bay-businesses': {
@@ -2094,8 +2094,8 @@ function RenovationLeadsArticle() {
       {/* Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
-          Buying leads looks efficient. In practice, it usually wrecks margin, weakens your brand, and keeps your sales team stuck chasing low-intent prospects. 
-          If you run a renovation company doing $1M+, this article explains why a <strong>home service marketing agency</strong> approach built on owned assets will always outperform rented lead lists — and what to build instead.
+          If your Tampa Bay business is spending over $2,000 a month on advertising and still buying third-party leads on the side, you are paying twice for prospects you do not own.
+          This article explains why bought leads weaken your brand, destroy your margins, and prevent you from building a real <strong>customer acquisition</strong> system — and what to build instead.
         </p>
       </div>
 
@@ -2126,7 +2126,7 @@ function RenovationLeadsArticle() {
         🔴 The Real Problem: You Don't Own the Acquisition System
       </h2>
       <p>
-        When a renovation company buys leads, it is not building demand. It is renting access to people who often do not know the company, did not ask for that company specifically, and may have been sold to several competitors.
+        When a business buys leads from a third party, it is not building demand. It is renting access to people who often do not know the company, did not ask for that company specifically, and may have been sold to several competitors at the same time.
       </p>
       <p>That creates three immediate issues:</p>
       <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
@@ -2137,7 +2137,7 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        For a company doing $1M+ a year, that is not a growth strategy. It is outsourced dependency.
+        For a Tampa Bay business already spending $2,000+ per month on ads, that is not a growth strategy. It is outsourced dependency layered on top of an existing ad budget.
       </p>
 
       {/* Section 2 */}
@@ -2147,13 +2147,13 @@ function RenovationLeadsArticle() {
       <p>Your goal is simple:</p>
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 my-6">
         <ul className="space-y-2 m-0 list-none p-0">
-          <li>✅ Get qualified homeowners</li>
+          <li>✅ Get qualified prospects</li>
           <li>✅ Book serious appointments</li>
-          <li>✅ Close profitable jobs</li>
+          <li>✅ Close profitable deals</li>
         </ul>
       </div>
       <p>The lead seller's goal is different:</p>
-      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-6">
         <ul className="space-y-2 m-0 list-none p-0">
           <li>👉 Generate as many leads as possible</li>
           <li>👉 Sell them as many times as possible</li>
@@ -2167,21 +2167,21 @@ function RenovationLeadsArticle() {
         <li>⚠️ The conversation starts with price pressure</li>
         <li>⚠️ Your team spends time chasing people already comparing quotes</li>
       </ul>
-      <p>This is not a sales problem. It is a bad <strong>customer acquisition</strong> model.</p>
+      <p>This is not a sales problem. It is a broken <strong>customer acquisition</strong> model.</p>
 
       {/* Example Card */}
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <h3 className="text-lg font-bold mb-4 mt-0">🎯 Real Example</h3>
-        <p className="mb-3">A roofing company buys 100 leads in a month. Results:</p>
+        <p className="mb-3">A Tampa Bay service business buys 100 leads in a month. Results:</p>
         <ul className="space-y-2 list-none p-0 m-0">
           <li>❌ 30 never answer</li>
-          <li>❌ 25 already spoke with another contractor</li>
+          <li>❌ 25 already spoke with another company</li>
           <li>❌ 20 are price shopping only</li>
           <li>❌ 15 are outside the ideal service scope</li>
           <li>✅ 10 turn into real opportunities</li>
         </ul>
         <p className="mt-4 text-sm text-muted-foreground mb-0">
-          The business thinks it bought 100 leads. In reality, it bought 10 workable conversations and 90 distractions.
+          The business thinks it bought 100 leads. In reality, it bought 10 workable conversations and 90 distractions — on top of the $2K+ it already spends on its own ads.
         </p>
       </div>
 
@@ -2190,9 +2190,9 @@ function RenovationLeadsArticle() {
         🔴 2. The Lead Doesn't Come Through Your Brand — So Trust Is Weak
       </h2>
       <p>
-        Most bought leads come from generic landing pages, comparison sites, or broad home-services funnels. The prospect did not search for your company. They often do not even remember where they submitted their information.
+        Most bought leads come from generic landing pages, comparison sites, or broad service funnels. The prospect did not search for your company. They often do not even remember where they submitted their information.
       </p>
-      <p>That creates a trust gap. In home renovation, trust is not optional.</p>
+      <p>That creates a trust gap — and for businesses spending real money on ads, it undermines everything your own campaigns are building.</p>
       <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-6 my-6">
         <h4 className="font-bold mb-3 mt-0">Weak-brand leads create these problems:</h4>
         <ul className="space-y-2 list-none p-0 m-0">
@@ -2203,16 +2203,16 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        The best prospects do not convert on sketchy or generic forms. The stronger homeowners tend to respond to businesses that look credible, visible, and established.
+        The best prospects do not convert on generic forms. Stronger buyers respond to businesses that look credible, visible, and established — exactly what your own <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link> should be doing.
       </p>
-      <p>So when you buy leads, you often attract colder prospects, more hesitant buyers, lower-trust conversations, and more price-sensitive deals. That is bad <strong>lead generation services</strong> economics.</p>
+      <p>So when you buy leads on top of an existing ad budget, you are diluting your brand with low-trust traffic while paying premium for both channels. That is bad <strong>lead generation</strong> economics.</p>
 
       {/* Section 4 */}
       <h2 id="margin-destruction" className="flex items-center gap-3">
         🟠 3. Bought Leads Destroy Margin Because They Force Competition Too Early
       </h2>
       <p>
-        When multiple contractors call the same lead, the market shifts immediately toward price comparison. You lose leverage.
+        When multiple businesses call the same lead, the market shifts immediately toward price comparison. You lose leverage.
       </p>
       <p>Instead of controlling the buying process, you enter a race:</p>
       <ul className="space-y-2 list-none p-0">
@@ -2221,9 +2221,9 @@ function RenovationLeadsArticle() {
         <li>👉 Who can tolerate thinner margin</li>
       </ul>
       <p>
-        If you have a real team, office staff, project management, installers, guarantees, and operating overhead — you should not be competing like a commodity vendor.
+        If you have a real team, office staff, project management, and operating overhead — you should not be competing like a commodity vendor. Especially if you are already investing $2,000+ per month in your own advertising.
       </p>
-      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-8">
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-8">
         <h4 className="font-bold mb-3 mt-0">📊 What this does to your numbers</h4>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
@@ -2246,15 +2246,15 @@ function RenovationLeadsArticle() {
           </div>
         </div>
         <p className="mt-4 text-sm text-muted-foreground mb-0">
-          A lead that looks cheap at top of funnel becomes expensive once you measure actual revenue and margin. That is why many companies complain about <strong>cost per lead marketing</strong> while missing the real metric: cost per closed profitable job.
+          A lead that looks cheap at top of funnel becomes expensive once you measure actual revenue and margin. That is why many Tampa Bay businesses complain about <strong>cost per lead</strong> while missing the real metric: cost per closed profitable deal.
         </p>
       </div>
 
       {/* Mid-Article CTA */}
       <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 my-12 text-center">
-        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Stop Renting Leads?</h3>
+        <h3 className="text-2xl font-bold mb-3 mt-0">🎯 Ready to Stop Paying Twice for Leads?</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established renovation and home service businesses build their own <strong>lead generation</strong> engine — with predictable results and real margin.
+          We help Tampa Bay businesses spending $2K+/mo on ads build their own <strong>lead generation</strong> engine — with predictable results and real margin.
         </p>
         <Link to="/#contact" className="btn-hero-primary inline-block">
           Talk to Our Team
@@ -2275,7 +2275,7 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        That means you do not have a marketing system. You have a paid tap. A real <strong>growth marketing services</strong> system should keep building value over time. Bought leads do the opposite.
+        That means you do not have a marketing system. You have a paid tap. And you are running two paid taps — your own ads plus a lead vendor — without building any lasting asset. A real <strong>growth marketing</strong> system should keep building value over time. Bought leads do the opposite.
       </p>
       <p>You do not build:</p>
       <ul className="space-y-2 list-none p-0">
@@ -2286,17 +2286,17 @@ function RenovationLeadsArticle() {
         <li>❌ First-party lead database</li>
         <li>❌ Marketing infrastructure</li>
       </ul>
-      <p>So every month starts from zero again. For an established contractor, that is a bad place to be in 2026.</p>
+      <p>So every month starts from zero again. For an established Tampa Bay business already investing in advertising, that is a growth ceiling — not a growth strategy.</p>
 
       {/* Section 6 */}
       <h2 id="market-harder" className="flex items-center gap-3">
         ⚠️ 5. The Market Is Harder Now — Generic Leads Perform Worse
       </h2>
       <p>
-        Homeowners are more skeptical. Competition is tighter. Ad platforms are more expensive. Attention is lower. People do more research before booking.
+        Buyers are more skeptical. Competition is tighter. Ad platforms are more expensive. Attention is lower. People do more research before committing.
       </p>
       <p>In that environment, low-trust lead sources get weaker:</p>
-      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-6">
         <ul className="space-y-2 list-none p-0 m-0">
           <li>👉 Prospects screen harder</li>
           <li>👉 Generic funnels convert worse</li>
@@ -2305,18 +2305,18 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        This is often the hidden answer behind <strong>why ads are not working</strong> or why the sales team says "the leads are bad." The issue is usually not demand alone. It is the system behind the lead.
+        This is often the hidden answer behind <strong>why ads are not working</strong> or why the sales team says "the leads are bad." The issue is usually not demand alone. It is the system behind the lead — and buying leads adds noise instead of signal.
       </p>
 
       {/* Section 7 - What to Do Instead */}
       <h2 id="what-to-do-instead" className="flex items-center gap-3">
-        🎯 What to Do Instead: Build Your Own Lead Generation Engine
+        🎯 What to Do Instead: Consolidate Your Budget Into One Owned System
       </h2>
-      <p>The alternative is not "stop investing in marketing." The alternative is to stop renting prospects and start owning the acquisition process.</p>
+      <p>The alternative is not "stop investing in marketing." The alternative is to stop splitting your budget between your own ads and rented prospects, and instead consolidate everything into one branded acquisition engine that you control.</p>
 
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
         <h3 className="text-lg font-bold mb-4 mt-0">✅ The Better Model</h3>
-        <p className="mb-3">Use paid traffic to drive prospects into your own system:</p>
+        <p className="mb-3">Take that $2K+ ad budget and the lead-buying budget, and invest the full amount into your own system:</p>
         <ul className="space-y-2 list-none p-0 m-0">
           <li>✅ <Link to="/services/ads-management" className="text-primary hover:underline">Google Ads</Link> for high-intent demand</li>
           <li>✅ <Link to="/services/ads-management" className="text-primary hover:underline">Facebook Ads</Link> for local awareness and retargeting</li>
@@ -2330,16 +2330,16 @@ function RenovationLeadsArticle() {
       <h3>🔧 1. Traffic with Intent Segmentation</h3>
       <p>Separate campaigns by intent level:</p>
       <ul className="space-y-2 list-none p-0">
-        <li>✔️ Google Search for "roof replacement near me"</li>
-        <li>✔️ Google Search for "window company [city]"</li>
+        <li>✔️ Google Search for high-intent keywords in your service area</li>
         <li>✔️ Facebook retargeting for visitors who did not book</li>
         <li>✔️ YouTube or Meta video ads to warm local audiences</li>
+        <li>✔️ Separate budgets for cold and warm traffic</li>
       </ul>
       <p>Do not mix all traffic into one generic campaign.</p>
 
       <h3>🔧 2. Landing Pages Built to Convert</h3>
       <p>A high-performing page should answer four questions fast:</p>
-      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 my-6">
+      <div className="bg-secondary/30 border border-border rounded-2xl p-6 my-6">
         <ul className="space-y-3 list-none p-0 m-0">
           <li>👉 What do you do?</li>
           <li>👉 Why should someone trust you?</li>
@@ -2348,21 +2348,21 @@ function RenovationLeadsArticle() {
         </ul>
       </div>
       <p>
-        Include local proof, before/after visuals, reviews, offer clarity, financing details, and a short form with a clear CTA. This is where <strong>landing page optimization</strong> and <strong>conversion rate optimization</strong> directly affect revenue.
+        Include local proof, reviews, offer clarity, and a short form with a clear CTA. This is where <strong>landing page optimization</strong> and <strong>conversion rate optimization</strong> directly affect revenue.
       </p>
 
       <h3>🔧 3. Creative That Builds Trust Before the Sales Call</h3>
       <p>
-        <Link to="/services/video-shooting" className="text-primary hover:underline">Video</Link> is underrated in renovation marketing because it reduces skepticism fast:
+        <Link to="/services/video-shooting" className="text-primary hover:underline">Video</Link> is underrated because it reduces skepticism fast:
       </p>
       <ul className="space-y-2 list-none p-0">
         <li>✅ Owner videos</li>
-        <li>✅ Project walkthroughs</li>
+        <li>✅ Behind-the-scenes content</li>
         <li>✅ Customer testimonials</li>
-        <li>✅ Before/after transformations</li>
-        <li>✅ Simple explanation of process and guarantees</li>
+        <li>✅ Process walkthroughs</li>
+        <li>✅ Simple explanation of what makes you different</li>
       </ul>
-      <p>Good <strong>video content creation</strong> pre-sells the prospect before your rep even calls.</p>
+      <p>Good <strong>video content</strong> pre-sells the prospect before your rep even calls.</p>
 
       <h3>🔧 4. Follow-Up That Matches Lead Speed</h3>
       <p>Even good leads die with bad process. Minimum standard:</p>
@@ -2380,15 +2380,15 @@ function RenovationLeadsArticle() {
       <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8 my-8">
         <h3 className="text-xl font-bold mb-4 mt-0">🧠 The Strategic Shift</h3>
         <p className="mb-2"><strong>Stop asking:</strong> "Where can I buy more leads?"</p>
-        <p className="mb-4"><strong>Start asking:</strong> "How do we build a system that generates qualified leads under our own brand?"</p>
-        <p className="mb-0">That shift changes everything: better lead quality, better close rates, better margin, better predictability, and higher enterprise value over time.</p>
+        <p className="mb-4"><strong>Start asking:</strong> "How do I consolidate my $2K+ ad budget and lead spend into one system that generates qualified leads under my own brand?"</p>
+        <p className="mb-0">That shift changes everything: better lead quality, better close rates, better margin, better predictability, and higher business value over time.</p>
       </div>
 
       {/* Bottom Line */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 my-8">
         <h3 className="text-xl font-bold mb-3 mt-0">📌 Bottom Line</h3>
         <p className="mb-0">
-          Buying renovation leads can fill short-term gaps. It does not create durable growth. If you want to scale a serious home service business in 2026, the goal is not to buy more names. The goal is to own the full path from traffic to trust to booked appointment to closed revenue. That is how real <strong>lead generation services</strong> should work.
+          Buying leads can fill short-term gaps. It does not create durable growth. If your Tampa Bay business is already spending $2,000+ per month on ads, the goal is not to add another lead source. The goal is to own the full path from traffic to trust to booked appointment to closed revenue. That is how real <strong>lead generation</strong> should work.
         </p>
       </div>
 
@@ -2401,7 +2401,7 @@ function RenovationLeadsArticle() {
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">Are bought leads always bad?</h4>
           <p className="m-0 text-muted-foreground">
-            No. They can help temporarily if you need immediate volume. But as a core growth strategy, they are weak, expensive, and hard to scale profitably.
+            No. They can help temporarily if you need immediate volume. But as a core growth strategy alongside an existing ad budget, they are redundant, expensive, and prevent you from building a real system.
           </p>
         </div>
         <div className="glass-card">
@@ -2411,21 +2411,21 @@ function RenovationLeadsArticle() {
           </p>
         </div>
         <div className="glass-card">
-          <h4 className="font-bold mt-0 mb-2">What is better than buying leads for contractors?</h4>
+          <h4 className="font-bold mt-0 mb-2">What is better than buying leads for Tampa Bay businesses?</h4>
           <p className="m-0 text-muted-foreground">
-            Building your own <strong>contractor marketing agency</strong>-grade system with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, branded <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link>, strong <Link to="/services/video-shooting" className="text-primary hover:underline">creative</Link>, and structured follow-up.
+            Building your own acquisition system with <Link to="/services/ads-management" className="text-primary hover:underline">paid ads</Link>, branded <Link to="/services/website-creation" className="text-primary hover:underline">landing pages</Link>, strong <Link to="/services/video-shooting" className="text-primary hover:underline">creative</Link>, and structured follow-up — all under your own brand.
           </p>
         </div>
         <div className="glass-card">
-          <h4 className="font-bold mt-0 mb-2">What should a renovation company focus on instead?</h4>
+          <h4 className="font-bold mt-0 mb-2">Should I stop my ads to focus on one system?</h4>
           <p className="m-0 text-muted-foreground">
-            Focus on owned acquisition assets: paid traffic under your brand, conversion-focused landing pages, reviews and proof, CRM follow-up, retargeting, and sales process discipline.
+            No — keep your ads, but stop buying third-party leads and redirect that budget into improving your own campaigns, landing pages, creative, and follow-up process. Consolidate, do not split.
           </p>
         </div>
         <div className="glass-card">
           <h4 className="font-bold mt-0 mb-2">Is this only for large companies?</h4>
           <p className="m-0 text-muted-foreground">
-            No, but it matters more once you are trying to scale beyond referrals and inconsistent deal flow. For companies above $1M in annual revenue, relying on third-party leads is usually a growth ceiling.
+            No, but it matters most once you are spending $2,000+ per month on ads. At that level, every dollar wasted on rented leads is a dollar not spent strengthening your own branded pipeline.
           </p>
         </div>
       </div>
@@ -2440,8 +2440,8 @@ function RenovationLeadsArticle() {
           <Link to="/blog/lead-qualification-levels-tampa-bay-businesses" className="text-primary hover:underline font-semibold block">
             Not All Leads Are Equal: The 4 Qualification Levels Tampa Bay Businesses Need →
           </Link>
-          <Link to="/blog/why-paid-advertising-beats-random-lead-tactics-tampa-2026" className="text-primary hover:underline font-semibold block">
-            Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses →
+          <Link to="/blog/how-much-should-tampa-businesses-spend-on-ads-2026" className="text-primary hover:underline font-semibold block">
+            How Much Should Tampa Bay Businesses Spend on Ads in 2026? →
           </Link>
         </div>
       </div>
@@ -2450,7 +2450,7 @@ function RenovationLeadsArticle() {
       <div className="blog-cta bg-primary/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10 my-12 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-3 mt-0">🚀 Build Your Own Growth Engine</h3>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          We help established businesses build predictable, branded <strong>lead generation</strong> systems — from paid ads to landing pages to video to CRM.
+          We help Tampa Bay businesses consolidate their ad spend into one predictable, branded <strong>lead generation</strong> system — from paid ads to landing pages to video to CRM.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="btn-hero-primary">
@@ -5201,7 +5201,7 @@ const BlogArticle = () => {
       </Helmet>
       <Navbar />
       {/* Dark header area for breadcrumb + article title */}
-      <div className="pt-32 pb-12 px-3 md:px-8 bg-background">
+      <div className="pt-32 pb-12 px-2 sm:px-3 md:px-8 bg-background">
         <div className="container mx-auto max-w-3xl">
           {/* Breadcrumb */}
           <motion.div
@@ -5252,7 +5252,7 @@ const BlogArticle = () => {
       </div>
 
       {/* Summary */}
-      <div className="blog-light py-8 md:py-10 px-3 md:px-8">
+      <div className="blog-light py-8 md:py-10 px-2 sm:px-3 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <div className="border-l-4 border-primary pl-4 md:pl-6 py-3" style={{ borderColor: 'hsl(38 92% 50%)' }}>
             <span className="text-xs font-semibold uppercase tracking-wider mb-2 block" style={{ color: 'hsl(38 92% 50%)' }}>Article Summary</span>
@@ -5264,7 +5264,7 @@ const BlogArticle = () => {
       </div>
 
       {/* Light theme article content */}
-      <article className="blog-light py-8 md:py-16 px-3 md:px-8">
+      <article className="blog-light py-8 md:py-16 px-2 sm:px-3 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
