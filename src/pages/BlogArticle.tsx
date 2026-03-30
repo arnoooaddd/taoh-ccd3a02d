@@ -5264,7 +5264,7 @@ const BlogArticle = () => {
       </div>
 
       {/* Light theme article content */}
-      <article className="blog-light py-8 md:py-16 px-3 md:px-8">
+      <article className="blog-light py-8 md:py-16 px-2 sm:px-3 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

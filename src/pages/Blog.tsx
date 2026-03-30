@@ -73,12 +73,12 @@ export const blogArticles = [
   },
   {
     slug: 'why-buying-home-renovation-leads-is-bad-strategy-2026',
-    title: 'Why Buying Home Renovation Leads Is a Bad Strategy in 2026',
-    excerpt: 'Buying leads looks efficient. In practice, it usually wrecks margin, weakens your brand, and keeps your sales team stuck chasing low-intent prospects.',
+    title: 'Why Buying Leads Is a Losing Strategy for Tampa Bay Businesses Spending $2K+/Mo on Ads',
+    excerpt: 'If you are spending over $2,000 a month on ads and still buying third-party leads, you are paying twice for prospects you do not own. Here is how to fix that.',
     date: '2026-03-29',
     readTime: '12 min read',
     category: 'Lead Generation',
-    keywords: ['lead generation', 'contractor marketing', 'home services'],
+    keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'paid advertising agency'],
     image: undefined as string | undefined,
   },
   {
