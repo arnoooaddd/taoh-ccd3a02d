@@ -38,6 +38,7 @@ export const blogArticles = [
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
     image: blogWhichPlatform,
+  },
   {
     slug: 'why-paid-advertising-beats-random-lead-tactics-tampa-2026',
     title: 'Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses in 2026',
