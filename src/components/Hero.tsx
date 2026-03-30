@@ -93,7 +93,7 @@ export const Hero = () => {
             </motion.div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              The #1 Growth Accelerator for{' '}
+              The #1 Marketing Agency for{' '}
               <span className="text-gradient">Tampa Bay</span>{' '}
               Businesses
             </h1>

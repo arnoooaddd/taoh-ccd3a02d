@@ -135,7 +135,7 @@
   }
   
   .glass-card {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6;
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-4 md:p-6;
   }
   
   /* Floating logo background */
