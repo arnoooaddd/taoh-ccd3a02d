@@ -5,6 +5,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, Calendar } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
+import blogBestAdPlatform from '@/assets/blog-best-ad-platform.png';
+import blogLeadQualityLevels from '@/assets/blog-lead-quality-levels.png';
+import blogStandOutCompetitors from '@/assets/blog-stand-out-competitors.png';
+import blogRetargetLeads from '@/assets/blog-retarget-leads.png';
+import blogChooseAgency from '@/assets/blog-choose-agency.png';
+import blogInhouseVsAgency from '@/assets/blog-inhouse-vs-agency.png';
+import blogHowLongAdsWork from '@/assets/blog-how-long-ads-work.png';
+import blogEscapePriceWars from '@/assets/blog-escape-price-wars.png';
+import blogNeverBuyLeads from '@/assets/blog-never-buy-leads.png';
+
 export const blogArticles = [
   {
     slug: 'how-much-should-tampa-businesses-spend-on-ads-2026',
@@ -14,6 +24,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'google ads agency', 'facebook ads agency', 'digital marketing agency tampa'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'google-ads-vs-facebook-ads-tampa-2026',
@@ -23,6 +34,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'why-paid-advertising-beats-random-lead-tactics-tampa-2026',
@@ -32,6 +44,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'digital marketing agency tampa', 'lead generation agency', 'sales funnel agency'],
+    image: blogEscapePriceWars,
   },
   {
     slug: 'why-buying-leads-bad-strategy-tampa-2026',
@@ -41,6 +54,7 @@ export const blogArticles = [
     readTime: '15 min read',
     category: 'Lead Generation',
     keywords: ['digital marketing agency tampa', 'lead generation agency', 'customer acquisition', 'branding agency'],
+    image: blogNeverBuyLeads,
   },
   {
     slug: 'should-you-hire-marketing-manager-in-house-2026',
@@ -50,6 +64,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'lead generation agency', 'growth marketing'],
+    image: blogInhouseVsAgency,
   },
   {
     slug: 'why-buying-home-renovation-leads-is-bad-strategy-2026',
@@ -59,6 +74,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
@@ -68,6 +84,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'digital marketing agency tampa', 'lead generation agency', 'google ads agency', 'facebook ads agency'],
+    image: blogHowLongAdsWork,
   },
   {
     slug: 'how-to-choose-a-digital-marketing-agency-in-tampa',
@@ -77,6 +94,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'tampa digital marketing agency', 'lead generation agency', 'website design agency'],
+    image: blogChooseAgency,
   },
   {
     slug: 'lead-qualification-levels-tampa-bay-businesses',
@@ -86,6 +104,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'sales funnel agency'],
+    image: blogLeadQualityLevels,
   },
   {
     slug: 'contact-social-media-leads-tampa-bay-businesses',
@@ -95,6 +114,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'facebook ads agency', 'customer acquisition', 'digital marketing agency tampa'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'google-ads-vs-facebook-ads-tampa-businesses',
@@ -104,6 +124,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
+    image: blogBestAdPlatform,
   },
   {
     slug: 'retargeting-paid-ads-tampa-bay-businesses',
@@ -113,6 +134,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'lead generation agency', 'digital marketing agency tampa', 'customer acquisition'],
+    image: blogRetargetLeads,
   },
   {
     slug: 'tampa-bay-business-marketing-content-paid-ads-2026',
@@ -122,6 +144,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'content marketing services', 'growth marketing services', 'brand positioning services'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'stand-out-from-untrustworthy-competitors-tampa-businesses',
@@ -131,6 +154,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'brand positioning services'],
+    image: blogStandOutCompetitors,
   },
 ];
 
@@ -170,11 +194,21 @@ const Blog = () => {
               >
                 <Link
                   to={`/blog/${article.slug}`}
-                  className="glass-card group block hover:bg-white/10 transition-all duration-500"
+                  className="glass-card group block hover:bg-white/10 transition-all duration-500 overflow-hidden"
                 >
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    {article.image && (
+                      <div className="w-full md:w-48 lg:w-56 flex-shrink-0">
+                        <img
+                          src={article.image}
+                          alt={article.title}
+                          className="w-full h-36 md:h-32 object-cover rounded-lg"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                     <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
+                      <div className="flex items-center gap-3 mb-3 flex-wrap">
                         <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
                           {article.category}
                         </span>

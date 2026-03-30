@@ -5238,6 +5238,15 @@ const BlogArticle = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               {articleMeta.title}
             </h1>
+            {articleMeta.image && (
+              <div className="mt-8 rounded-xl overflow-hidden">
+                <img
+                  src={articleMeta.image}
+                  alt={articleMeta.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            )}
           </motion.div>
         </div>
       </div>
