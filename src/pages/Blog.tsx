@@ -194,11 +194,21 @@ const Blog = () => {
               >
                 <Link
                   to={`/blog/${article.slug}`}
-                  className="glass-card group block hover:bg-white/10 transition-all duration-500"
+                  className="glass-card group block hover:bg-white/10 transition-all duration-500 overflow-hidden"
                 >
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    {article.image && (
+                      <div className="w-full md:w-48 lg:w-56 flex-shrink-0">
+                        <img
+                          src={article.image}
+                          alt={article.title}
+                          className="w-full h-36 md:h-32 object-cover rounded-lg"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                     <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
+                      <div className="flex items-center gap-3 mb-3 flex-wrap">
                         <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
                           {article.category}
                         </span>
