@@ -13,10 +13,12 @@ import blogInhouseVsAgency from '@/assets/blog-inhouse-vs-agency.webp';
 import blogDoAdsWork from '@/assets/blog-do-ads-work.webp';
 import blogHowLongAdsWork from '@/assets/blog-how-long-ads-work.webp';
 import blogChooseAgency from '@/assets/blog-choose-agency.webp';
-import blogBestAdPlatform from '@/assets/blog-best-ad-platform.png';
-import blogLeadQualityLevels from '@/assets/blog-lead-quality-levels.png';
-import blogStandOutCompetitors from '@/assets/blog-stand-out-competitors.png';
-import blogRetargetLeads from '@/assets/blog-retarget-leads.png';
+import blogLeadQualityLevels from '@/assets/blog-lead-quality-levels.webp';
+import blogContactLeads from '@/assets/blog-contact-leads.webp';
+import blogBestAdPlatform from '@/assets/blog-best-ad-platform.webp';
+import blogRetargetLeads from '@/assets/blog-retarget-leads.webp';
+import blogContentPaidAds2026 from '@/assets/blog-content-paid-ads-2026.webp';
+import blogStandOutCompetitors from '@/assets/blog-stand-out-competitors.webp';
 
 export const blogArticles = [
   {
@@ -77,7 +79,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
-    image: blogDoAdsWork,
+    image: undefined as string | undefined,
   },
   {
     slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
@@ -117,7 +119,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'facebook ads agency', 'customer acquisition', 'digital marketing agency tampa'],
-    image: undefined as string | undefined,
+    image: blogContactLeads,
   },
   {
     slug: 'google-ads-vs-facebook-ads-tampa-businesses',
@@ -147,7 +149,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'content marketing services', 'growth marketing services', 'brand positioning services'],
-    image: undefined as string | undefined,
+    image: blogContentPaidAds2026,
   },
   {
     slug: 'stand-out-from-untrustworthy-competitors-tampa-businesses',

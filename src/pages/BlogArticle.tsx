@@ -5201,7 +5201,7 @@ const BlogArticle = () => {
       </Helmet>
       <Navbar />
       {/* Dark header area for breadcrumb + article title */}
-      <div className="pt-32 pb-12 px-4 md:px-8 bg-background">
+      <div className="pt-32 pb-12 px-3 md:px-8 bg-background">
         <div className="container mx-auto max-w-3xl">
           {/* Breadcrumb */}
           <motion.div
@@ -5251,8 +5251,20 @@ const BlogArticle = () => {
         </div>
       </div>
 
+      {/* Summary */}
+      <div className="blog-light py-8 md:py-10 px-3 md:px-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="border-l-4 border-primary pl-4 md:pl-6 py-3" style={{ borderColor: 'hsl(38 92% 50%)' }}>
+            <span className="text-xs font-semibold uppercase tracking-wider mb-2 block" style={{ color: 'hsl(38 92% 50%)' }}>Article Summary</span>
+            <p className="text-base md:text-lg leading-relaxed" style={{ color: 'hsl(215 25% 30%)' }}>
+              {articleMeta.excerpt}
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Light theme article content */}
-      <article className="blog-light py-12 md:py-16 px-4 md:px-8">
+      <article className="blog-light py-8 md:py-16 px-3 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
