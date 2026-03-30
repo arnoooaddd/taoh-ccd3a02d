@@ -75,8 +75,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
-    image: undefined as string | undefined,
-  },
+    image: blogDoAdsWork,
   {
     slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
     title: 'How Long Does It Take to See Results From Digital Acquisition in 2026?',
