@@ -119,7 +119,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'facebook ads agency', 'customer acquisition', 'digital marketing agency tampa'],
-    image: undefined as string | undefined,
+    image: blogContactLeads,
   },
   {
     slug: 'google-ads-vs-facebook-ads-tampa-businesses',
