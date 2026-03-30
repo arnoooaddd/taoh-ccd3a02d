@@ -28,6 +28,7 @@ export const blogArticles = [
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'google ads agency', 'facebook ads agency', 'digital marketing agency tampa'],
     image: blogAdCostProfitable,
+  },
   {
     slug: 'google-ads-vs-facebook-ads-tampa-2026',
     title: 'Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026?',
@@ -37,6 +38,7 @@ export const blogArticles = [
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
     image: blogWhichPlatform,
+  },
   {
     slug: 'why-paid-advertising-beats-random-lead-tactics-tampa-2026',
     title: 'Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses in 2026',
@@ -76,6 +78,7 @@ export const blogArticles = [
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
     image: blogDoAdsWork,
+  },
   {
     slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
     title: 'How Long Does It Take to See Results From Digital Acquisition in 2026?',
