@@ -149,7 +149,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'content marketing services', 'growth marketing services', 'brand positioning services'],
-    image: undefined as string | undefined,
+    image: blogContentPaidAds2026,
   },
   {
     slug: 'stand-out-from-untrustworthy-competitors-tampa-businesses',
