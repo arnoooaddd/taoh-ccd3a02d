@@ -5252,7 +5252,7 @@ const BlogArticle = () => {
       </div>
 
       {/* Summary */}
-      <div className="blog-light py-8 md:py-10 px-3 md:px-8">
+      <div className="blog-light py-8 md:py-10 px-2 sm:px-3 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <div className="border-l-4 border-primary pl-4 md:pl-6 py-3" style={{ borderColor: 'hsl(38 92% 50%)' }}>
             <span className="text-xs font-semibold uppercase tracking-wider mb-2 block" style={{ color: 'hsl(38 92% 50%)' }}>Article Summary</span>
