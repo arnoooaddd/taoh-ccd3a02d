@@ -25,13 +25,16 @@ export const blogArticles = [
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'google ads agency', 'facebook ads agency', 'digital marketing agency tampa'],
     image: undefined as string | undefined,
-
+  },
+  {
+    slug: 'google-ads-vs-facebook-ads-tampa-2026',
     title: 'Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026?',
     excerpt: 'It is not "Which platform is better?" It is "Which platform fits your buying cycle, sales process, and growth goal?" Here is how to decide.',
     date: '2026-03-29',
     readTime: '12 min read',
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'why-paid-advertising-beats-random-lead-tactics-tampa-2026',
@@ -41,6 +44,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'digital marketing agency tampa', 'lead generation agency', 'sales funnel agency'],
+    image: blogEscapePriceWars,
   },
   {
     slug: 'why-buying-leads-bad-strategy-tampa-2026',
@@ -50,6 +54,7 @@ export const blogArticles = [
     readTime: '15 min read',
     category: 'Lead Generation',
     keywords: ['digital marketing agency tampa', 'lead generation agency', 'customer acquisition', 'branding agency'],
+    image: blogNeverBuyLeads,
   },
   {
     slug: 'should-you-hire-marketing-manager-in-house-2026',
@@ -59,6 +64,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'lead generation agency', 'growth marketing'],
+    image: blogInhouseVsAgency,
   },
   {
     slug: 'why-buying-home-renovation-leads-is-bad-strategy-2026',
@@ -68,6 +74,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
@@ -77,6 +84,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'digital marketing agency tampa', 'lead generation agency', 'google ads agency', 'facebook ads agency'],
+    image: blogHowLongAdsWork,
   },
   {
     slug: 'how-to-choose-a-digital-marketing-agency-in-tampa',
@@ -86,6 +94,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'tampa digital marketing agency', 'lead generation agency', 'website design agency'],
+    image: blogChooseAgency,
   },
   {
     slug: 'lead-qualification-levels-tampa-bay-businesses',
@@ -95,6 +104,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'sales funnel agency'],
+    image: blogLeadQualityLevels,
   },
   {
     slug: 'contact-social-media-leads-tampa-bay-businesses',
@@ -104,6 +114,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation agency', 'facebook ads agency', 'customer acquisition', 'digital marketing agency tampa'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'google-ads-vs-facebook-ads-tampa-businesses',
@@ -113,6 +124,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
+    image: blogBestAdPlatform,
   },
   {
     slug: 'retargeting-paid-ads-tampa-bay-businesses',
@@ -122,6 +134,7 @@ export const blogArticles = [
     readTime: '13 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'lead generation agency', 'digital marketing agency tampa', 'customer acquisition'],
+    image: blogRetargetLeads,
   },
   {
     slug: 'tampa-bay-business-marketing-content-paid-ads-2026',
@@ -131,6 +144,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['digital marketing agency tampa', 'content marketing services', 'growth marketing services', 'brand positioning services'],
+    image: undefined as string | undefined,
   },
   {
     slug: 'stand-out-from-untrustworthy-competitors-tampa-businesses',
@@ -140,6 +154,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Growth Strategy',
     keywords: ['lead generation agency', 'digital marketing agency tampa', 'customer acquisition', 'brand positioning services'],
+    image: blogStandOutCompetitors,
   },
 ];
 
