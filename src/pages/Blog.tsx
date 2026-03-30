@@ -79,7 +79,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
-    image: blogDoAdsWork,
+    image: undefined as string | undefined,
   },
   {
     slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
