@@ -5,15 +5,18 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, Calendar } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
+import blogAdCostProfitable from '@/assets/blog-ad-cost-profitable.webp';
+import blogWhichPlatform from '@/assets/blog-which-platform.webp';
+import blogEscapePriceWars from '@/assets/blog-escape-price-wars.webp';
+import blogNeverBuyLeads from '@/assets/blog-never-buy-leads.webp';
+import blogInhouseVsAgency from '@/assets/blog-inhouse-vs-agency.webp';
+import blogDoAdsWork from '@/assets/blog-do-ads-work.webp';
+import blogHowLongAdsWork from '@/assets/blog-how-long-ads-work.webp';
+import blogChooseAgency from '@/assets/blog-choose-agency.webp';
 import blogBestAdPlatform from '@/assets/blog-best-ad-platform.png';
 import blogLeadQualityLevels from '@/assets/blog-lead-quality-levels.png';
 import blogStandOutCompetitors from '@/assets/blog-stand-out-competitors.png';
 import blogRetargetLeads from '@/assets/blog-retarget-leads.png';
-import blogChooseAgency from '@/assets/blog-choose-agency.png';
-import blogInhouseVsAgency from '@/assets/blog-inhouse-vs-agency.png';
-import blogHowLongAdsWork from '@/assets/blog-how-long-ads-work.png';
-import blogEscapePriceWars from '@/assets/blog-escape-price-wars.png';
-import blogNeverBuyLeads from '@/assets/blog-never-buy-leads.png';
 
 export const blogArticles = [
   {
@@ -24,8 +27,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'google ads agency', 'facebook ads agency', 'digital marketing agency tampa'],
-    image: undefined as string | undefined,
-  },
+    image: blogAdCostProfitable,
   {
     slug: 'google-ads-vs-facebook-ads-tampa-2026',
     title: 'Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026?',
@@ -34,8 +36,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Paid Advertising',
     keywords: ['google ads agency', 'facebook ads agency', 'paid advertising agency', 'digital marketing agency tampa'],
-    image: undefined as string | undefined,
-  },
+    image: blogWhichPlatform,
   {
     slug: 'why-paid-advertising-beats-random-lead-tactics-tampa-2026',
     title: 'Why Paid Advertising Beats Random Lead Tactics for Tampa Bay Businesses in 2026',
@@ -74,8 +75,7 @@ export const blogArticles = [
     readTime: '12 min read',
     category: 'Lead Generation',
     keywords: ['lead generation', 'contractor marketing', 'home services'],
-    image: undefined as string | undefined,
-  },
+    image: blogDoAdsWork,
   {
     slug: 'digital-acquisition-results-timeline-tampa-bay-businesses',
     title: 'How Long Does It Take to See Results From Digital Acquisition in 2026?',
