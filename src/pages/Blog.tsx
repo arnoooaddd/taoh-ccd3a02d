@@ -27,8 +27,7 @@ export const blogArticles = [
     readTime: '14 min read',
     category: 'Paid Advertising',
     keywords: ['paid advertising agency', 'google ads agency', 'facebook ads agency', 'digital marketing agency tampa'],
-    image: undefined as string | undefined,
-  },
+    image: blogAdCostProfitable,
   {
     slug: 'google-ads-vs-facebook-ads-tampa-2026',
     title: 'Google Ads vs Facebook Ads: What Works Best for Tampa Bay Businesses in 2026?',
