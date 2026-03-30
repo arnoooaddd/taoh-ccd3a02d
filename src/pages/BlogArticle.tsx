@@ -130,8 +130,9 @@ const articles: Record<string, { component: React.FC; meta: { title: string; des
 function AdBudgetArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most businesses do not fail with ads because they spend too much. They fail because they spend too little, expect results too fast, and judge performance before the system has enough data. This article gives Tampa Bay businesses realistic budget benchmarks for Meta and Google Ads, CPL ranges, and a framework for building a <strong>paid advertising agency</strong>-grade system that actually scales. Note: these are general benchmarks — actual budgets depend on your industry, ticket size, and competition level.
         </p>
@@ -528,8 +529,9 @@ function AdBudgetArticle() {
 function GoogleVsFacebookArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most businesses ask the wrong question. It is not "Which platform is better?" It is "Which platform fits our buying cycle, sales process, and growth goal?" For Tampa Bay businesses, both Google Ads and Facebook Ads can drive results — but they do very different jobs. This article breaks down when to use each, realistic budgets, and how a <strong>digital marketing agency tampa</strong> businesses trust would structure both for maximum <strong>customer acquisition</strong>.
         </p>
@@ -930,8 +932,9 @@ function GoogleVsFacebookArticle() {
 function PaidAdvertisingArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most businesses do not have a lead problem. They have a system problem. If your growth depends on inconsistent referrals, third-party lead sources, or unstructured marketing, you do not have a scalable acquisition engine. This article breaks down why a <strong>paid advertising agency</strong> approach — connected to funnels, landing pages, and brand visibility — outperforms scattered tactics for Tampa Bay businesses in 2026.
         </p>
@@ -1306,8 +1309,9 @@ function PaidAdvertisingArticle() {
 function MarketingManagerArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Hiring a marketing manager feels like control. In most cases, it gives you one salary, partial execution, and no real <strong>client acquisition</strong> system.
           If you are running an established business in Tampa Bay, this article breaks down when in-house makes sense — and when a <strong>digital marketing agency tampa</strong> businesses trust will deliver faster, stronger results.
@@ -1712,8 +1716,9 @@ function MarketingManagerArticle() {
 function BuyingLeadsTampaArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Buying leads feels easy. You pay, get contacts, call them, and hope some turn into revenue. In reality, for most businesses in Tampa Bay, bought leads destroy margin, weaken brand value, and keep you dependent on platforms you do not control. If you are running an established business, this article breaks down why a branded <strong>customer acquisition</strong> system will always outperform rented lead lists — and what a <strong>digital marketing agency tampa</strong> businesses trust would build instead.
         </p>
@@ -2091,8 +2096,9 @@ function BuyingLeadsTampaArticle() {
 function RenovationLeadsArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           If your Tampa Bay business is spending over $2,000 a month on advertising and still buying third-party leads on the side, you are paying twice for prospects you do not own.
           This article explains why bought leads weaken your brand, destroy your margins, and prevent you from building a real <strong>customer acquisition</strong> system — and what to build instead.
@@ -2468,8 +2474,9 @@ function RenovationLeadsArticle() {
 function DigitalAcquisitionTimelineArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most Tampa Bay businesses expect paid marketing to work too fast. That is usually the first mistake. Digital acquisition can generate traction quickly, but predictable results come from testing, learning, fixing conversion leaks, and building a full <strong>customer acquisition</strong> system. This article breaks down realistic timelines, lead costs, appointment costs, and what to actually measure.
         </p>
@@ -2862,8 +2869,9 @@ function DigitalAcquisitionTimelineArticle() {
 function ChooseAgencyArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most businesses do not need another agency that talks well. They need a team that understands their market, produces strong creative, and helps turn traffic into real customers. If you are hiring a <strong>digital marketing agency tampa</strong> businesses rely on, this guide shows you exactly what to look for — and what to avoid.
         </p>
@@ -3147,8 +3155,9 @@ function ChooseAgencyArticle() {
 function LeadQualificationArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most businesses don't have a lead problem. They have a lead sorting problem. A Tampa Bay business can generate 100 leads and still struggle to grow if the team treats every contact the same. This article breaks down the 4 qualification levels that help you prioritize faster, follow up better, and stop wasting ad spend on low-intent opportunities.
         </p>
@@ -3475,8 +3484,9 @@ function LeadQualificationArticle() {
 function SocialMediaLeadSpeedArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most businesses do not lose social media leads because the lead was bad. They lose the lead because they waited too long, followed up poorly, or treated a warm inquiry like a cold list. If you generate leads through Facebook or Instagram, speed and process matter more than most Tampa Bay businesses think.
         </p>
@@ -3801,8 +3811,9 @@ function SocialMediaLeadSpeedArticle() {
 function GoogleVsFacebookPlatformArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           If your business is ready to spend at least $2,000 per month on advertising, platform choice starts to matter. Stop asking "Where can we run ads?" and start asking "Which platform gives us the best path to qualified leads, booked appointments, and actual revenue?" For most Tampa Bay businesses, the answer depends on your offer, your sales cycle, and how fast prospects need to act.
         </p>
@@ -4142,8 +4153,9 @@ function GoogleVsFacebookPlatformArticle() {
 function RetargetingArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Most prospects do not buy the first time they see you. They click, browse, compare, get distracted, and leave. If your business is spending money on paid traffic and not retargeting those visitors, you are leaking revenue every day. For Tampa Bay businesses investing serious budget into Google, Meta, or multi-channel paid ads, retargeting is not optional — it is part of the system.
         </p>
@@ -4485,8 +4497,9 @@ function RetargetingArticle() {
 function ContentPaidAds2026Article() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           If a business in Tampa still treats marketing like a side task in 2026, it is already behind. Paid ads still matter, but content, brand visibility, and data now decide who wins attention first. The businesses compounding results today started building years ago. The right move now is to stop thinking in isolated campaigns and start building assets.
         </p>
@@ -4826,8 +4839,9 @@ function ContentPaidAds2026Article() {
 function StandOutTrustArticle() {
   return (
     <div className="prose-custom">
-      {/* Summary */}
+      {/* Article Summary */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 mb-12">
+        <span className="text-xs font-semibold uppercase tracking-wider mb-3 block text-primary">📋 Article Summary</span>
         <p className="text-lg leading-relaxed text-foreground/90 m-0">
           Buyers are more skeptical than ever. They have seen bad service, fake reviews, empty promises, and spammy follow-up. Getting attention is not enough anymore. If you want to grow in Tampa Bay, you need marketing that generates demand and reduces buyer hesitation at the same time.
         </p>
