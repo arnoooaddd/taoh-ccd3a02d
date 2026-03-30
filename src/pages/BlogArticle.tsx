@@ -5201,7 +5201,7 @@ const BlogArticle = () => {
       </Helmet>
       <Navbar />
       {/* Dark header area for breadcrumb + article title */}
-      <div className="pt-32 pb-12 px-3 md:px-8 bg-background">
+      <div className="pt-32 pb-12 px-2 sm:px-3 md:px-8 bg-background">
         <div className="container mx-auto max-w-3xl">
           {/* Breadcrumb */}
           <motion.div
