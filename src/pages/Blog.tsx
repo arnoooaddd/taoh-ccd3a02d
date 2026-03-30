@@ -5,6 +5,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, Calendar } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
+import blogBestAdPlatform from '@/assets/blog-best-ad-platform.png';
+import blogLeadQualityLevels from '@/assets/blog-lead-quality-levels.png';
+import blogStandOutCompetitors from '@/assets/blog-stand-out-competitors.png';
+import blogRetargetLeads from '@/assets/blog-retarget-leads.png';
+import blogChooseAgency from '@/assets/blog-choose-agency.png';
+import blogInhouseVsAgency from '@/assets/blog-inhouse-vs-agency.png';
+import blogHowLongAdsWork from '@/assets/blog-how-long-ads-work.png';
+import blogEscapePriceWars from '@/assets/blog-escape-price-wars.png';
+import blogNeverBuyLeads from '@/assets/blog-never-buy-leads.png';
+
 export const blogArticles = [
   {
     slug: 'how-much-should-tampa-businesses-spend-on-ads-2026',
