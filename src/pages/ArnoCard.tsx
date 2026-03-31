@@ -142,6 +142,7 @@ const ArnoCard = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 

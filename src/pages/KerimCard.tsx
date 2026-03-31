@@ -149,6 +149,7 @@ const KerimCard = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 
