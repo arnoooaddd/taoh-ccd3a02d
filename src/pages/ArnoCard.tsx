@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, Globe, MessageCircle, Download, Smartphone, Info } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import arnaudImg from '@/assets/team/arnaud.webp';
 import instagramIcon from '@/assets/instagram-icon.png';
 
