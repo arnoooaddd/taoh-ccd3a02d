@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, Globe, MessageCircle, Download, Smartphone, Info } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import arnaudImg from '@/assets/team/arnaud.webp';
 import instagramIcon from '@/assets/instagram-icon.png';
 
@@ -32,7 +33,14 @@ const ArnoCard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[hsl(220,25%,6%)] text-white relative overflow-hidden">
+    <>
+      <Helmet>
+        <title>Arno's contact page | The Alpha Omega Hub</title>
+        <meta property="og:title" content="Arno's contact page | The Alpha Omega Hub" />
+        <meta property="og:image" content="https://taoh.lovable.app/images/arno-og.png" />
+        <meta property="og:type" content="profile" />
+      </Helmet>
+      <div className="min-h-screen bg-[hsl(220,25%,6%)] text-white relative overflow-hidden">
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-[hsl(220,60%,15%)] blur-[150px] opacity-40" />
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(250,40%,12%)] blur-[120px] opacity-30" />
@@ -134,6 +142,7 @@ const ArnoCard = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 
