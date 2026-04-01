@@ -142,13 +142,13 @@ const VideoShooting = () => {
         </div>
       </section>
 
-      {/* Outcome & Pricing */}
+      {/* Outcome */}
       <section className="section section-dark">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="glass-card"
@@ -166,22 +166,11 @@ const VideoShooting = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="glass-card text-center flex flex-col items-center justify-center"
-            >
-              <span className="text-sm uppercase tracking-widest text-muted-foreground mb-2">Investment</span>
-              <p className="text-5xl md:text-6xl font-bold text-primary mb-2">$5,000</p>
-              <p className="text-lg text-muted-foreground mb-1">per video shoot</p>
-              <p className="text-sm text-foreground font-semibold mb-6">8 to 15 ads-ready videos included</p>
-              <a href="#contact" className="btn-hero-primary min-w-[200px] px-8">
-                Become a Partner
-              </a>
+              <div className="mt-8 text-center">
+                <a href="#contact" className="btn-hero-primary min-w-[200px] px-8">
+                  Become a Partner
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
