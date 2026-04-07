@@ -1,8 +1,12 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /aa
+Disallow: /kj
 
 User-agent: Bingbot
 Allow: /
+Disallow: /aa
+Disallow: /kj
 
 User-agent: Twitterbot
 Allow: /
@@ -12,3 +16,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /aa
+Disallow: /kj

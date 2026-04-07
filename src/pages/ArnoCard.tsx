@@ -36,6 +36,8 @@ const ArnoCard = () => {
     <>
       <Helmet>
         <title>Arno's contact page | The Alpha Omega Hub</title>
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+        <meta name="googlebot" content="noindex, nofollow" />
         <meta property="og:title" content="Arno's contact page | The Alpha Omega Hub" />
         <meta property="og:image" content="https://taoh.lovable.app/images/arno-og.png" />
         <meta property="og:type" content="profile" />
