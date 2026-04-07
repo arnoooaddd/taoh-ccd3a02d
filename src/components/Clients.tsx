@@ -20,10 +20,10 @@ export const Clients = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            They Trust The Alpha Omega Hub
+            Meet Our Partners
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Join the growing family of businesses we've helped dominate their markets
+            Partners from <a href="https://agendac.fr/?lang=en-US" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Agendac</a>, our subsidiary in France
           </p>
         </motion.div>
         

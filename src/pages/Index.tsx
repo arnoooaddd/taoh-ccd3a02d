@@ -8,7 +8,7 @@ import { Interview } from '@/components/Interview';
 import { Stats } from '@/components/Stats';
 import { Gallery } from '@/components/Gallery';
 import { Team } from '@/components/Team';
-import { FAQ } from '@/components/FAQ';
+
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 
@@ -25,7 +25,7 @@ const Index = () => {
       <Stats />
       <Gallery />
       <Team />
-      <FAQ />
+      
       <Contact />
       <Footer />
     </main>
