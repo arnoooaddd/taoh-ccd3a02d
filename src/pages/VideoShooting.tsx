@@ -78,7 +78,7 @@ const VideoShooting = () => {
               <div>
                 <p className="font-semibold text-foreground">Hassan Erakat, MP</p>
                 <p className="text-sm text-muted-foreground"><a href="https://www.progresscillc.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Progress Construction & Renovation</a></p>
-                <p className="text-xs text-muted-foreground mt-1">April 6, 2026</p>
+                <p className="text-xs text-muted-foreground mt-1"><a href="https://maps.app.goo.gl/yC1CPEjkyQRoySX67" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">April 6, 2026 — Google Review ↗</a></p>
               </div>
             </div>
           </motion.div>

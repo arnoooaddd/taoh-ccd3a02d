@@ -79,7 +79,7 @@ const AdsManagement = () => {
               <div>
                 <p className="font-semibold text-foreground">Dave Ellis</p>
                 <p className="text-sm text-muted-foreground">Founder of <a href="https://theracingline.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">The Racing Line</a></p>
-                <p className="text-xs text-muted-foreground mt-1">December 2025</p>
+                <p className="text-xs text-muted-foreground mt-1"><a href="https://maps.app.goo.gl/QQgrYnLSyGrdgoNj8" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">December 2025 — Google Review ↗</a></p>
               </div>
             </div>
           </motion.div>
