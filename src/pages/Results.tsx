@@ -60,9 +60,14 @@ const Results = () => {
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 The proof is in the numbers, the videos, and the reviews. Every business below is verifiable.
               </p>
-              <a href="#stats" className="btn-hero-primary inline-flex items-center gap-2 px-8">
-                See the Proof <ArrowDown className="w-5 h-5" />
-              </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#interview" className="btn-hero-primary inline-flex items-center gap-2 px-8">
+                  Partner Interview <ArrowDown className="w-5 h-5" />
+                </a>
+                <a href="#reviews" className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-colors justify-center">
+                  Read Google Reviews
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -107,7 +112,7 @@ const Results = () => {
       </section>
 
       {/* Partner Interview */}
-      <section className="section">
+      <section id="interview" className="section">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -120,7 +125,7 @@ const Results = () => {
               Partner Interview
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Hear directly from our partners about their experience and results
+              Hear from <a href="https://theracingline.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Dave Ellis</a>, Founder of The Racing Line, about his experience working with us
             </p>
           </motion.div>
 
@@ -156,7 +161,7 @@ const Results = () => {
       </section>
 
       {/* Google Reviews */}
-      <section className="section section-dark">
+      <section id="reviews" className="section section-dark">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

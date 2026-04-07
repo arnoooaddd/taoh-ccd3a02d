@@ -19,7 +19,7 @@ export const Interview = () => {
             Partner Interview
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Hear directly from our partners about their experience and results
+            Hear from <a href="https://theracingline.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Dave Ellis</a>, Founder of The Racing Line, about his experience working with us
           </p>
         </motion.div>
         
