@@ -14,14 +14,16 @@ const teamLeaders = [
     role: "Chief Executive Officer",
     description: "Client Relationship & Customer Success Management",
     highlight: "Bachelor, majoring in physics • 9+ years in marketing",
-    image: arnaudImg
+    image: arnaudImg,
+    contactUrl: "/aa"
   },
   {
     name: "Kerim JAKUPOVIC",
     role: "Chief Operating Officer",
     description: "Project Management & Technical Implementation",
     highlight: "Master's in Marketing • 4+ years in content creation",
-    image: kerimImg
+    image: kerimImg,
+    contactUrl: "/kj"
   }
 ];
 
