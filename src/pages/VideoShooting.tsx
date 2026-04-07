@@ -48,6 +48,43 @@ const VideoShooting = () => {
         </div>
       </section>
 
+      {/* Featured Review */}
+      <section className="section">
+        <div className="container mx-auto max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="glass-card relative"
+          >
+            <div className="flex items-center gap-1 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-yellow-400 text-xl">★</span>
+              ))}
+            </div>
+            <blockquote className="text-lg md:text-xl leading-relaxed text-foreground/90 italic mb-6">
+              "Working with a marketing agency can sometimes feel like a chore, especially in the construction world. I've had some negative experiences in the past with other companies, but this team was a breath of fresh air.
+              <br /><br />
+              They recently came out to one of our completed remodeling projects to capture footage for future ads, and the entire experience was seamless.
+              <br /><br />
+              From the moment they arrived, it was clear they were pros. They didn't just show up with a camera; they had a full setup with professional lighting, multiple angles, and a clear vision for the shoot. What impressed me most was their preparation. They had scripts ready to go and knew exactly how to direct the flow of the day, which took a huge weight off our shoulders.
+              <br /><br />
+              They also went above and beyond in how they handled the homeowner. They were incredibly respectful of the space, kept the environment comfortable, and made sure the client felt at ease while we were all filming. It's rare to find a creative team that maintains that level of professionalism with customers while also being very friendly.
+              <br /><br />
+              If you're looking for an agency that actually knows how to produce high-quality content without the headache, I can't recommend them enough. They made the whole process easy, and the final results speak for themselves!"
+            </blockquote>
+            <div className="flex items-center gap-4">
+              <div>
+                <p className="font-semibold text-foreground">Hassan Erakat, MP</p>
+                <p className="text-sm text-muted-foreground"><a href="https://www.progresscillc.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Progress Construction & Renovation</a></p>
+                <p className="text-xs text-muted-foreground mt-1">April 6, 2026</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* What's Included */}
       <section className="section">
         <div className="container mx-auto">
