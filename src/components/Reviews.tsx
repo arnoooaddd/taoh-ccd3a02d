@@ -32,7 +32,7 @@ export const Reviews = () => {
             What Our Partners Say
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Hear from business owners we've helped grow
+            Reviews from <a href="https://maps.app.goo.gl/SXCCfqnP1hTmbrjD8" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Agendac</a>, our subsidiary in France
           </p>
         </motion.div>
         
