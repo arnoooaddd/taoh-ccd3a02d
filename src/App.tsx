@@ -15,6 +15,7 @@ import ArnoCard from "./pages/ArnoCard";
 import KerimCard from "./pages/KerimCard";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
+import Results from "./pages/Results";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/services/ads-management" element={<AdsManagement />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogArticle />} />
+            <Route path="/results" element={<Results />} />
             <Route path="/aa" element={<ArnoCard />} />
             <Route path="/kj" element={<KerimCard />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
