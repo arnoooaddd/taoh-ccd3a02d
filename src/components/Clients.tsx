@@ -23,7 +23,7 @@ export const Clients = () => {
             Meet Our Partners
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Partners from <a href="https://agendac.fr/?lang=en-US" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Agendac</a>, our subsidiary in France
+            Businesses that trust us to grow their brand
           </p>
         </motion.div>
         
