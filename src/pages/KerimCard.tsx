@@ -37,6 +37,8 @@ const KerimCard = () => {
     <>
       <Helmet>
         <title>Kerim's contact page | The Alpha Omega Hub</title>
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+        <meta name="googlebot" content="noindex, nofollow" />
         <meta property="og:title" content="Kerim's contact page | The Alpha Omega Hub" />
         <meta property="og:image" content="https://taoh.lovable.app/images/kerim-og.png" />
         <meta property="og:type" content="profile" />
