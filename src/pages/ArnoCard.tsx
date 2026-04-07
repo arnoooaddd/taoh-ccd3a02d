@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, Globe, MessageCircle, Download, Smartphone, Info } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import arnaudImg from '@/assets/team/arnaud.webp';
 import instagramIcon from '@/assets/instagram-icon.png';
+import logoFull from '@/assets/logo-full-white-transparent.png';
 
 const ArnoCard = () => {
   const generateVCard = () => {
@@ -43,12 +45,15 @@ const ArnoCard = () => {
         <meta property="og:type" content="profile" />
       </Helmet>
       <div className="min-h-screen bg-[hsl(220,25%,6%)] text-white relative overflow-hidden">
+      <Link to="/?utm_source=contact_card&utm_campaign=aa" className="absolute top-4 left-4 z-20">
+        <img src={logoFull} alt="The Alpha Omega Hub" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+      </Link>
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-[hsl(220,60%,15%)] blur-[150px] opacity-40" />
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(250,40%,12%)] blur-[120px] opacity-30" />
       </div>
 
-      <div className="relative z-10 max-w-md mx-auto px-5 py-12 flex flex-col items-center gap-6">
+      <div className="relative z-10 max-w-md mx-auto px-5 py-12 pt-16 flex flex-col items-center gap-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
