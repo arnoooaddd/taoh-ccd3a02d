@@ -21,7 +21,6 @@ export const Interview = () => {
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Hear from Dave Ellis, Founder of <a href="https://theracingline.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">The Racing Line</a>, about his experience working with us
           </p>
-          </p>
         </motion.div>
         
         <motion.div

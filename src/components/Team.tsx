@@ -92,7 +92,13 @@ export const Team = () => {
               <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
               <p className="text-sm text-primary mb-2">({member.role})</p>
               <p className="text-sm text-muted-foreground mb-3">{member.description}</p>
-              <p className="text-xs font-semibold text-primary">{member.highlight}</p>
+              <p className="text-xs font-semibold text-primary mb-4">{member.highlight}</p>
+              <a
+                href={member.contactUrl}
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-full border-2 border-primary text-primary text-sm font-semibold hover:bg-primary/10 transition-colors"
+              >
+                View Contact Info
+              </a>
             </motion.div>
           ))}
         </div>
