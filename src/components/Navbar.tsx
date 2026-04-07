@@ -11,8 +11,8 @@ const serviceLinks = [
 ];
 
 const navLinks = [
-  { name: 'Results', href: '/results' },
-  { name: 'Team', href: '/#team' },
+  { name: 'Our Results', href: '/results' },
+  { name: 'The Team', href: '/#team' },
   { name: 'Blog', href: '/blog' },
 ];
 
