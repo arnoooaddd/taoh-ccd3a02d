@@ -57,6 +57,35 @@ const AdsManagement = () => {
         </div>
       </section>
 
+      {/* Featured Review */}
+      <section className="section">
+        <div className="container mx-auto max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="glass-card relative"
+          >
+            <div className="flex items-center gap-1 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-yellow-400 text-xl">★</span>
+              ))}
+            </div>
+            <blockquote className="text-lg md:text-xl leading-relaxed text-foreground/90 italic mb-6">
+              "Really really helpful people. They run my Meta ad campaigns, and have suggested changes to the pricing and onboarding of my product — both of which improved conversion rates. They're generally just great at marketing; including the product side of things. Fully recommend."
+            </blockquote>
+            <div className="flex items-center gap-4">
+              <div>
+                <p className="font-semibold text-foreground">Dave Ellis</p>
+                <p className="text-sm text-muted-foreground">Founder of <a href="https://theracingline.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">The Racing Line</a></p>
+                <p className="text-xs text-muted-foreground mt-1">December 2025</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* KPIs */}
       <section className="section section-dark">
         <div className="container mx-auto">
