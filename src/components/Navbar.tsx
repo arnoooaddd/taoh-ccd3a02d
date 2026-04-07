@@ -11,11 +11,8 @@ const serviceLinks = [
 ];
 
 const navLinks = [
-  { name: 'Results', href: '/#results' },
   { name: 'Team', href: '/#team' },
   { name: 'Blog', href: '/blog' },
-  { name: 'FAQ', href: '/#faq' },
-  { name: 'Contact', href: '/#contact' },
 ];
 
 export const Navbar = () => {
