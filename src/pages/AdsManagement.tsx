@@ -73,7 +73,7 @@ const AdsManagement = () => {
               ))}
             </div>
             <blockquote className="text-lg md:text-xl leading-relaxed text-foreground/90 italic mb-6">
-              "Really really helpful people. They run my Meta ad campaigns, and have suggested changes to the pricing and onboarding of my product — both of which improved conversion rates. They're generally just great at marketing; including the product side of things. Fully recommend."
+              "Really really helpful people. They run my Meta ad campaigns, and have suggested changes to the pricing and onboarding of my product, both of which improved conversion rates. They're generally just great at marketing; including the product side of things. Fully recommend."
             </blockquote>
             <div className="flex items-center gap-4">
               <div>
