@@ -175,12 +175,8 @@ const VideoShooting = () => {
                   className="absolute inset-0 w-full h-full"
                 />
               </div>
+              <p className="text-xs text-muted-foreground mt-3"><a href="https://cbbcfla.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Community Bible Baptist Church ↗</a></p>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.6 }}
               className="text-center"
             >
               <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">Bottom of Funnel — Conversion Ad</p>
