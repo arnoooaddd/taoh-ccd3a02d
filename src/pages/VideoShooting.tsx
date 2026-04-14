@@ -1,4 +1,5 @@
 import { ServicePageLayout } from '@/components/ServicePageLayout';
+import { VideoShowcase } from '@/components/VideoShowcase';
 import { motion } from 'framer-motion';
 import { Camera, CheckCircle, Film, Clapperboard, Users, Sparkles, RefreshCw, ArrowDown } from 'lucide-react';
 
