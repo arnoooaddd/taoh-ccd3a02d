@@ -85,43 +85,6 @@ const VideoShooting = () => {
         </div>
       </section>
 
-      {/* What's Included */}
-      <section className="section">
-        <div className="container mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              What's Included
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We handle the entire video production from start to finish
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {features.map((f, i) => (
-              <motion.div
-                key={f.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="glass-card group hover:bg-white/10 transition-all duration-500"
-              >
-                <f.icon className="w-8 h-8 text-primary mb-4" />
-                <h3 className="text-lg font-semibold mb-2">{f.title}</h3>
-                <p className="text-sm text-muted-foreground">{f.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Example Work */}
       <section id="our-work" className="section section-dark">
         <div className="container mx-auto">
@@ -136,7 +99,7 @@ const VideoShooting = () => {
               See Our Work in Action
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Ad produced for Community Bible Baptist Church
+              Videos we produced for our partners across different industries
             </p>
           </motion.div>
 
@@ -195,6 +158,43 @@ const VideoShooting = () => {
               </div>
               <p className="text-xs text-muted-foreground mt-3"><a href="https://www.progresscillc.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Progress Construction & Renovation ↗</a></p>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* What's Included */}
+      <section className="section">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              What's Included
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              We handle the entire video production from start to finish
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {features.map((f, i) => (
+              <motion.div
+                key={f.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="glass-card group hover:bg-white/10 transition-all duration-500"
+              >
+                <f.icon className="w-8 h-8 text-primary mb-4" />
+                <h3 className="text-lg font-semibold mb-2">{f.title}</h3>
+                <p className="text-sm text-muted-foreground">{f.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
