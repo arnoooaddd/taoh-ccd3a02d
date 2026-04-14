@@ -113,50 +113,6 @@ const WebsiteCreation = () => {
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="section">
-        <div className="container mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Everything You Need
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A comprehensive website package designed for established businesses
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {sections.map((section, i) => (
-              <motion.div
-                key={section.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="glass-card group hover:bg-white/10 transition-all duration-500"
-              >
-                <div className="text-2xl mb-3">{section.emoji}</div>
-                <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
-                <ul className="space-y-2">
-                  {section.items.map(item => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Portfolio */}
       <section id="our-work" className="section section-dark">
         <div className="container mx-auto">
@@ -205,6 +161,50 @@ const WebsiteCreation = () => {
                   <p className="text-sm text-primary mt-1 group-hover:underline">Visit website →</p>
                 </div>
               </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Grid */}
+      <section className="section">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Everything You Need
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              A comprehensive website package designed for established businesses
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {sections.map((section, i) => (
+              <motion.div
+                key={section.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="glass-card group hover:bg-white/10 transition-all duration-500"
+              >
+                <div className="text-2xl mb-3">{section.emoji}</div>
+                <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
+                <ul className="space-y-2">
+                  {section.items.map(item => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
             ))}
           </div>
         </div>
