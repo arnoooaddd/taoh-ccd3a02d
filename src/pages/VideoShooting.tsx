@@ -157,6 +157,7 @@ const VideoShooting = () => {
                   className="absolute inset-0 w-full h-full"
                 />
               </div>
+              <p className="text-xs text-muted-foreground mt-3"><a href="https://www.westtampatobacco.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">West Tampa Tobacco ↗</a></p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -174,6 +175,7 @@ const VideoShooting = () => {
                   className="absolute inset-0 w-full h-full"
                 />
               </div>
+              <p className="text-xs text-muted-foreground mt-3"><a href="https://cbbcfla.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Community Bible Baptist Church ↗</a></p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -191,6 +193,7 @@ const VideoShooting = () => {
                   className="absolute inset-0 w-full h-full"
                 />
               </div>
+              <p className="text-xs text-muted-foreground mt-3"><a href="https://www.progresscillc.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Progress Construction & Renovation ↗</a></p>
             </motion.div>
           </div>
         </div>
