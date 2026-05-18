@@ -7,6 +7,9 @@ import kerimImg from '@/assets/team/kerim.webp';
 import gabrielImg from '@/assets/team/gabriel.webp';
 import omarImg from '@/assets/team/omar.webp';
 import andreiImg from '@/assets/team/andrei.webp';
+import whoWeAre1 from '@/assets/team/who-we-are-1.jpg';
+import whoWeAre2 from '@/assets/team/who-we-are-2.jpg';
+import whoWeAre3 from '@/assets/team/who-we-are-3.jpg';
 
 const teamLeaders = [
   {
@@ -65,12 +68,26 @@ export const Team = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            The Team
+            Who We Are
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Proximity and efficiency—we're not a faceless agency, we're your growth partners
+            Kerim and Arno — two 25-year-old Christian entrepreneurs based in Tampa Bay, with nearly 10 years of marketing experience
           </p>
         </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-16">
+          {[whoWeAre1, whoWeAre2, whoWeAre3].map((img, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[3/4]"
+            >
+              <img src={img} alt="Kerim and Arno in Tampa Bay" className="w-full h-full object-cover" />
+            </motion.div>
+          ))}
+        </div>
         
         {/* Leadership Team */}
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
