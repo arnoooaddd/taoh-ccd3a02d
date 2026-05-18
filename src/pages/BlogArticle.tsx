@@ -5186,6 +5186,12 @@ const BlogArticle = () => {
         <meta property="og:title" content={articleData.meta.title} />
         <meta property="og:description" content={articleData.meta.description} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://thealphaomegahub.com/blog/${slug}`} />
+        <meta property="og:image" content="https://thealphaomegahub.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={articleData.meta.title} />
+        <meta name="twitter:description" content={articleData.meta.description} />
+        <meta name="twitter:image" content="https://thealphaomegahub.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <Navbar />

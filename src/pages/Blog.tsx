@@ -167,9 +167,18 @@ const Blog = () => {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
       <Helmet>
-        <title>Blog | The Alpha Omega Hub — Growth Marketing Insights</title>
-        <meta name="description" content="Expert insights on lead generation, paid ads, contractor marketing, and growth strategies for established businesses. Read the latest from The Alpha Omega Hub." />
+        <title>Marketing Blog | The Alpha Omega Hub Tampa Bay</title>
+        <meta name="description" content="Insights on lead generation, paid ads, contractor marketing, funnels, and growth for Tampa Bay businesses — from The Alpha Omega Hub." />
         <link rel="canonical" href="https://thealphaomegahub.com/blog" />
+        <meta property="og:title" content="Marketing Blog | The Alpha Omega Hub Tampa Bay" />
+        <meta property="og:description" content="Insights on lead generation, paid ads, contractor marketing, funnels, and growth for Tampa Bay businesses — from The Alpha Omega Hub." />
+        <meta property="og:url" content="https://thealphaomegahub.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://thealphaomegahub.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Marketing Blog | The Alpha Omega Hub Tampa Bay" />
+        <meta name="twitter:description" content="Insights on lead generation, paid ads, contractor marketing, funnels, and growth for Tampa Bay businesses — from The Alpha Omega Hub." />
+        <meta name="twitter:image" content="https://thealphaomegahub.com/og-image.png" />
       </Helmet>
       <Navbar />
       <section className="pt-32 pb-20 px-4 md:px-8">

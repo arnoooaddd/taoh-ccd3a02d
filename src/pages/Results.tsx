@@ -35,8 +35,18 @@ const Results = () => {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
       <Helmet>
-        <title>Our Results | The Alpha Omega Hub</title>
-        <meta name="description" content="Verified results from our partners — Google reviews, video interviews, and real numbers. See why businesses trust The Alpha Omega Hub." />
+        <title>Marketing Results & Case Studies | The Alpha Omega Hub</title>
+        <meta name="description" content="Verified Tampa Bay marketing results: Google reviews, video interviews, and real numbers from partners of The Alpha Omega Hub." />
+        <link rel="canonical" href="https://thealphaomegahub.com/results" />
+        <meta property="og:title" content="Marketing Results & Case Studies | The Alpha Omega Hub" />
+        <meta property="og:description" content="Verified Tampa Bay marketing results: Google reviews, video interviews, and real numbers from partners of The Alpha Omega Hub." />
+        <meta property="og:url" content="https://thealphaomegahub.com/results" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://thealphaomegahub.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Marketing Results & Case Studies | The Alpha Omega Hub" />
+        <meta name="twitter:description" content="Verified Tampa Bay marketing results: Google reviews, video interviews, and real numbers from partners of The Alpha Omega Hub." />
+        <meta name="twitter:image" content="https://thealphaomegahub.com/og-image.png" />
       </Helmet>
       <Navbar />
 

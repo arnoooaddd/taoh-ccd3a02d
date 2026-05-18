@@ -14,7 +14,44 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+Disallow: /aa
+Disallow: /kj
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /aa
+Disallow: /kj
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /aa
+Disallow: /kj
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /aa
+Disallow: /kj
+
+User-agent: Claude-User
+Allow: /
+Disallow: /aa
+Disallow: /kj
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /aa
+Disallow: /kj
+
+User-agent: Applebot
+Allow: /
+Disallow: /aa
+Disallow: /kj
+
 User-agent: *
 Allow: /
 Disallow: /aa
 Disallow: /kj
+
+Sitemap: https://thealphaomegahub.com/sitemap.xml

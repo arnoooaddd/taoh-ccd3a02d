@@ -1,5 +1,6 @@
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Globe, Search, Phone, BarChart3, Share2, Languages, CheckCircle, Monitor, Smartphone, Tablet, ArrowDown, DollarSign, Clock } from 'lucide-react';
 
 const sections = [
@@ -68,6 +69,20 @@ const sections = [
 const WebsiteCreation = () => {
   return (
     <ServicePageLayout>
+      <Helmet>
+        <title>Website Design Agency Tampa | The Alpha Omega Hub</title>
+        <meta name="description" content="Conversion-focused website design and development for Tampa Bay businesses — built for more leads, stronger trust, and better conversion rates." />
+        <link rel="canonical" href="https://thealphaomegahub.com/services/website-creation" />
+        <meta property="og:title" content="Website Design Agency Tampa | The Alpha Omega Hub" />
+        <meta property="og:description" content="Conversion-focused website design and development for Tampa Bay businesses — built for more leads, stronger trust, and better conversion rates." />
+        <meta property="og:url" content="https://thealphaomegahub.com/services/website-creation" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://thealphaomegahub.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Website Design Agency Tampa | The Alpha Omega Hub" />
+        <meta name="twitter:description" content="Conversion-focused website design and development for Tampa Bay businesses — built for more leads, stronger trust, and better conversion rates." />
+        <meta name="twitter:image" content="https://thealphaomegahub.com/og-image.png" />
+      </Helmet>
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center pt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-[hsl(var(--color-darker))]" />

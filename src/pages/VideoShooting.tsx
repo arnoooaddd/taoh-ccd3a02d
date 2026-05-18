@@ -1,6 +1,7 @@
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { VideoShowcase } from '@/components/VideoShowcase';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Camera, CheckCircle, Film, Clapperboard, Users, Sparkles, RefreshCw, ArrowDown } from 'lucide-react';
 
 const features = [
@@ -15,6 +16,20 @@ const features = [
 const VideoShooting = () => {
   return (
     <ServicePageLayout>
+      <Helmet>
+        <title>Video Marketing Agency | The Alpha Omega Hub</title>
+        <meta name="description" content="Video ads, short-form content, creative production, and video marketing assets for campaigns, websites, and social media." />
+        <link rel="canonical" href="https://thealphaomegahub.com/services/video-shooting" />
+        <meta property="og:title" content="Video Marketing Agency | The Alpha Omega Hub" />
+        <meta property="og:description" content="Video ads, short-form content, creative production, and video marketing assets for campaigns, websites, and social media." />
+        <meta property="og:url" content="https://thealphaomegahub.com/services/video-shooting" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://thealphaomegahub.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Video Marketing Agency | The Alpha Omega Hub" />
+        <meta name="twitter:description" content="Video ads, short-form content, creative production, and video marketing assets for campaigns, websites, and social media." />
+        <meta name="twitter:image" content="https://thealphaomegahub.com/og-image.png" />
+      </Helmet>
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center pt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-[hsl(var(--color-darker))]" />

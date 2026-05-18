@@ -1,5 +1,6 @@
 import { ServicePageLayout } from '@/components/ServicePageLayout';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { BarChart3, Target, Brain, RefreshCw, LineChart, Shield, DollarSign, TrendingUp, Zap, CheckCircle, ArrowDown } from 'lucide-react';
 import { Interview } from '@/components/Interview';
 import { Stats } from '@/components/Stats';
@@ -23,6 +24,20 @@ const stats = [
 const AdsManagement = () => {
   return (
     <ServicePageLayout>
+      <Helmet>
+        <title>PPC & Paid Ads Agency Tampa | The Alpha Omega Hub</title>
+        <meta name="description" content="Google Ads, Facebook Ads, and Meta Ads management with AI-driven tracking — built for qualified leads, lower CPL, and measurable ROI." />
+        <link rel="canonical" href="https://thealphaomegahub.com/services/ads-management" />
+        <meta property="og:title" content="PPC & Paid Ads Agency Tampa | The Alpha Omega Hub" />
+        <meta property="og:description" content="Google Ads, Facebook Ads, and Meta Ads management with AI-driven tracking — built for qualified leads, lower CPL, and measurable ROI." />
+        <meta property="og:url" content="https://thealphaomegahub.com/services/ads-management" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://thealphaomegahub.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PPC & Paid Ads Agency Tampa | The Alpha Omega Hub" />
+        <meta name="twitter:description" content="Google Ads, Facebook Ads, and Meta Ads management with AI-driven tracking — built for qualified leads, lower CPL, and measurable ROI." />
+        <meta name="twitter:image" content="https://thealphaomegahub.com/og-image.png" />
+      </Helmet>
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center pt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-[hsl(var(--color-darker))]" />
