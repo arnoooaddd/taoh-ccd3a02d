@@ -24,6 +24,13 @@ const videos = [
   },
 ];
 
+const wideVideo = {
+  label: "Owner Video Presentation",
+  src: "https://www.youtube.com/embed/zrQ2onkxH4c",
+  company: "Vento Law Firm",
+  url: "https://ventolawfirm.com/",
+};
+
 export const VideoShowcase = () => {
   return (
     <section id="our-work" className="section section-dark">
@@ -70,6 +77,29 @@ export const VideoShowcase = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-5xl mx-auto mt-12 text-center"
+        >
+          <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">{wideVideo.label}</p>
+          <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <iframe
+              src={wideVideo.src}
+              frameBorder="0"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
+          </div>
+          <p className="text-xs text-muted-foreground mt-3">
+            <a href={wideVideo.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              {wideVideo.company} ↗
+            </a>
+          </p>
+        </motion.div>
       </div>
     </section>
   );
