@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const videos = [
   {
     label: "Top of Funnel — Client Interview",
-    src: "https://www.youtube.com/embed/HJtxQX0ekZ4",
+    src: "https://www.youtube.com/embed/lYleKrBfT5Q",
     company: "West Tampa Tobacco",
     url: "https://www.westtampatobacco.com/",
     delay: 0.2,
