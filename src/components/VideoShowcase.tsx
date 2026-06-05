@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 
 const videos = [
   {
-    label: "Top of Funnel — Client Interview",
+    label: "Top of Funnel — Organic Content",
     src: "https://www.youtube.com/embed/lYleKrBfT5Q",
     company: "West Tampa Tobacco",
     url: "https://www.westtampatobacco.com/",
     delay: 0.2,
   },
   {
-    label: "Middle of Funnel — Brand Ad",
+    label: "Bottom of Funnel — Event Ad",
     src: "https://www.youtube.com/embed/Vu51NLokiwE",
     company: "Community Bible Baptist Church",
     url: "https://cbbcfla.com/",
