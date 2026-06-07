@@ -10,14 +10,14 @@ const videos = [
   },
   {
     label: "Bottom of Funnel — Event Ad",
-    src: "https://www.youtube.com/embed/Vu51NLokiwE",
+    src: "https://www.loom.com/embed/e24286f9ebcc459e821442b9fd8509f0",
     company: "Community Bible Baptist Church",
     url: "https://cbbcfla.com/",
     delay: 0.4,
   },
   {
     label: "Bottom of Funnel — Conversion Ad",
-    src: "https://www.youtube.com/embed/Z6955giAJXY",
+    src: "https://www.loom.com/embed/2bc105a0d0a4479e9a2665dc8b092f21",
     company: "Progress Construction & Renovation",
     url: "https://www.progresscillc.com/",
     delay: 0.6,
@@ -26,7 +26,7 @@ const videos = [
 
 const wideVideo = {
   label: "Owner Video Presentation",
-  src: "https://www.youtube.com/embed/zrQ2onkxH4c",
+  src: "https://www.loom.com/embed/4eeb31245c214d27b78455fe6f70d4d1",
   company: "Vento Law Firm",
   url: "https://ventolawfirm.com/",
 };
