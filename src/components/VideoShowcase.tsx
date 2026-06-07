@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const videos = [
   {
     label: "Top of Funnel — Organic Content",
-    src: "https://www.youtube.com/embed/lYleKrBfT5Q",
+    src: "https://www.loom.com/embed/53f41be05cbd473ebca405a4ef19cd40",
     company: "West Tampa Tobacco",
     url: "https://www.westtampatobacco.com/",
     delay: 0.2,
