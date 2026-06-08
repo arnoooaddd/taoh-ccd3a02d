@@ -1,4 +1,4 @@
-import { Facebook, MessageCircle, MapPin } from 'lucide-react';
+import { Facebook, MessageCircle, MapPin, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logoFull from '@/assets/logo-full-white-transparent.png';
 
@@ -17,6 +17,9 @@ export const Footer = () => {
             <div className="flex items-center gap-4">
               <a href="https://www.facebook.com/thealphaomegahub" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Facebook className="w-5 h-5" />
+              </a>
+              <a href="https://instagram.com/arno.adornier" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center hover:bg-pink-500/30 transition-colors">
+                <Instagram className="w-5 h-5 text-pink-400" />
               </a>
               <a href="sms:+17273588135?body=TAOH" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <MessageCircle className="w-5 h-5" />
