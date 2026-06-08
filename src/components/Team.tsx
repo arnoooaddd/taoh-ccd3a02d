@@ -29,7 +29,9 @@ const teamLeaders = [
     description: "Project Management & Technical Implementation",
     highlight: "Master's in Marketing • 4+ years in content creation",
     image: kerimImg,
-    contactUrl: "/kj"
+    contactUrl: "/kj",
+    instagram: "",
+    instagramHandle: ""
   }
 ];
 
