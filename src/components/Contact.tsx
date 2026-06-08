@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useEffect } from 'react';
-import { Phone, MessageCircle, MapPin, Facebook, Calendar } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Instagram } from 'lucide-react';
 import logoFull from '@/assets/logo-full-white-transparent.png';
 
 export const Contact = () => {
@@ -59,20 +59,20 @@ export const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-3 mb-6"
           >
-            <a 
-              href="sms:+17273588135?body=TAOH"
+            <a
+              href="tel:+17272972702"
               className="glass-card flex items-center gap-4 hover:bg-white/10 transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                <MessageCircle className="w-5 h-5" />
+              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <Phone className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="font-semibold">Text TAOH</p>
-                <p className="text-sm text-muted-foreground">(727) 358-8135</p>
+                <p className="font-semibold">Call Now: +1 727-297-2702</p>
+                <p className="text-sm text-muted-foreground">Take your digital marketing from Alpha to Omega</p>
               </div>
             </a>
-            
-            <a 
+
+            <a
               href="https://wa.me/33628545978"
               target="_blank"
               rel="noopener noreferrer"
@@ -88,43 +88,23 @@ export const Contact = () => {
                 <p className="text-sm text-muted-foreground">Chat with us</p>
               </div>
             </a>
-          </motion.div>
-          
-          {/* Facebook Icon */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex justify-center mb-6"
-          >
+
             <a
-              href="https://www.facebook.com/thealphaomegahub"
+              href="https://instagram.com/arno.adornier"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+              className="glass-card flex items-center gap-4 hover:bg-white/10 transition-all duration-300"
             >
-              <Facebook className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-full bg-pink-500/20 flex items-center justify-center">
+                <Instagram className="w-5 h-5 text-pink-400" />
+              </div>
+              <div>
+                <p className="font-semibold">@arno.adornier</p>
+                <p className="text-sm text-muted-foreground">Follow Arnaud (CEO) on Instagram</p>
+              </div>
             </a>
           </motion.div>
-          
-          {/* Book a Call Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mb-8"
-          >
-            <a 
-              href="https://api.leadconnectorhq.com/widget/booking/zgLpBu3IRRYCa1Dyesec"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-hero-primary w-full flex items-center justify-center gap-2"
-            >
-              <Calendar className="w-5 h-5" />
-              Book a Call
-            </a>
-          </motion.div>
-          
+
           {/* Logo and Description - Bottom */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,16 +168,16 @@ export const Contact = () => {
               </div>
               
               <div className="space-y-4">
-                <a 
-                  href="sms:+17273588135?body=TAOH"
+                <a
+                  href="tel:+17272972702"
                   className="glass-card flex items-center gap-4 hover:bg-white/10 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                    <MessageCircle className="w-5 h-5" />
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold">Text TAOH</p>
-                    <p className="text-sm text-muted-foreground">(727) 358-8135</p>
+                    <p className="font-semibold">Call Now: +1 727-297-2702</p>
+                    <p className="text-sm text-muted-foreground">Take your digital marketing from Alpha to Omega</p>
                   </div>
                 </a>
                 
@@ -217,22 +197,22 @@ export const Contact = () => {
                     <p className="text-sm text-muted-foreground">Chat with us</p>
                   </div>
                 </a>
-                
-                <a 
-                  href="https://www.facebook.com/thealphaomegahub"
+
+                <a
+                  href="https://instagram.com/arno.adornier"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="glass-card flex items-center gap-4 hover:bg-white/10 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                    <Facebook className="w-5 h-5" />
+                  <div className="w-12 h-12 rounded-full bg-pink-500/20 flex items-center justify-center">
+                    <Instagram className="w-5 h-5 text-pink-400" />
                   </div>
                   <div>
-                    <p className="font-semibold">Follow on Facebook</p>
-                    <p className="text-sm text-muted-foreground">@thealphaomegahub</p>
+                    <p className="font-semibold">@arno.adornier</p>
+                    <p className="text-sm text-muted-foreground">Follow Arnaud (CEO) on Instagram</p>
                   </div>
                 </a>
-                
+
                 <div className="glass-card flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                     <MapPin className="w-5 h-5" />
@@ -243,16 +223,6 @@ export const Contact = () => {
                   </div>
                 </div>
               </div>
-              
-              <a 
-                href="https://api.leadconnectorhq.com/widget/booking/zgLpBu3IRRYCa1Dyesec"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-hero-primary w-full flex items-center justify-center gap-2"
-              >
-                <Calendar className="w-5 h-5" />
-                Book a Call
-              </a>
             </motion.div>
             
             {/* Typeform */}
@@ -260,11 +230,11 @@ export const Contact = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="glass-card"
+              className="glass-card flex"
             >
-              <div 
+              <div
                 data-tf-live="01KEZ1CB4G0RYGXG6CMFQ1846W"
-                style={{ width: '100%', height: 'auto', minHeight: '550px' }}
+                style={{ width: '100%', minHeight: '750px', flex: 1 }}
               />
             </motion.div>
           </div>
