@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, Globe, MessageCircle, Download, Smartphone, Info } from 'lucide-react';
+import { Mail, Phone, Globe, MessageCircle, Download, Smartphone, Info, Instagram } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import arnaudImg from '@/assets/team/arnaud.webp';
@@ -79,62 +79,20 @@ const ArnoCard = () => {
             <Download className="w-5 h-5" />
             Save Contact on My Phone
           </button>
-        </motion.div>
-
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.15 }} className="w-full">
-          <a href="https://instagram.com/arno.adornier" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 px-5 py-4 rounded-2xl border bg-white/[0.04] border-white/[0.08] hover:bg-white/[0.08] hover:border-white/[0.15] backdrop-blur-xl transition-all duration-300">
-            <img src={instagramIcon} alt="Instagram" className="w-6 h-6 flex-shrink-0 rounded" />
-            <div className="flex-1 min-w-0">
-              <p className="text-xs text-white/40 uppercase tracking-wider font-medium">Instagram</p>
-              <p className="text-sm font-medium text-white/80">@arno.adornier</p>
-            </div>
-            <span className="text-white/20 group-hover:text-white/40 transition-colors text-lg">→</span>
-          </a>
+          <div className="mt-3 flex items-center justify-center gap-4 text-white/50">
+            <span className="flex items-center gap-1.5 text-xs"><Phone className="w-3.5 h-3.5" /> Phone</span>
+            <span className="flex items-center gap-1.5 text-xs"><Mail className="w-3.5 h-3.5" /> Email</span>
+            <span className="flex items-center gap-1.5 text-xs"><MessageCircle className="w-3.5 h-3.5" /> WhatsApp</span>
+            <span className="flex items-center gap-1.5 text-xs"><Instagram className="w-3.5 h-3.5" /> Instagram</span>
+          </div>
+          <p className="mt-2 text-center text-[11px] text-white/30">All included in the contact file</p>
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="w-full">
-          <a href="https://wa.me/33628545978" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 px-5 py-4 rounded-2xl border bg-[hsl(142,70%,40%)]/10 border-[hsl(142,70%,40%)]/30 hover:bg-[hsl(142,70%,40%)]/20 hover:border-[hsl(142,70%,40%)]/50 backdrop-blur-xl transition-all duration-300">
-            <span className="flex-shrink-0 text-[hsl(142,70%,45%)]"><MessageCircle className="w-5 h-5" /></span>
-            <div className="flex-1 min-w-0">
-              <p className="text-xs text-white/40 uppercase tracking-wider font-medium">WhatsApp</p>
-              <p className="text-sm font-medium text-[hsl(142,70%,60%)]">Message on WhatsApp</p>
-            </div>
-            <span className="text-white/20 group-hover:text-white/40 transition-colors text-lg">→</span>
+          <a href="https://thealphaomegahub.com/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-3 px-6 py-4 rounded-2xl border-2 border-[hsl(42,100%,50%)] text-[hsl(42,100%,55%)] font-semibold text-base hover:bg-[hsl(42,100%,50%)]/10 transition-all duration-300">
+            <Globe className="w-5 h-5" />
+            View Services
           </a>
-        </motion.div>
-
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.25 }} className="w-full flex flex-col gap-3">
-          <a href="tel:+17273588135" className="group flex items-center gap-4 px-5 py-4 rounded-2xl border bg-white/[0.04] border-white/[0.08] hover:bg-white/[0.08] hover:border-white/[0.15] backdrop-blur-xl transition-all duration-300">
-            <span className="flex-shrink-0 text-white/50 group-hover:text-white/80 transition-colors"><Phone className="w-5 h-5" /></span>
-            <div className="flex-1 min-w-0">
-              <p className="text-xs text-white/40 uppercase tracking-wider font-medium">Phone</p>
-              <p className="text-sm font-medium text-white/80">+1 727 358 8135</p>
-            </div>
-            <span className="text-white/20 group-hover:text-white/40 transition-colors text-lg">→</span>
-          </a>
-          <a href="mailto:arno@thealphaomegahub.com" className="group flex items-center gap-4 px-5 py-4 rounded-2xl border bg-white/[0.04] border-white/[0.08] hover:bg-white/[0.08] hover:border-white/[0.15] backdrop-blur-xl transition-all duration-300">
-            <span className="flex-shrink-0 text-white/50 group-hover:text-white/80 transition-colors"><Mail className="w-5 h-5" /></span>
-            <div className="flex-1 min-w-0">
-              <p className="text-xs text-white/40 uppercase tracking-wider font-medium">Email</p>
-              <p className="text-sm font-medium text-white/80">arno@thealphaomegahub.com</p>
-            </div>
-            <span className="text-white/20 group-hover:text-white/40 transition-colors text-lg">→</span>
-          </a>
-        </motion.div>
-
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.35 }} className="w-full">
-          <p className="text-xs text-white/30 uppercase tracking-widest text-center mb-3 font-medium">Quick Actions</p>
-          <div className="flex gap-3 justify-center">
-            <a href="https://thealphaomegahub.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white/60 text-xs font-medium hover:bg-white/[0.08] hover:text-white/80 transition-all duration-300">
-              <Globe className="w-4 h-4" /> Website
-            </a>
-            <a href="https://instagram.com/arno.adornier" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white/60 text-xs font-medium hover:bg-white/[0.08] hover:text-white/80 transition-all duration-300">
-              <img src={instagramIcon} alt="" className="w-4 h-4 rounded-sm" /> Instagram
-            </a>
-            <a href="https://wa.me/33628545978" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white/60 text-xs font-medium hover:bg-white/[0.08] hover:text-white/80 transition-all duration-300">
-              <MessageCircle className="w-4 h-4" /> WhatsApp
-            </a>
-          </div>
         </motion.div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.45 }} className="w-full flex flex-col items-center gap-2 pt-4">
