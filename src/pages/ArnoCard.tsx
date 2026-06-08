@@ -3,7 +3,6 @@ import { Mail, Phone, Globe, MessageCircle, Download, Smartphone, Info, Instagra
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import arnaudImg from '@/assets/team/arnaud.webp';
-import instagramIcon from '@/assets/instagram-icon.png';
 import logoFull from '@/assets/logo-full-white-transparent.png';
 
 const ArnoCard = () => {
