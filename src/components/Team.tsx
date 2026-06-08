@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { Instagram } from 'lucide-react';
 
 import arnaudImg from '@/assets/team/arnaud.webp';
 import kerimImg from '@/assets/team/kerim.webp';
@@ -18,7 +19,9 @@ const teamLeaders = [
     description: "Client Relationship & Customer Success Management",
     highlight: "Bachelor, majoring in physics • 9+ years in marketing",
     image: arnaudImg,
-    contactUrl: "/aa"
+    contactUrl: "/aa",
+    instagram: "https://instagram.com/arno.adornier",
+    instagramHandle: "@arno.adornier"
   },
   {
     name: "Kerim JAKUPOVIC",
@@ -108,6 +111,17 @@ export const Team = () => {
               </div>
               <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
               <p className="text-sm text-primary mb-2">({member.role})</p>
+              {member.instagram && (
+                <a
+                  href={member.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-pink-400 hover:text-pink-300 mb-2"
+                >
+                  <Instagram className="w-3.5 h-3.5" />
+                  {member.instagramHandle}
+                </a>
+              )}
               <p className="text-sm text-muted-foreground mb-3">{member.description}</p>
               <p className="text-xs font-semibold text-primary mb-4">{member.highlight}</p>
               <a
