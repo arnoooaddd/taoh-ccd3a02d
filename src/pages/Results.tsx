@@ -14,10 +14,18 @@ const stats = [
 
 const reviews = [
   {
+    name: "Ryan Griffiths",
+    company: "Turfit",
+    companyUrl: "",
+    reviewUrl: "https://maps.app.goo.gl/eBuwgJmY6jQ8tFr8A",
+    date: "June 2026",
+    text: "Working with Arno has been amazing. They are a top notch and professional team. He met with me promtly to go over his strategy and how it would apply to our business and we quickly scheduled time to get started on work. They have been punctual and already produced fantastic content for us. Looking forward to an ongoing advertising relationship.",
+  },
+  {
     name: "Dave Ellis",
     company: "The Racing Line",
     companyUrl: "https://theracingline.app/",
-    reviewUrl: "https://maps.app.goo.gl/QQgrYnLSyGrdgoNj8",
+    reviewUrl: "https://maps.app.goo.gl/p7Ah7UYWBjmPep1R7",
     date: "December 2025",
     text: "Really really helpful people. They run my Meta ad campaigns, and have suggested changes to the pricing and onboarding of my product, both of which improved conversion rates. They're generally just great at marketing; including the product side of things. Fully recommend.",
   },
@@ -25,7 +33,7 @@ const reviews = [
     name: "Hassan Erakat, MP",
     company: "Progress Construction & Renovation",
     companyUrl: "https://www.progresscillc.com/",
-    reviewUrl: "https://maps.app.goo.gl/yC1CPEjkyQRoySX67",
+    reviewUrl: "https://maps.app.goo.gl/jFgbPGNX7CFrZZpA6",
     date: "April 6, 2026",
     text: "Working with a marketing agency can sometimes feel like a chore, especially in the construction world. I've had some negative experiences in the past with other companies, but this team was a breath of fresh air.\n\nThey recently came out to one of our completed remodeling projects to capture footage for future ads, and the entire experience was seamless.\n\nFrom the moment they arrived, it was clear they were pros. They didn't just show up with a camera; they had a full setup with professional lighting, multiple angles, and a clear vision for the shoot. What impressed me most was their preparation. They had scripts ready to go and knew exactly how to direct the flow of the day, which took a huge weight off our shoulders.\n\nThey also went above and beyond in how they handled the homeowner. They were incredibly respectful of the space, kept the environment comfortable, and made sure the client felt at ease while we were all filming. It's rare to find a creative team that maintains that level of professionalism with customers while also being very friendly.\n\nIf you're looking for an agency that actually knows how to produce high-quality content without the headache, I can't recommend them enough. They made the whole process easy, and the final results speak for themselves!",
   },
@@ -209,9 +217,13 @@ const Results = () => {
                 <div>
                   <p className="font-semibold text-foreground">{review.name}</p>
                   <p className="text-sm text-muted-foreground">
-                    <a href={review.companyUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                      {review.company}
-                    </a>
+                    {review.companyUrl ? (
+                      <a href={review.companyUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        {review.company}
+                      </a>
+                    ) : (
+                      review.company
+                    )}
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
                     <a href={review.reviewUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
@@ -223,22 +235,6 @@ const Results = () => {
             ))}
           </div>
 
-          {/* Elfsight Google Reviews Widget */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="max-w-5xl mx-auto mt-16"
-          >
-            <p className="text-center text-sm uppercase tracking-wider text-muted-foreground mb-6">
-              Reviews from <a href="https://maps.app.goo.gl/SXCCfqnP1hTmbrjD8" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Agendac</a>, our subsidiary in France
-            </p>
-            <div
-              className="elfsight-app-6ed2862a-6a58-46df-8794-f87f430bcf80"
-              data-elfsight-app-lazy
-            />
-          </motion.div>
         </div>
       </section>
 
