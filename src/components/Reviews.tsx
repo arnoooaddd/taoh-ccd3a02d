@@ -6,6 +6,7 @@ const reviews = [
   {
     name: "Ryan Griffiths",
     company: "Turfit",
+    companyUrl: "https://turfit.com/",
     reviewUrl: "https://maps.app.goo.gl/eBuwgJmY6jQ8tFr8A",
     date: "June 2026",
     text: "Working with Arno has been amazing. They are a top notch and professional team. He met with me promtly to go over his strategy and how it would apply to our business and we quickly scheduled time to get started on work. They have been punctual and already produced fantastic content for us. Looking forward to an ongoing advertising relationship.",
@@ -34,7 +35,7 @@ export const Reviews = () => {
 
   return (
     <section className="section section-dark" ref={ref}>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -49,21 +50,21 @@ export const Reviews = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 items-start">
           {reviews.map((review, i) => (
             <motion.div
               key={review.name}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.15 * i }}
-              className="glass-card flex flex-col"
+              className="glass-card"
             >
               <div className="flex items-center gap-1 mb-3">
                 {[...Array(5)].map((_, j) => (
                   <span key={j} className="text-yellow-400 text-lg">★</span>
                 ))}
               </div>
-              <blockquote className="text-base leading-relaxed text-foreground/90 italic mb-4 flex-1">
+              <blockquote className="text-base leading-relaxed text-foreground/90 italic mb-4">
                 "{review.text}"
               </blockquote>
               <div>
