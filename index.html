@@ -86,6 +86,19 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Hide LeadConnector chat widget on mobile only -->
+    <style>
+      @media (max-width: 767px) {
+        #lc_text-widget-root,
+        .lc_text-widget,
+        [id^="lc_text-widget"],
+        [class*="lc_text-widget"],
+        iframe[src*="leadconnectorhq.com"] {
+          display: none !important;
+          visibility: hidden !important;
+        }
+      }
+    </style>
     <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a271ce38cf84918beb4efea" data-source="WEB_USER"></script>
   </body>
 </html>
