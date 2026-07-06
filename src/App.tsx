@@ -16,7 +16,6 @@ import KerimCard from "./pages/KerimCard";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import Results from "./pages/Results";
-import { PasswordGate } from "./components/PasswordGate";
 
 const queryClient = new QueryClient();
 
@@ -42,7 +41,6 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <PasswordGate>
           <ScrollToHash />
           <Routes>
             <Route path="/" element={<Index />} />
@@ -57,7 +55,6 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          </PasswordGate>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
